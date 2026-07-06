@@ -46,7 +46,7 @@ Native Pay 的核心不是“前端拉起支付”，而是：
 
 ## 2. 环境准备
 
-### springboot 引入 wx-java-pay
+### springboot引入wx-java-pay
 
 ```xml
     <parent>
@@ -55,7 +55,7 @@ Native Pay 的核心不是“前端拉起支付”，而是：
         <version>3.5.12</version>
         <relativePath/>
     </parent>
-
+    
     <properties>
         <java.version>25</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -65,13 +65,13 @@ Native Pay 的核心不是“前端拉起支付”，而是：
         <!-- https://github.com/binarywang/WxJava -->
         <wx-java.version>4.8.3.B</wx-java.version>
     </properties>
-
+    
     <dependency>
         <groupId>com.github.binarywang</groupId>
         <artifactId>wx-java-pay-spring-boot-starter</artifactId>
         <version>${wx-java.version}</version>
-    </dependency>
-
+    </dependency>    
+    
 ```
 
 ### yml 配置已正确
@@ -110,7 +110,7 @@ wx:
 
 ---
 
-## 3. 问题一：如何生成 code_url（Native 下单）
+## 3. 问题一：如何生成 code\_url（Native 下单）
 
 ### 3.1 后端核心代码
 
@@ -210,7 +210,9 @@ Native Pay 页面通常需要前端轮询查询：
 超时后提示用户刷新或重新发起支付
 ```
 
-## 5. 问题三：如何处理支付回调（notify_url）
+## 5. 问题三：如何处理支付回调（notify\_url）
+
+> 微信支付回调是由微信服务器主动请求你的 `notify_url`，因此该接口不能依赖用户登录态，也不能要求携带业务 token。
 
 ### 5.1 回调接口
 
@@ -363,6 +365,8 @@ Native Pay 文档对应的功能完成后，应能验证：
 
 3. 回调收不到
 → 检查 notify_url 是否公网 HTTPS
+→ 检查 `notify_url` 是否允许匿名访问，不要被登录拦截器、鉴权网关、白名单拦住  
+→ 检查服务器防火墙、安全组、Nginx 是否放行对应路径
 
 4. 查单成功但回调失败
 → 回调网络问题，不影响支付结果
