@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress';
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
-  lang: 'en-US',
+  lang: 'zh-CN',
   title: '小刘实验室',
+  base: '/xiaoliulab-docs/',
 
   description: 'Vite & Vue powered static site generator.',
 
