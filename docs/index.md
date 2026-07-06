@@ -4,22 +4,22 @@ layout: home
 hero:
   name: 小刘实验室
   text: 微信支付接入实验室
-  tagline: 面向 Java / Spring Boot 开发者，提供 Native Pay、JSAPI Pay、Code Pay 的完整接入示例。
+  tagline: 面向 Java / Spring Boot 开发者，提供 Native Pay、JSAPI Pay、Code Pay 的最小化接入示例。
   actions:
     - theme: brand
-      text: 开始学习1
+      text: 微信native支付
       link: /wechat/native-pay-mvp/
     - theme: alt
-      text: JSAPI Pay
-      link: /lab-wx-jsapi/
+      text: JSAPI Pay（整理中）
+      # link: /lab-wx-jsapi/
     - theme: alt
-      text: Code Pay
-      link: /lab-wx-codepay/
+      text: Code Pay（整理中）
+      # link: /lab-wx-codepay/
 
 features:
   - title: Native Pay
     details: 电脑页面生成 code_url，用户使用微信扫码完成支付。
-    link: /lab-wx-native-pay/
+    link: /wechat/native-pay-mvp/
   - title: JSAPI Pay
     details: 公众号内网页拉起微信支付，适合微信 H5 场景。
     link: /lab-wx-jsapi/
