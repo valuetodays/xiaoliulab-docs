@@ -1,5 +1,6 @@
 ---
 layout: home
+pageClass: lab-home
 
 hero:
   name: 小刘实验室
