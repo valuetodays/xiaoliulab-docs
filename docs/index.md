@@ -3,43 +3,28 @@ layout: home
 
 hero:
   name: 小刘实验室
-  text: 微信支付接入实验室
-  tagline: 面向 Java / Spring Boot 开发者，提供 Native Pay、JSAPI Pay、Code Pay 的最小化接入示例。
+  text: 每一个第一次，都值得跑通
+  tagline: 面向开发者的最小 MVP 实验室。每个实验都以「在线体验 + 可运行源码 + 明确成功结果」为目标。
   actions:
     - theme: brand
-      text: 微信native支付
-      link: /wechat/native-pay-mvp/
-    - theme: alt
-      text: JSAPI Pay（整理中）
-      # link: /lab-wx-jsapi/
-    - theme: alt
-      text: Code Pay（整理中）
-      # link: /lab-wx-codepay/
+      text: 微信支付实验室
+      link: /wechat/
 
 features:
-  - title: Native Pay
+  - title: 微信支付实验室
+    details: 从第一次付款成功开始，跑通 Native Pay、JSAPI Pay、Code Pay 的最小流程。
+    link: /wechat/
+  - title: 第一次 Native Pay
     details: 电脑页面生成 code_url，用户使用微信扫码完成支付。
     link: /wechat/native-pay-mvp/
-  - title: JSAPI Pay
-    details: 公众号内网页拉起微信支付，适合微信 H5 场景。
-    link: /lab-wx-jsapi/
-  - title: Code Pay
-    details: 扫用户付款码完成支付，适合扫码枪、收银台等场景。
-    link: /lab-wx-codepay/
-  - title: 支付回调
-    details: 处理微信支付通知，完成签名验签、订单状态更新。
-  - title: 订单查询
-    details: 根据 out_trade_no 查询微信订单状态，排查支付链路问题。
-  - title: 接入示例
-    details: 提供 yml 配置、接口调用顺序、常见问题说明。
+  - title: 第一次 JSAPI Pay
+    details: 公众号内网页拉起微信支付，理解 openid、prepay_id 和前端支付参数。
+    link: /wechat/jsapi-pay-mvp/
+  - title: 第一次 Code Pay
+    details: 使用用户付款码完成扫码付款，面向扫码枪、收银台等场景。
+    link: /wechat/code-pay-mvp/
+  - title: 第一次买域名
+    details: Coming Soon
+  - title: 第一次买云服务器
+    details: Coming Soon
 ---
-
-## 这个文档适合谁？
-
-如果你正在第一次接入微信支付，或者想快速理解 Native Pay / JSAPI Pay / Code Pay 的完整流程，可以从这里开始。
-
-## 推荐阅读顺序
-
-1. 先看 Native Pay，理解创建订单、生成 code_url、查询订单、处理回调。
-2. 再看 JSAPI Pay，理解 openid、prepay_id 和前端拉起支付。
-3. 最后看 Code Pay，理解付款码支付和扫码枪场景。
