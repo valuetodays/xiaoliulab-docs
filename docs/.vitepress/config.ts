@@ -10,33 +10,22 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: 'Example', link: '/example' },
-
-      // {
-      //   text: 'Dropdown Menu',
-      //   items: [
-      //     { text: 'Item A', link: '/item-1' },
-      //     { text: 'Item B', link: '/item-2' },
-      //     { text: 'Item C', link: '/item-3' },
-      //   ],
-      // },
-
-      // ...
+      { text: '首页', link: '/' },
+      { text: '微信支付实验室', link: '/wechat/' },
     ],
 
-    sidebar: [
-      {
-        // text: 'Guide',
-        items: [
-          { text: 'Example', link: '/example' },
-          // ...
-        ],
-      },
-
-      {
-        text: '微信支付',
-        items: [{ text: 'Native Pay MVP', link: '/wechat/native-pay-mvp/' }],
-      },
-    ],
+    sidebar: {
+      '/wechat/': [
+        {
+          text: '微信支付实验室',
+          items: [
+            { text: '专题首页', link: '/wechat/' },
+            { text: 'Native Pay MVP', link: '/wechat/native-pay-mvp/' },
+            { text: 'JSAPI Pay MVP（整理中）', link: '/wechat/jsapi-pay-mvp/' },
+            { text: 'Code Pay MVP（整理中）', link: '/wechat/code-pay-mvp/' },
+          ],
+        },
+      ],
+    },
   },
 });
