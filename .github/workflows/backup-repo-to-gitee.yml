@@ -1,0 +1,23 @@
+name: backup-repo-to-gitee
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # https://github.com/marketplace/actions/sync-gitee-mirror
+      - name: vt-backup-repo-to-gitee
+        uses: valuetodays/backup-repo-to-gitee@master
+        with:
+          # default is github repo name
+          #        giteerepo: sync-gitee-mirror-test1
+          # default is github user name
+          #        giteeuser: valuetodays
+          # must not be empty
+          giteetoken: ${{ secrets.GITEE_TOKEN }}
