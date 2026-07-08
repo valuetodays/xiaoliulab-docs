@@ -17,13 +17,13 @@ export default defineConfig({
     sidebar: {
       '/wechat/': [
         {
-          text: '微信支付实验室',
+          text: '微信支付实验',
           items: [
             { text: '专题首页', link: '/wechat/' },
             { text: '微信支付接入路线', link: '/wechat/getting-started/' },
-            { text: 'Native Pay MVP', link: '/wechat/native-pay-mvp/' },
-            { text: 'JSAPI Pay MVP（整理中）', link: '/wechat/jsapi-pay-mvp/' },
-            { text: 'Code Pay MVP（整理中）', link: '/wechat/code-pay-mvp/' },
+            { text: '微信 Native Pay 最小接入指南', link: '/wechat/native-pay-mvp/' },
+            { text: '微信 Code Pay 最小接入指南', link: '/wechat/code-pay-mvp/' },
+            { text: '微信 JSAPI Pay 最小接入指南（整理中）', link: '/wechat/jsapi-pay-mvp/' },
           ],
         },
       ],
