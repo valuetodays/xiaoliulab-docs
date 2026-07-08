@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 微信支付实验室
   text: 从第一次付款成功开始
-  tagline: Native Pay、JSAPI Pay、Code Pay 的最小 MVP 实验。先跑通，再理解。
+  tagline: Native Pay、Code Pay、JSAPI Pay 的最小 MVP 实验。先跑通，再理解。
   actions:
     - theme: brand
       text: 微信 Native 支付最小接入指南
