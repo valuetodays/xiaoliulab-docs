@@ -1,0 +1,21 @@
+version: "3"
+
+###########
+# this docker-compose.yml intends to let developper to run this project in docker(maybe in another computer), and access by another computer.
+# because different projects use different version of node.
+# this is convinent.
+###########
+
+services:
+  xiaoliu-docs-dev:
+    image: node:24
+    container_name: xiaoliu-docs-dev
+    ports:
+      - "28080:28080"
+    environment:
+      - LANG=en_US.utf8
+      - TZ=Asia/Shanghai
+    command: /bin/bash -c "npm ci --registry=https://registry.npmmirror.com && npm run docs:dev -- --host 0.0.0.0"
+    volumes:
+      - ./:/tmp/xiaoliu-docs-dev
+    working_dir: /tmp/xiaoliu-docs-dev
