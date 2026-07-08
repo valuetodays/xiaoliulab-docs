@@ -8,6 +8,12 @@ export default defineConfig({
 
   description: 'Vite & Vue powered static site generator.',
 
+  vite: {
+    server: {
+      allowedHosts: ['v200'],
+    },
+  },
+
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
