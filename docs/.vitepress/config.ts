@@ -20,6 +20,7 @@ export default defineConfig({
           text: '微信支付实验室',
           items: [
             { text: '专题首页', link: '/wechat/' },
+            { text: '微信支付接入路线', link: '/wechat/getting-started/' },
             { text: 'Native Pay MVP', link: '/wechat/native-pay-mvp/' },
             { text: 'JSAPI Pay MVP（整理中）', link: '/wechat/jsapi-pay-mvp/' },
             { text: 'Code Pay MVP（整理中）', link: '/wechat/code-pay-mvp/' },

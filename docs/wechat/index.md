@@ -7,14 +7,14 @@ hero:
   tagline: Native Pay、JSAPI Pay、Code Pay 的最小 MVP 实验。先跑通，再理解。
   actions:
     - theme: brand
-      text: Native Pay MVP
+      text: 微信 Native 支付最小接入指南
       link: /wechat/native-pay-mvp/
+    - theme: alt
+      text: 微信 Code Pay 最小接入指南
+      link: /wechat/code-pay-mvp/
     - theme: alt
       text: JSAPI Pay（整理中）
       link: /wechat/jsapi-pay-mvp/
-    - theme: alt
-      text: Code Pay（整理中）
-      link: /wechat/code-pay-mvp/
 
 features:
   - title: Native Pay
