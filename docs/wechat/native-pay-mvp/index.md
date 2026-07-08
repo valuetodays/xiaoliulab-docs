@@ -4,7 +4,7 @@
 
 > 本文只讨论一个最小闭环：在配置正确的前提下，如何生成 `code_url`、如何查询订单、如何处理支付回调。
 
-> 默认你已经完成商户号、证书以及 yml 配置，本文不再介绍这些内容。
+> 默认你已经完成商户号、证书以及 yml 配置，本文不再介绍这些内容。见[微信支付接入路线](/wechat/getting-started/)。
 
 > 文中的示例代码版本：
 >
@@ -93,9 +93,9 @@ wx:
     # 商户 API 证书序列号：商户平台 → API安全 → 商户API证书 → 管理证书 里的序列号
     cert-serial-no: xxx
     # 微信支付公钥文件
-    publicKeyPath: xxxx
+    public-key-path: xxxx
     # 微信支付公钥ID
-    publicKeyId: PUB_KEY_ID_xxxx
+    public-key-id: PUB_KEY_ID_xxxx
 ```
 
 注意：字段名以项目实际配置类为准。
@@ -108,7 +108,6 @@ wx:
 3. 能否收到并处理微信支付回调
 ```
 
----
 
 ## 3. 问题一：如何生成 code\_url（Native 下单）
 
@@ -164,7 +163,6 @@ update_time
 2. 主动查单结果
 ```
 
----
 
 ## 4. 问题二：如何查询订单（主动查单）
 
@@ -296,7 +294,6 @@ public Map<String, String> wxPayNotify(@RequestBody String body,
 重复触发实验完成事件
 ```
 
----
 
 ## 6. 为什么已经有支付回调，还需要主动查单？
 
