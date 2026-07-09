@@ -223,7 +223,13 @@ public ResponseEntity<Void> callback(@RequestParam("code") String code,
     // 把ticket放到缓存，value是用户及openid
     String to = 根据state取出原始前端页面; // 从 state 取出的 to 仍然只允许站内相对路径或白名单域名
 
-    String redirectToFrontend = "https://wx.xiaoliulab.com/wx-redirect?to=" + url_encode(to) + "&ticket=" + ticket;
+    String redirectToFrontend = UriComponentsBuilder
+            .fromUriString("https://wx.xiaoliulab.com/wx-redirect")
+            .queryParam("to", to)
+            .queryParam("ticket", ticket)
+            .build()
+            .encode()
+            .toUriString();
 
     return ResponseEntity.status(HttpStatus.FOUND)
             .location(URI.create(redirectToFrontend))
@@ -311,7 +317,7 @@ public void testJsapiPay() {
 
     // 如果 WxPayConfig 里已经 setNotifyUrl，这里可以不 set。
     // 但建议显式 set，方便排查。
-    request.setNotifyUrl(wxPayService.getConfig().getNotifyUrl());x
+    request.setNotifyUrl(wxPayService.getConfig().getNotifyUrl());
 
     WxPayUnifiedOrderV3Request.Amount amount = new WxPayUnifiedOrderV3Request.Amount();
     amount.setTotal(1); // 单位：分。这里是 0.01 元
@@ -338,7 +344,7 @@ public void testJsapiPay() {
 
 JSAPI Pay 不会返回 `code_url`，它返回的是前端调起微信支付所需参数。
 
-常见参数包括：
+后端 `WxPayUnifiedOrderV3Result.JsapiResult` 常见字段包括：
 
 ```plaintext
 appId
@@ -349,12 +355,21 @@ signType
 paySign
 ```
 
-> 注意 `package` 在java中是关键字，此处转成 `packageValue`。
+> 注意 `package` 在 Java 中是关键字，weixin-java 的 Java 对象字段名是 `packageValue`；真正传给 `WeixinJSBridge` 的参数字段名必须是 `package`。
 
 其中 `packageValue` 一般类似：
 
 ```plaintext
 prepay_id=wx201410272009395522657a690389285100
+```
+
+如果后端直接返回 `WxPayUnifiedOrderV3Result.JsapiResult`，需要注意序列化框架差异：
+
+```plaintext
+1. JsapiResult 上的 @SerializedName("package") 是 Gson 注解
+2. Spring Boot 默认使用 Jackson 时，不一定会把 packageValue 序列化成 package
+3. 推荐后端单独转一个给前端的 DTO，把 JSON 字段显式命名为 package
+4. 或者前端调用 WeixinJSBridge 前，把 packageValue 映射成 package
 ```
 
 ## 6. 问题三：前端如何拉起微信支付
@@ -391,7 +406,14 @@ WeixinJSBridge.invoke(
 function onBridgeReady(payParams) {
   WeixinJSBridge.invoke(
     'getBrandWCPayRequest',
-    payParams,
+    {
+      appId: payParams.appId,
+      timeStamp: payParams.timeStamp,
+      nonceStr: payParams.nonceStr,
+      package: payParams.package || payParams.packageValue,
+      signType: payParams.signType,
+      paySign: payParams.paySign
+    },
     function (res) {
       console.log('wx pay result', res);
     }
