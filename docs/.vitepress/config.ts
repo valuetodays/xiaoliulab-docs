@@ -30,7 +30,7 @@ export default defineConfig({
             { text: '微信 Native Pay 最小接入指南', link: '/wechat/native-pay-mvp/' },
             { text: '微信 Code Pay 最小接入指南', link: '/wechat/code-pay-mvp/' },
             { text: '微信 JSAPI Pay 最小接入指南', link: '/wechat/jsapi-pay-mvp/' },
-            { text: '微信 h5 Pay 支持情况', link: '/wechat/h5-pay-mvp/' },
+            { text: '微信 H5 Pay 支持情况', link: '/wechat/h5-pay-mvp/' },
           ],
         },
       ],
