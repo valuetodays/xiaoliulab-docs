@@ -153,6 +153,8 @@ Native Pay 的优点：
 
 ### 第一阶段：Native Pay
 
+[微信 Native Pay 最小接入指南](/wechat/native-pay-mvp/)
+
 最容易验证支付链路。
 
 只需要：
@@ -173,6 +175,8 @@ Native Pay 的优点：
 
 ### 第二阶段：Code Pay
 
+[微信 Code Pay 最小接入指南](/wechat/code-pay-mvp/)
+
 完成付款码支付。
 
 特点：
@@ -192,6 +196,8 @@ Native Pay 的优点：
 
 
 ### 第三阶段：JSAPI Pay
+
+[微信 JSAPI Pay 最小接入指南](/wechat/jsapi-pay-mvp/)
 
 JSAPI 是公众号内最常见的支付方式。
 
