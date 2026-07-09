@@ -191,6 +191,7 @@ scope=snsapi_base
 ### 4.1 后端入口示例
 
 ```java
+// 注意：该接口不要被权限框架拦截
 @GetMapping("/wx/oauth/entry")
 public ResponseEntity<Void> entry(@RequestParam("to") String to) {
     String state = 生成并保存state，同时记录to;
@@ -213,6 +214,7 @@ public ResponseEntity<Void> entry(@RequestParam("to") String to) {
 ### 4.2 OAuth 回调示例
 
 ```java
+// 注意：该接口不要被权限框架拦截
 @GetMapping("/wx/oauth/callback")
 public ResponseEntity<Void> callback(@RequestParam("code") String code,
                                      @RequestParam("state") String state) {
@@ -252,6 +254,7 @@ public ResponseEntity<Void> callback(@RequestParam("code") String code,
 /wx-redirect是前后端约定的中转页面，它调用后端的loginByTicket
 
 ```java
+// 注意：该接口不要被权限框架拦截
 @GetMapping("/loginByTicket")
 public ResponseEntity<LoginResp> callback(@RequestParam("ticket") String ticket) {
     // 根据ticket查缓存中的用户及open_id
@@ -264,13 +267,50 @@ public ResponseEntity<LoginResp> callback(@RequestParam("ticket") String ticket)
 }
 ```
 
+
+为什么不用把 token 放 URL？为什么还要 loginByTicket？
+
+因为 callback 如果直接把 token 拼到 URL：
+
+https://xxx?token=xxxxx
+
+容易：
+
+- 出现在浏览器历史
+- 出现在 Referer
+- 被日志记录
+- 被第三方统计收集
+
+因此建议：
+
+```text
+callback
+    ↓
+ticket
+    ↓
+loginByTicket
+    ↓
+token
+```
+
+ticket 不是登录 token。
+
+ticket 只是 OAuth 与业务登录之间的一次性桥梁。
+
+它通常：
+
+- 只能使用一次
+- 有效期很短（例如 1~5 分钟）
+- 使用成功立即删除
+
+
 前端拿到token后保存到localStorage中，并跳到to页面。
 
 
 完整图：
 
 ```text
-公众号
+公众号菜单
     │
     ▼
 entry
@@ -290,10 +330,14 @@ ticket
 wx-redirect
     │
 loginByTicket
-    ▼
+    │
 token
     ▼
-H5 支付页面
+H5 页面
+    │
+openid
+    ▼
+JSAPI Pay
 ```
 
 
