@@ -100,7 +100,7 @@ JSAPI Pay：用户在微信公众号网页内点击按钮，微信内置支付�
 wx:
   # com.binarywang.spring.starter.wxjava.mp.properties.WxMpProperties
   mp:
-    app-id: xxx
+    app-id: 公众号id
     secret: xxx
     #token: 'xxx'，jsapi pay时不需要 token / aes-key / config-storage
     #aes-key: 'xxx'
@@ -108,8 +108,8 @@ wx:
     #  type: Memory
   # com.binarywang.spring.starter.wxjava.pay.properties.WxPayProperties
   pay:
-    app-id: xxx
-    mch-id: xxx
+    app-id: 公众号id，必须和 wx.mp.app-id 相同
+    mch-id: 商户号
     # APIv3 密钥：商户平台 → API安全 → 解密回调 → APIv3密钥
     api-v3-key: xxx
     # 商户 API 证书，来自 xxxx_cert.zip 解压后的 apiclient_key.pem
@@ -219,9 +219,9 @@ public ResponseEntity<Void> callback(@RequestParam("code") String code,
     WxOAuth2AccessToken accessToken = wxMpService.getOAuth2Service().getAccessToken(code);
     String openid = accessToken.getOpenId();
     // 保存用户表与open_id的关系
-    String ticket = 生成前端登录态或一次性票据;
+    String ticket = 生成前端登录态或一次性票据，可以使用uuid/雪花id，建议字符是数字+大小写字母; 
     // 把ticket放到缓存，value是用户及openid
-    String to = 根据state取出原始前端页面;
+    String to = 根据state取出原始前端页面; // 从 state 取出的 to 仍然只允许站内相对路径或白名单域名
 
     String redirectToFrontend = "https://wx.xiaoliulab.com/wx-redirect?to=" + url_encode(to) + "&ticket=" + ticket;
 
