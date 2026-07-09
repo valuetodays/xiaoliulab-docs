@@ -85,6 +85,11 @@ JSAPI Pay：用户在微信公众号网页内点击按钮，微信内置支付�
     <artifactId>wx-java-pay-spring-boot-starter</artifactId>
     <version>${wx-java.version}</version>
 </dependency>
+<dependency>
+    <groupId>com.github.binarywang</groupId>
+    <artifactId>wx-java-mp-spring-boot-starter</artifactId>
+    <version>${wx-java.version}</version>
+</dependency>
 ```
 
 ### yml 配置已正确
@@ -93,6 +98,15 @@ JSAPI Pay：用户在微信公众号网页内点击按钮，微信内置支付�
 
 ```yaml
 wx:
+  # com.binarywang.spring.starter.wxjava.mp.properties.WxMpProperties
+  mp:
+    app-id: xxx
+    secret: xxx
+    #token: 'xxx'，jsapi pay时不需要 token / aes-key / config-storage
+    #aes-key: 'xxx'
+    #config-storage:
+    #  type: Memory
+  # com.binarywang.spring.starter.wxjava.pay.properties.WxPayProperties
   pay:
     app-id: xxx
     mch-id: xxx
@@ -132,7 +146,8 @@ JSAPI Pay 比 Native Pay、Code Pay 多几个前置条件。
 3. 公众号 appid 必须与商户号绑定
 4. H5 页面域名需要完成 ICP 备案并配置 HTTPS
 5. 需要在微信支付商户平台配置支付授权目录
-6. notify_url 必须是公网 HTTPS，且不能要求登录
+6. OAuth 获取 openid 需要在公众号后台配置网页授权域名。
+7. notify_url 必须是公网 HTTPS，且不能要求登录
 ```
 
 其中最容易踩坑的是：
@@ -181,6 +196,8 @@ public ResponseEntity<Void> entry(@RequestParam("to") String to) {
     String state = 生成并保存state，同时记录to;
     String redirectUri = "https://你的域名/wx/oauth/callback";
 
+    // 为了安全考虑，建议检查 to 在白名单里
+
     String oauthUrl = wxMpService.getOAuth2Service().buildAuthorizationUrl(
             redirectUri,
             "snsapi_base",
@@ -206,7 +223,7 @@ public ResponseEntity<Void> callback(@RequestParam("code") String code,
     // 把ticket放到缓存，value是用户及openid
     String to = 根据state取出原始前端页面;
 
-    String redirectToFrontend = "https://wx.xiaoliulab.com/wx-redirect?to=" + to + "&ticket=" + ticket;
+    String redirectToFrontend = "https://wx.xiaoliulab.com/wx-redirect?to=" + url_encode(to) + "&ticket=" + ticket;
 
     return ResponseEntity.status(HttpStatus.FOUND)
             .location(URI.create(redirectToFrontend))
@@ -231,13 +248,12 @@ public ResponseEntity<Void> callback(@RequestParam("code") String code,
 ```java
 @GetMapping("/loginByTicket")
 public ResponseEntity<LoginResp> callback(@RequestParam("ticket") String ticket) {
-    
     // 根据ticket查缓存中的用户及open_id
     // 生成登录后的token并放到redis中，并设置过期时间
-
+    // 用完ticket后要删除
     String token = "xxx";
     LoginResp resp = new LoginResp();
-    resp.setToken(resp);
+    resp.setToken(token);
     return ResponseEntity.ok(resp);
 }
 ```
@@ -245,11 +261,45 @@ public ResponseEntity<LoginResp> callback(@RequestParam("ticket") String ticket)
 前端拿到token后保存到localStorage中，并跳到to页面。
 
 
+完整图：
+
+```text
+公众号
+    │
+    ▼
+entry
+    │
+302
+    ▼
+微信 OAuth
+    │
+code
+    ▼
+callback
+    │
+openid
+    │
+ticket
+    ▼
+wx-redirect
+    │
+loginByTicket
+    ▼
+token
+    ▼
+H5 支付页面
+```
+
+
+
 ## 5. 问题二：如何创建 JSAPI 支付单
 
 ### 5.1 后端核心代码
 
 ```java
+/**
+ * 本方法是演示调用jsapi pay接口，真实场景中openid要从微信获取
+ */
 @Test
 public void testJsapiPay() {
     String openid = "用户的openid";
@@ -261,7 +311,7 @@ public void testJsapiPay() {
 
     // 如果 WxPayConfig 里已经 setNotifyUrl，这里可以不 set。
     // 但建议显式 set，方便排查。
-    request.setNotifyUrl(wxPayService.getConfig().getNotifyUrl());
+    request.setNotifyUrl(wxPayService.getConfig().getNotifyUrl());x
 
     WxPayUnifiedOrderV3Request.Amount amount = new WxPayUnifiedOrderV3Request.Amount();
     amount.setTotal(1); // 单位：分。这里是 0.01 元
@@ -274,7 +324,7 @@ public void testJsapiPay() {
 
     try {
         // JSAPI 模式：返回前端调起支付需要的参数
-        Object jsapiPayParams = wxPayService.createOrderV3(TradeTypeEnum.JSAPI, request);
+        WxPayUnifiedOrderV3Result.JsapiResult jsapiPayParams = wxPayService.createOrderV3(TradeTypeEnum.JSAPI, request);
         log.info("jsapiPayParams={}", jsapiPayParams);
     } catch (WxPayException e) {
         throw BizAssert.createNewException("微信 JSAPI Pay 下单失败：" + e.getMessage(), e);
