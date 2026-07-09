@@ -15,6 +15,10 @@
   font-size: 34px;
 }
 
+.lab-home .VPHero .tagline {
+  max-width: 840px;
+}
+
 .vp-doc img {
   display: block;
   margin-left: auto;
@@ -38,5 +42,9 @@
 
   .lab-home .VPHero .text {
     font-size: 42px;
+  }
+
+  .lab-home .VPHero .tagline {
+    white-space: nowrap;
   }
 }

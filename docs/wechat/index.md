@@ -1,5 +1,6 @@
 ---
 layout: home
+pageClass: lab-home
 
 hero:
   name: 微信支付实验室
