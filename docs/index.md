@@ -12,12 +12,12 @@ hero:
       link: /wechat/
     - theme: alt
       text: 做T实验室
-      link: /zuot/
+      link: /lab-zuot/
 
 features:
   - title: 做T实验室
     details: 记录做T相关知识、方法、实践与复盘，逐步沉淀为系列文档。
-    link: /zuot/
+    link: /lab-zuot/
   - title: 微信支付实验室
     details: 从第一次付款成功开始，跑通 Native Pay、JSAPI Pay、Code Pay 的最小流程。
     link: /wechat/
