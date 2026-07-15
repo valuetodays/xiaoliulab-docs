@@ -14,8 +14,11 @@ hero:
   tagline: 整理金融知识、分析方法与实践记录，逐步建立可验证、可复盘的认知框架。
   actions:
     - theme: brand
-      text: 开始阅读
-      link: /lab-fortune/#文档目录
+      text: 金融基础
+      link: /lab-fortune/foundation/
+    - theme: alt
+      text: 做T实验室
+      link: /lab-fortune/lab-zuot/
 
 features:
   - title: 基础认知
