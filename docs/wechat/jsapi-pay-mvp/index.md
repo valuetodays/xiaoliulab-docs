@@ -1,3 +1,12 @@
+---
+title: 微信 JSAPI Pay 接入教程：公众号内拉起支付
+description: 使用 Java、Spring Boot 和 weixin-java 接入微信 JSAPI Pay，讲解公众号网页获取 openid、创建预支付订单、前端拉起微信支付及处理支付回调。
+head:
+  - - meta
+    - name: keywords
+      content: 微信 JSAPI Pay,公众号微信支付,微信支付 openid,prepay_id,WeixinJSBridge,Spring Boot 微信支付,weixin-java
+---
+
 # 微信 JSAPI Pay 最小接入指南
 
 ## 0. 阅读说明
