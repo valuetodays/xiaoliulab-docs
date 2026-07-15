@@ -9,6 +9,16 @@ export default defineConfig({
   description: '记录真实实验、真实验证与持续迭代的技术和金融实践。',
   base: '/',
   lastUpdated: true,
+  head: [
+    [
+      'script',
+      {
+        defer: '',
+        src: 'https://myanalytics.pages.dev/tracker.min.js',
+        'data-website-id': 'a-web-xiaoliulab-docs',
+      },
+    ],
+  ],
   sitemap: {
     hostname: `${siteUrl}/`,
   },
