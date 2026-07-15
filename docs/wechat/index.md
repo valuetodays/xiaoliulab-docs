@@ -38,12 +38,17 @@ features:
     details: notify_url、公网 HTTPS、匿名访问等排查。
 ---
 
+## 第一次来到实验室？
+
+先读一读[为什么会有这个实验室？](/wechat/why-this-lab/)，了解这里为什么强调真实验证，以及“先跑通，再理解”的学习方式。
+
 ## 这个专题适合谁？
 
 适合第一次接入微信支付，或者想快速跑通 Native Pay / JSAPI Pay / Code Pay 最小流程的 Java / Spring Boot 开发者。
 
 ## 推荐实验顺序
 
-1. Native Pay MVP：理解创建订单、生成 code_url、查询订单、处理回调。
-2. Code Pay MVP：理解付款码支付和扫码枪场景。
-3. JSAPI Pay MVP：理解 openid、prepay_id 和前端拉起支付。
+1. 微信 Native Pay 最小接入指南：理解创建订单、生成 code_url、查询订单、处理回调。
+2. 微信 Code Pay 最小接入指南：理解付款码支付和扫码枪场景。
+3. 微信 JSAPI Pay 最小接入指南：理解 openid、prepay_id 和前端拉起微信支付。
+4. 微信 H5 Pay 支持情况：理解在手机浏览器中拉起微信支付。
