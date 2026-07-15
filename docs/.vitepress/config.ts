@@ -1,13 +1,13 @@
 import { defineConfig } from 'vitepress';
 
-const siteUrl = 'https://valuetodays.github.io/xiaoliulab-docs';
+const siteUrl = 'https://docs.xiaoliulab.com';
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
   lang: 'zh-CN',
   title: '小刘实验室',
   description: '记录真实实验、真实验证与持续迭代的技术和金融实践。',
-  base: '/xiaoliulab-docs/',
+  base: '/',
   lastUpdated: true,
   sitemap: {
     hostname: `${siteUrl}/`,

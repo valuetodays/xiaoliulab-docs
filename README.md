@@ -1,4 +1,3 @@
 # xiaoliulab-docs
 
-site: https://valuetodays.github.io/xiaoliulab-docs/
-
+site: https://docs.xiaoliulab.com
