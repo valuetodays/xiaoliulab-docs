@@ -13,9 +13,9 @@ head:
 
 很多朋友会发现：
 
-Native Pay ✔
-JSAPI ✔
-Code Pay ✔
+- Native Pay ✔
+- JSAPI ✔
+- Code Pay ✔
 
 唯独没有 H5 Pay。
 
