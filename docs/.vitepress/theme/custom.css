@@ -6,13 +6,13 @@
 .lab-home .VPHero .name {
   max-width: 720px;
   line-height: 1.16;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .lab-home .VPHero .text {
   max-width: 760px;
   line-height: 1.22;
-  font-size: 34px;
+  font-size: 28px;
 }
 
 .lab-home .VPHero .tagline {
@@ -27,21 +27,21 @@
 
 @media (min-width: 640px) {
   .lab-home .VPHero .name {
-    font-size: 44px;
+    font-size: 36px;
   }
 
   .lab-home .VPHero .text {
-    font-size: 38px;
+    font-size: 32px;
   }
 }
 
 @media (min-width: 960px) {
   .lab-home .VPHero .name {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .lab-home .VPHero .text {
-    font-size: 42px;
+    font-size: 34px;
   }
 
   .lab-home .VPHero .tagline {
