@@ -47,6 +47,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '微信支付实验室', link: '/wechat/' },
       { text: '做T实验室', link: '/lab-zuot/' },
+      { text: '金融实验室', link: '/lab-fortune/' },
     ],
 
     sidebar: {
@@ -69,6 +70,18 @@ export default defineConfig({
           text: '做T实验室',
           items: [
             { text: '专题首页', link: '/lab-zuot/' },
+          ],
+        },
+      ],
+      '/lab-fortune/': [
+        {
+          text: '金融实验室',
+          items: [
+            { text: '专题首页', link: '/lab-fortune/' },
+            { text: '金融基础', link: '/lab-fortune/foundation/' },
+            { text: '做T专题', link: '/lab-fortune/lab-zuot/' },
+            { text: '金融实验', link: '/lab-fortune/experiments/' },
+            { text: '内容路线图', link: '/lab-fortune/roadmap' },
           ],
         },
       ],

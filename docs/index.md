@@ -13,8 +13,14 @@ hero:
     - theme: alt
       text: 做T实验室
       link: /lab-zuot/
+    - theme: alt
+      text: 金融实验室
+      link: /lab-fortune/
 
 features:
+  - title: 金融实验室
+    details: 记录金融知识、分析方法与实践思考，在持续验证中建立自己的认知框架。
+    link: /lab-fortune/
   - title: 做T实验室
     details: 记录做T相关知识、方法、实践与复盘，逐步沉淀为系列文档。
     link: /lab-zuot/
