@@ -1,6 +1,6 @@
 ---
 layout: home
-pageClass: lab-home
+pageClass: lab-home site-home
 
 hero:
   name: 小刘实验室
@@ -11,33 +11,49 @@ hero:
       text: 微信支付实验室
       link: /wechat/
     - theme: alt
-      text: 做T实验室
-      link: /lab-zuot/
-    - theme: alt
       text: 金融实验室
       link: /lab-fortune/
-
-features:
-  - title: 金融实验室
-    details: 记录金融知识、分析方法与实践思考，在持续验证中建立自己的认知框架。
-    link: /lab-fortune/
-  - title: 做T实验室
-    details: 记录做T相关知识、方法、实践与复盘，逐步沉淀为系列文档。
-    link: /lab-zuot/
-  - title: 微信支付实验室
-    details: 从第一次付款成功开始，跑通 Native Pay、JSAPI Pay、Code Pay 的最小流程。
-    link: /wechat/
-  - title: 第一次 Native Pay
-    details: 电脑页面生成 code_url，用户使用微信扫码完成支付。
-    link: /wechat/native-pay-mvp/
-  - title: 第一次 JSAPI Pay
-    details: 公众号内网页拉起微信支付，理解 openid、prepay_id 和前端支付参数。
-    link: /wechat/jsapi-pay-mvp/
-  - title: 第一次 Code Pay
-    details: 使用用户付款码完成扫码付款，面向扫码枪、收银台等场景。
-    link: /wechat/code-pay-mvp/
-  - title: 第一次买域名
-    details: Coming Soon
-  - title: 第一次买云服务器
-    details: Coming Soon
 ---
+
+## 金融实验室
+
+<div class="lab-topic-grid">
+  <a class="lab-topic-card" href="./lab-fortune/lab-zuot/">
+    <h3>做T实验室</h3>
+    <p>记录做T的基础、信号、执行、系统与实践复盘。</p>
+  </a>
+</div>
+
+## 技术实验室
+
+<div class="lab-topic-grid">
+  <a class="lab-topic-card" href="./wechat/">
+    <h3>微信支付实验室</h3>
+    <p>从第一次付款成功开始，跑通 Native Pay、JSAPI Pay、Code Pay 的最小流程。</p>
+  </a>
+  <a class="lab-topic-card" href="./wechat/native-pay-mvp/">
+    <h3>第一次 Native Pay</h3>
+    <p>电脑页面生成 code_url，用户使用微信扫码完成支付。</p>
+  </a>
+  <a class="lab-topic-card" href="./wechat/jsapi-pay-mvp/">
+    <h3>第一次 JSAPI Pay</h3>
+    <p>公众号内网页拉起微信支付，理解 openid、prepay_id 和前端支付参数。</p>
+  </a>
+  <a class="lab-topic-card" href="./wechat/code-pay-mvp/">
+    <h3>第一次 Code Pay</h3>
+    <p>使用用户付款码完成扫码付款，面向扫码枪、收银台等场景。</p>
+  </a>
+</div>
+
+## 更多实验
+
+<div class="lab-topic-grid">
+  <div class="lab-topic-card is-disabled">
+    <h3>第一次买域名</h3>
+    <p>Coming Soon</p>
+  </div>
+  <div class="lab-topic-card is-disabled">
+    <h3>第一次买云服务器</h3>
+    <p>Coming Soon</p>
+  </div>
+</div>

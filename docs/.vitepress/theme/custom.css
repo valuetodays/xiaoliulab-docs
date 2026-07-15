@@ -19,13 +19,65 @@
   max-width: 840px;
 }
 
+.site-home .VPHome .VPHomeHero {
+  padding-bottom: 24px;
+}
+
+.site-home .vp-doc h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
 .vp-doc img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.lab-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 16px 0 32px;
+}
+
+.vp-doc .lab-topic-card {
+  display: block;
+  padding: 20px 24px;
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.vp-doc a.lab-topic-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: var(--vp-shadow-2);
+}
+
+.vp-doc .lab-topic-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.vp-doc .lab-topic-card p {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+}
+
+.vp-doc .lab-topic-card.is-disabled {
+  opacity: 0.7;
+}
+
 @media (min-width: 640px) {
+  .site-home .VPHome .VPHomeHero {
+    padding-bottom: 32px;
+  }
+
   .lab-home .VPHero .name {
     font-size: 36px;
   }

@@ -46,8 +46,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '微信支付实验室', link: '/wechat/' },
-      { text: '做T实验室', link: '/lab-zuot/' },
       { text: '金融实验室', link: '/lab-fortune/' },
+      { text: '做T实验室', link: '/lab-fortune/lab-zuot/' },
     ],
 
     sidebar: {
