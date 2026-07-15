@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /zuot/#文档目录
+      link: /lab-zuot/#文档目录
 
 features:
   - title: 基础知识
@@ -30,4 +30,3 @@ features:
 2. 常见方法与适用场景
 3. 风险控制与注意事项
 4. 实践案例与复盘记录
-
