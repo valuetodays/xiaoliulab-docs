@@ -36,7 +36,7 @@ export default defineConfig({
 
   themeConfig: {
     footer: {
-      message: '<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备17040585号-6</a>',
+      message: '<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">ICP备案号：京ICP备17040585号-6</a>',
     },
 
     lastUpdated: {
