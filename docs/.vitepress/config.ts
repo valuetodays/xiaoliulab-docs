@@ -1,14 +1,33 @@
 import { defineConfig } from 'vitepress';
 
+const siteUrl = 'https://valuetodays.github.io/xiaoliulab-docs';
+
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
   lang: 'zh-CN',
   title: '小刘实验室',
+  description: '记录真实实验、真实验证与持续迭代的技术和金融实践。',
   base: '/xiaoliulab-docs/',
   lastUpdated: true,
+  sitemap: {
+    hostname: `${siteUrl}/`,
+  },
+  transformHead({ pageData }) {
+    const relativePath = pageData.relativePath
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html');
+    const canonicalUrl = `${siteUrl}/${relativePath}`;
 
-  description: 'Vite & Vue powered static site generator.',
-
+    return [
+      ['link', { rel: 'canonical', href: canonicalUrl }],
+      ['meta', { property: 'og:type', content: 'article' }],
+      ['meta', { property: 'og:locale', content: 'zh_CN' }],
+      ['meta', { property: 'og:site_name', content: '小刘实验室' }],
+      ['meta', { property: 'og:title', content: pageData.title }],
+      ['meta', { property: 'og:description', content: pageData.description }],
+      ['meta', { property: 'og:url', content: canonicalUrl }],
+    ];
+  },
   vite: {
     server: {
       allowedHosts: ['v200'],

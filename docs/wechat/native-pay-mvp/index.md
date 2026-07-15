@@ -1,3 +1,12 @@
+---
+title: 微信 Native Pay 接入教程：Spring Boot 最小实现
+description: 使用 Java、Spring Boot 和 weixin-java 接入微信 Native Pay，完成下单、生成付款二维码、查询订单和处理支付回调的最小闭环。
+head:
+  - - meta
+    - name: keywords
+      content: 微信 Native Pay,微信支付 Java,Spring Boot 微信支付,weixin-java,微信支付二维码,微信支付回调
+---
+
 # 微信 Native Pay 最小接入指南
 
 ## 0. 阅读说明

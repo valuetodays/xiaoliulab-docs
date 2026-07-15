@@ -1,3 +1,12 @@
+---
+title: 微信 Code Pay 付款码支付教程：Spring Boot 最小实现
+description: 使用 Java、Spring Boot 和 weixin-java 接入微信 Code Pay，通过用户付款码 auth_code 完成商户扫码收款，并说明订单查询与支付回调流程。
+head:
+  - - meta
+    - name: keywords
+      content: 微信 Code Pay,微信付款码支付,微信支付 auth_code,商户扫码收款,Spring Boot 微信支付,weixin-java
+---
+
 # 微信 Code Pay 最小接入指南
 
 ## 0. 阅读说明

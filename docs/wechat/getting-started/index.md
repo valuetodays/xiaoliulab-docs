@@ -1,3 +1,12 @@
+---
+title: 微信支付接入指南：商户号、证书与支付方式选择
+description: 面向 Java 与 Spring Boot 开发者的微信支付接入路线，介绍服务号、商户号、API v3 证书配置，以及 Native Pay、JSAPI Pay、Code Pay 的区别和推荐学习顺序。
+head:
+  - - meta
+    - name: keywords
+      content: 微信支付接入,微信支付商户号,微信支付 API v3,Native Pay,JSAPI Pay,Code Pay,Spring Boot 微信支付
+---
+
 # 微信支付接入路线
 
 > 本文介绍接入微信支付前需要完成的准备工作，以及 Native Pay、JSAPI Pay、Code Pay 等支付方式的区别和推荐接入顺序。
