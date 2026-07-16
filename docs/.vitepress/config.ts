@@ -62,6 +62,7 @@ export default defineConfig({
       { text: '微信支付实验室', link: '/wechat/' },
       { text: '金融实验室', link: '/lab-fortune/' },
       { text: '做T实验室', link: '/lab-fortune/lab-zuot/' },
+      { text: '更新记录', link: '/changelog' },
     ],
 
     sidebar: {
