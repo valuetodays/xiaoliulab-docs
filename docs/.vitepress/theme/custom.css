@@ -34,6 +34,7 @@
 }
 
 .beian-links,
+.beian-public-security,
 .beian-link {
   display: inline-flex;
   align-items: center;
@@ -42,7 +43,15 @@
 .beian-links {
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px 16px;
+  column-gap: 8px;
+}
+
+.beian-public-security {
+  gap: 8px;
+}
+
+.beian-separator {
+  color: var(--vp-c-divider);
 }
 
 .beian-link img {
