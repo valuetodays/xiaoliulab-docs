@@ -15,14 +15,15 @@ head:
 
 ### ✨ 新增
 
-- 新增 [《为什么会有做T实验室？》](/lab-fortune/lab-zuot/basics/why-this-lab)，介绍做T实验室的建立初衷，以及如何通过数学、统计学、工程和资产配置，持续研究市场波动。
-
+- 新增 [为什么会有做T实验室？](/lab-fortune/lab-zuot/basics/why-this-lab)，介绍做T实验室的建立初衷，以及如何通过数学、统计学、工程和资产配置，持续研究市场波动。
+- 新增 [什么样的标的才算适合做T？](/lab-fortune/lab-zuot/basics/what-makes-a-good-target/)，介绍长期做T标的的选择标准，以及流动性、手续费、波动、长期价值和长期坚持等核心因素。
+- 新增 [为什么我最终选择了红利ETF？](/lab-fortune/lab-zuot/basics/why-i-finally-chose-dividend-etf/)，介绍为什么红利ETF最符合小刘实验室的长期做T标准，以及做T与长期资产配置之间的关系。
 
 ## 2026-07-16
 
 ### ✨ 新增
 
-- 新增 [《为什么一厘价差也能产生收益？——做T的数学基础》](/lab-fortune/lab-zuot/basics/math-foundation)，介绍做T收益背后的数学原理。
+- 新增 [为什么一厘价差也能产生收益？——做T的数学基础](/lab-fortune/lab-zuot/basics/math-foundation)，介绍做T收益背后的数学原理。
 
 ### 🚀 改进
 
