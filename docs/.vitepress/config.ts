@@ -46,7 +46,22 @@ export default defineConfig({
 
   themeConfig: {
     footer: {
-      message: '<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">ICP备案号：京ICP备17040585号-6</a>',
+      message: `
+        <span class="beian-links">
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+            ICP备案号：京ICP备17040585号-6
+          </a>
+          <a
+            href="https://beian.mps.gov.cn/#/query/webSearch?code=11010802049380"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="beian-link"
+          >
+            <img src="/images/gaba-icon.png" alt="" />
+            京公网安备11010802049380号
+          </a>
+        </span>
+      `,
     },
 
     lastUpdated: {
