@@ -97,8 +97,8 @@ export default defineConfig({
                   items: [
                     { text: '为什么会有这个实验室', link: '/lab-fortune/lab-zuot/basics/why-this-lab' },
                     { text: '做T的数学基础', link: '/lab-fortune/lab-zuot/basics/math-foundation' },
-                    { text: '什么样的标的才算适合做T？', link: '/lab-fortune/lab-zuot/basics/what-makes-a-good-target' },
-                    { text: '为什么我最终选择了红利ETF？', link: '/lab-fortune/lab-zuot/basics/why-i-finally-chose-dividend-etf' },
+                    { text: '什么样的标的适合做T？', link: '/lab-fortune/lab-zuot/basics/what-makes-a-good-target' },
+                    { text: '为什么我选择红利ETF？', link: '/lab-fortune/lab-zuot/basics/why-i-finally-chose-dividend-etf' },
                   ],
                 },
               ],
