@@ -60,7 +60,7 @@ export default defineConfig({
               class="beian-link"
             >
               <img src="/images/gaba-icon.png" alt="" />
-              京公网安备11010802049380号
+              京公网安备 11010802049380号
             </a>
           </span>
         </span>
