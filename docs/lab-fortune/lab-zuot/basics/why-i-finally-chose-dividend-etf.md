@@ -236,7 +236,8 @@ ETF具有一些天然优势：
 
 ## 下一篇
 
-**为什么第一笔交易最难？**
+
+[为什么第一笔交易最难？](/lab-fortune/lab-zuot/basics/why-first-trade-is-hard)
 
 标的已经确定。
 
