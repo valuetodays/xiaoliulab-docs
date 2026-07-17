@@ -85,7 +85,20 @@ export default defineConfig({
           text: '金融实验室',
           items: [
             { text: '专题首页', link: '/lab-fortune/' },
-            { text: '金融基础', link: '/lab-fortune/foundation/' },
+            {
+              text: '金融基础',
+              link: '/lab-fortune/foundation/',
+              collapsed: false,
+              items: [
+                {
+                  text: '交易基础',
+                  collapsed: false,
+                  items: [
+                    { text: 'T+0 与 T+1', link: '/lab-fortune/foundation/trading/t0-vs-t1' },
+                  ],
+                },
+              ],
+            },
             {
               text: '做T实验室',
               link: '/lab-fortune/lab-zuot/',
