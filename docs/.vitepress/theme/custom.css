@@ -33,6 +33,24 @@
   border-top: 0;
 }
 
+.beian-links,
+.beian-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.beian-links {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 16px;
+}
+
+.beian-link img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
 .vp-doc img {
   display: block;
   margin-left: auto;
