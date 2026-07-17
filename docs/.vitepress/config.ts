@@ -130,6 +130,7 @@ export default defineConfig({
                     { text: '做T的数学基础', link: '/lab-fortune/lab-zuot/basics/math-foundation' },
                     { text: '什么样的标的适合做T？', link: '/lab-fortune/lab-zuot/basics/what-makes-a-good-target' },
                     { text: '为什么我选择红利ETF？', link: '/lab-fortune/lab-zuot/basics/why-i-finally-chose-dividend-etf' },
+                    { text: '为什么第一笔交易最难？', link: '/lab-fortune/lab-zuot/basics/why-first-trade-is-hard' },
                   ],
                 },
               ],
