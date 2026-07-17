@@ -1,3 +1,17 @@
+# xiaoliulab-docs
+
+这是小刘实验室的 VitePress 文档仓库。
+
+## 通用规则
+
+- 所有正式文章使用中文。
+- 文章采用 Markdown 和 VitePress Frontmatter。
+- 不夸大收益，不使用“稳赚”“必赚”等表达。
+- 未经验证的结论必须明确标记为假设或待验证内容。
+- 保持现有目录、路由和内部链接风格。
+- 修改文章前，先阅读同目录相关文章。
+- 编写或重写完整文章时，使用 `article-writing` Skill。
+
 
 - 执行 `curl` 命令时要加参数 `--noproxy '*'`
 
