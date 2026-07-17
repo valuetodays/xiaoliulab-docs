@@ -170,7 +170,7 @@ description: 从最基本的数学公式出发，解释做T为什么能够产生
 
 ## 下一篇
 
-[什么样的标的才算适合做T？](/lab-fortune/lab-zuot/basics/what-makes-a-good-target/)
+[什么样的标的才算适合做T？](/lab-fortune/lab-zuot/basics/what-makes-a-good-target)
 
 既然数学成立。
 

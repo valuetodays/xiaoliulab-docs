@@ -69,7 +69,7 @@ head:
 
 ### ② 手续费是否足够低
 
-[上一篇文章](/lab-fortune/lab-zuot/basics/math-foundation/)介绍过：
+[上一篇文章](/lab-fortune/lab-zuot/basics/math-foundation)介绍过：
 
 收益来源于：
 
@@ -257,4 +257,4 @@ head:
 
 ## 下一篇
 
-下篇讲一下[为什么我最终选择了红利ETF？](/lab-fortune/lab-zuot/basics/why-i-finally-chose-dividend-etf/)。
+下篇讲一下[为什么我最终选择了红利ETF？](/lab-fortune/lab-zuot/basics/why-i-finally-chose-dividend-etf)。

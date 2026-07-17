@@ -9,7 +9,7 @@ head:
 
 # 为什么我最终选择了红利ETF？
 
-[上一篇文章](/lab-fortune/lab-zuot/basics/what-makes-a-good-target/)介绍了：
+[上一篇文章](/lab-fortune/lab-zuot/basics/what-makes-a-good-target)介绍了：
 
 > **一个适合长期做T的标的，并不仅仅需要波动。**
 
