@@ -20,7 +20,7 @@ head:
 记录 TdxQuant 的安装、基础调用和工程化封装过程，探索如何通过通达信获取行情数据，并将其接入自己的业务系统。
 
 - [安装通达信金融终端与 Python 环境](/lab-technology/tdxquant/installation)
-- 使用 curl 和 Python 获取行情数据（编写中）
+- [使用 curl 和 Python 获取第一份行情数据](/lab-technology/tdxquant/basic-usage)
 - 使用 Flask 封装行情服务（编写中）
 
 
