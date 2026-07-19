@@ -31,6 +31,10 @@ TdxQuant 提供 Python API，同时在本机提供 HTTP 调用入口。
 
 本文先通过 HTTP 接口确认服务正常，再使用 Python 调用 `tqcenter` 获取历史行情。
 
+## 方式一：通过 HTTP 接口调用
+
+### 使用浏览器确认服务已启动
+
 通达信金融终端启动并登录后，TdxQuant 会在本机提供 HTTP 服务：
 
 ```text
@@ -45,7 +49,7 @@ http://127.0.0.1:17709/
 
 截图中的“JSON 解析失败”是因为浏览器没有发送接口要求的 POST JSON。这里出现该提示，说明本地服务已经响应；接下来再用 curl 验证行情接口。
 
-## 使用 curl 验证本地接口
+### 使用 curl 验证行情接口
 
 官方文档在这里：[HTTP方式调用 | 通达信量化平台](https://help.tdx.com.cn/quant/docs/markdown/mindoc-1hdhbmi50d038.html)。
 
@@ -72,7 +76,7 @@ curl -X POST "http://127.0.0.1:17709/" ^
 :::
 
 
-## 在 PowerShell 中调用
+### 在 PowerShell 中调用
 
 如果上一节的 curl 请求已经成功，并且不需要使用 PowerShell，可以跳过本节。
 
@@ -102,7 +106,9 @@ $result | ConvertTo-Json -Depth 10
 
 这种写法比手动拼接 JSON 更容易阅读，也能减少引号转义带来的问题。
 
-## 创建 Python 测试脚本
+## 方式二：通过 Python API 调用
+
+### 创建 Python 测试脚本
 
 在任意目录创建一个 Python 文件，例如：
 
@@ -127,7 +133,7 @@ from tqcenter import tq
 ModuleNotFoundError: No module named 'tqcenter'
 ```
 
-## 初始化 TdxQuant
+### 初始化 TdxQuant
 
 导入模块后，需要先调用 `initialize`：
 
@@ -150,7 +156,7 @@ tq.initialize(__file__)
 
 执行脚本前，要确认通达信金融终端已经启动并登录，否则初始化或后续数据调用可能失败。
 
-## 刷新历史 K 线
+### 刷新历史 K 线
 
 第一次调用 `get_market_data` 时，可能只能获取最新一天的数据。这通常不是查询参数写错，而是通达信本地还没有完整的历史 K 线缓存。
 
@@ -167,7 +173,7 @@ print(refresh_result)
 
 刷新操作会让客户端补充指定证券和周期的本地历史数据。刷新完成后，再调用行情查询接口。
 
-## 获取历史行情
+### 获取历史行情
 
 下面查询 `000001.SZ` 在指定日期范围内的日 K 数据：
 
@@ -188,7 +194,7 @@ print(data)
 
 `field_list=[]` 表示获取接口默认返回的全部字段。`dividend_type="front"` 表示使用前复权行情。
 
-## 完整示例
+### 完整示例
 
 把刷新和查询放在一起，完整代码如下：
 
@@ -234,7 +240,9 @@ python tdxquant_api_test.py
 从截图中可以看到，`refresh_kline` 返回结果中的 `ErrorId=0`，说明历史 K 线刷新成功；随后 `get_market_data` 返回了指定日期范围内的日 K 数据。
 
 
-## 返回数据为什么是 DataFrame
+## 理解 Python API 的返回结果
+
+### 返回数据为什么是 DataFrame
 
 通过 Python API 调用 `get_market_data` 时，返回的不是普通的 JSON 数组，而是按照字段组织的数据结构，其中每个字段对应一个 pandas `DataFrame`。
 
@@ -254,7 +262,7 @@ python tdxquant_api_test.py
 
 这种结构适合在 Python 中进行批量计算，但不能直接交给 Flask 作为普通 JSON 返回。下一篇进行 Flask 封装时，会先把它转换成按日期排列的普通对象。
 
-## 为什么字段以大写字母开头
+### 为什么字段以大写字母开头
 
 TdxQuant 返回的行情字段使用通达信原始命名，例如：
 
@@ -269,7 +277,7 @@ Amount
 
 在简单调用阶段可以保留原始字段。工程化封装时，再在 API 边界统一转换为 `open`、`high`、`low`、`close` 等命名，避免业务系统依赖底层数据源的字段风格。
 
-## 关于 Volume 和 Amount 的单位
+### 关于 Volume 和 Amount 的单位
 
 官方示例对 `Volume` 和 `Amount` 给出了单位说明，但不同证券类型的实际返回结果仍应进行验证。
 
