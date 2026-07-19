@@ -16,6 +16,7 @@ description: 介绍 TdxQuant 的适用人群、通达信版本选择、Python �
 ## 视频演示
 
 - [TdxQuant 入门（一）：安装 Python 环境](https://www.bilibili.com/video/BV17WKr68EJr/)
+- [TdxQuant 入门（一）：安装通达信 Quant](https://www.bilibili.com/video/BV1F7Kr6eEE9/)
 
 
 
