@@ -21,7 +21,7 @@ head:
 
 - [安装通达信金融终端与 Python 环境](/lab-technology/tdxquant/installation)
 - [使用 curl 和 Python 获取第一份行情数据](/lab-technology/tdxquant/basic-usage)
-- 使用 Flask 封装行情服务（编写中）
+- [使用 Flask 封装行情服务](/lab-technology/tdxquant/flask-service)
 
 
 ## 内容方向
