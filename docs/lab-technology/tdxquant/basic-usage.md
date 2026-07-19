@@ -13,6 +13,13 @@ head:
 
 这一篇不做复杂封装，只验证两件事：TdxQuant 的本地 HTTP 接口能否正常访问，以及 Python 能否成功获取历史行情数据。
 
+
+## 视频演示
+
+- [TdxQuant 入门（二）：通达信 Quant | 第一个 Python 行情程序](https://www.bilibili.com/video/BV1XeKr6QEF9/)
+
+
+
 ## 开始前的准备
 
 运行下面的示例前，需要先启动通达信金融终端，并登录通达信账号。只获取行情时，不需要登录券商资金账号。
