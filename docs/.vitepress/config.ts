@@ -78,6 +78,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '微信支付实验室', link: '/wechat/' },
+      { text: '技术实验室', link: '/lab-technology/' },
       { text: '金融实验室', link: '/lab-fortune/' },
       { text: '做T实验室', link: '/lab-fortune/lab-zuot/' },
       { text: '更新记录', link: '/changelog' },
@@ -98,6 +99,32 @@ export default defineConfig({
           ],
         },
       ],
+ '/lab-technology/': [
+    {
+      text: '技术实验室',
+      items: [
+        { text: '专题首页', link: '/lab-technology/' },
+        {
+          text: 'TdxQuant',
+          collapsed: false,
+          items: [
+            {
+              text: '安装通达信金融终端与 Python 环境',
+              link: '/lab-technology/tdxquant/installation',
+            },
+            {
+              text: '使用 curl 和 Python 获取行情',
+              link: '/lab-technology/tdxquant/basic-usage',
+            },
+            {
+              text: '使用 Flask 封装行情服务',
+              link: '/lab-technology/tdxquant/flask-service',
+            },
+          ],
+        },
+      ],
+    },
+  ],
       '/lab-fortune/': [
         {
           text: '金融实验室',
