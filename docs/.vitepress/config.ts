@@ -113,7 +113,7 @@ export default defineConfig({
               link: '/lab-technology/tdxquant/installation',
             },
             {
-              text: '使用 curl 和 Python 获取行情',
+              text: '使用 curl 和 Python 获取第一份行情数据',
               link: '/lab-technology/tdxquant/basic-usage',
             },
             {
