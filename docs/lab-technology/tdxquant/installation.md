@@ -13,7 +13,9 @@ description: 介绍 TdxQuant 的适用人群、通达信版本选择、Python �
 
 本篇只需要会安装 Windows 软件，并能在 PowerShell 或命令提示符中执行命令。即使暂时不了解 curl、HTTP，也不影响完成本文的安装步骤，后续用到时再逐步了解即可。
 
-## TdxQuant 是什么
+## 准备通达信金融终端
+
+### TdxQuant 是什么
 
 TdxQuant 是通达信提供的 Python 量化接口，可以通过代码调用通达信客户端中的行情、公式、财务数据、模拟交易和实盘交易等功能。
 
@@ -21,7 +23,7 @@ TdxQuant 是通达信提供的 Python 量化接口，可以通过代码调用通
 
 本文只关注最基础的环境安装。行情调用、历史数据刷新和 HTTP 接口验证会放在[下一篇文章](/lab-technology/tdxquant/basic-usage)中。
 
-## 应该下载哪个通达信版本
+### 选择通达信版本
 
 官方下载地址：[通达信软件下载中心](https://www.tdx.com.cn/soft.html)
 
@@ -39,7 +41,7 @@ TdxQuant 是通达信提供的 Python 量化接口，可以通过代码调用通
 ![通达信金融终端-下载页面及入口](./images/tdx-terminal-download.png)
 
 
-## 安装通达信金融终端
+### 安装通达信金融终端
 
 进入通达信官方下载中心，下载金融终端 64 位版，并按照安装程序提示完成安装。
 
@@ -53,13 +55,13 @@ C:\new_tdx64
 > 注意：[下一篇](/lab-technology/tdxquant/basic-usage)会用到该路径。
 
 
-## 注册并登录通达信账号
+### 注册并登录通达信账号
 
 首次启动金融终端时，需要使用手机号注册或登录通达信账号。
 
 只获取行情时，不需要登录券商资金账号。登录通达信账号并保持客户端在线，即可使用 TdxQuant 行情接口。
 
-## 确认终端支持 TQ 策略
+### 确认终端支持 TQ 策略
 
 登录金融终端后，可以在客户端菜单中查找“TQ 策略”“TQ 策略管理器”或类似入口。
 
@@ -75,7 +77,9 @@ PYPlugins\user\tqcenter.py
 TPythClient.dll
 ```
 
-## 安装 Python 环境
+## 准备 Python 运行环境
+
+### 安装 Python 环境
 
 官方文档：[Python 环境与依赖库安装](https://help.tdx.com.cn/quant/docs/markdown/mindoc-1cfsjkbf8f3is/mindoc-1d00970eq1rtc.html)
 
@@ -89,7 +93,7 @@ python --version
 
 ![Python 版本检查结果](./images/python-version.png)
 
-## 安装依赖库
+### 安装依赖库
 
 具体说明可参考官方文档中的[安装 IDE 与依赖库](https://help.tdx.com.cn/quant/docs/markdown/mindoc-1cfsjkbf8f3is/mindoc-1d00970eq1rtc.html#_2-%E5%AE%89%E8%A3%85ide-%E5%BB%BA%E8%AE%AEvscode%E3%80%81pycharm%E6%88%96trae)。
 
@@ -106,7 +110,7 @@ python -m pip install numpy pandas -i https://pypi.tuna.tsinghua.edu.cn/simple
 回测、技术指标和数据可视化还可能用到其他依赖库，但本篇暂时不需要。等后续功能实际用到时再安装，可以减少当前的环境配置和排错成本。
 
 
-## 找到 TdxQuant Python 模块
+### 找到 TdxQuant Python 模块
 
 TdxQuant 的 Python 模块通常位于通达信安装目录下：
 
@@ -118,7 +122,7 @@ C:\new_tdx64\PYPlugins\user\tqcenter.py
 
 本篇暂时不需要修改系统环境变量。下一篇运行示例代码时，我们会在 Python 代码中加入该目录，并说明具体写法。
 
-## 了解 TQ 相关目录结构
+### 了解 TQ 相关目录结构
 
 一个常见的通达信目录结构如下：
 
@@ -132,7 +136,9 @@ C:\new_tdx64
 
 `tqcenter.py` 会调用通达信目录中的 `TPythClient.dll`，因此不要单独复制 `tqcenter.py` 到其他目录使用。
 
-## 在虚拟机中运行 TdxQuant
+## 长期运行与完成检查
+
+### 在虚拟机中运行 TdxQuant
 
 > 小刘已经实际验证，截至2026-07-19，通达信金融终端 V7.73 可以在 Windows 虚拟机中正常运行。
 
@@ -140,7 +146,7 @@ C:\new_tdx64
 
 用于长期采集行情时，建议关闭 Windows 自动休眠，并避免注销当前用户。远程桌面使用完成后可以断开连接，但不要退出 Windows 会话。
 
-## 安装完成后的检查清单
+### 安装完成后的检查清单
 
 完成安装后，可以确认以下项目：
 
