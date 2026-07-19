@@ -83,7 +83,7 @@ TPythClient.dll
 
 官方文档：[Python 环境与依赖库安装](https://help.tdx.com.cn/quant/docs/markdown/mindoc-1cfsjkbf8f3is/mindoc-1d00970eq1rtc.html)
 
-官方文档建议使用 Python 3.7 及以上版本。本文使用的是 Python 3.12.7 64 位版，建议 Python 与通达信客户端保持相同的 64 位架构。
+官方文档建议使用 Python 3.7 及以上版本。本文使用的是 Python 3.12.X 64 位版，建议 Python 与通达信客户端保持相同的 64 位架构。
 
 安装时建议勾选 `Add Python to PATH`。安装完成后，可以在命令行中执行以下命令确认：
 
