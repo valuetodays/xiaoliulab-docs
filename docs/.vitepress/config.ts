@@ -45,6 +45,8 @@ export default defineConfig({
   },
 
   themeConfig: {
+    outline: [2, 3],
+
     footer: {
       message: `
         <span class="beian-links">
