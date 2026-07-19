@@ -13,6 +13,12 @@ description: 介绍 TdxQuant 的适用人群、通达信版本选择、Python �
 
 本篇只需要会安装 Windows 软件，并能在 PowerShell 或命令提示符中执行命令。即使暂时不了解 curl、HTTP，也不影响完成本文的安装步骤，后续用到时再逐步了解即可。
 
+## 视频演示
+
+- [TdxQuant 入门（一）：安装 Python 环境](https://www.bilibili.com/video/BV17WKr68EJr/)
+
+
+
 ## 准备通达信金融终端
 
 ### TdxQuant 是什么
