@@ -11,6 +11,14 @@ head:
 
 这里记录小刘实验室的重要更新，包括新增实验、文档完善、功能上线以及网站改进。最新内容排在最前面。
 
+## 2026-07-19
+
+### ✨ 新增
+
+- 新增 [安装通达信金融终端与 Python 环境](/lab-technology/tdxquant/installation)，介绍通达信终端版本选择、Python 环境、依赖库以及 Windows 虚拟机中的运行准备。
+- 新增 [使用 curl 和 Python 获取第一份行情数据](/lab-technology/tdxquant/basic-usage)，介绍如何通过本地 HTTP 接口和 Python API 验证 TdxQuant，并完成历史 K 线刷新与行情数据获取。
+- 新增 [使用 Flask 封装行情服务](/lab-technology/tdxquant/flask-service)，介绍如何为 TdxQuant 建立内部行情 API 边界，并梳理统一响应、数据转换、访问鉴权和长期运行等工程化问题。
+
 ## 2026-07-17
 
 ### ✨ 新增
