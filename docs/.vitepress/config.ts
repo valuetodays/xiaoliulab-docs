@@ -162,6 +162,13 @@ export default defineConfig({
                     { text: '为什么第一笔交易最难？', link: '/lab-fortune/lab-zuot/basics/why-first-trade-is-hard' },
                   ],
                 },
+                {
+                  text: '信号研究',
+                  collapsed: false,
+                  items: [
+                    { text: '为什么历史行情值得研究？', link: '/lab-fortune/lab-zuot/signal/why-study-historical-market-data' },
+                  ],
+                },
               ],
             },
             { text: '金融实验', link: '/lab-fortune/experiments/' },
