@@ -454,7 +454,7 @@ data = tq.get_market_data(
 
 ### 工程实现方案
 
-modestep 当前采用以下规则：
+建议当前采用以下规则：
 
 1. `period == "1d"` 时，TdxQuant 固定接收空的 `start_time` 和 `end_time`。
 2. `count=-1`，获取该品种完整前复权日线。
