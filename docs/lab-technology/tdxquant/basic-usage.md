@@ -267,7 +267,7 @@ python tdxquant_api_test.py
 ```
 
 
-这种结构适合在 Python 中进行批量计算，但不能直接交给 Flask 作为普通 JSON 返回。[下一篇文章](/lab-technology/tdxquant/flask-service)进行 Flask 封装时，会先把它转换成按日期排列的普通对象。
+这种结构适合在 Python 中进行批量计算，但不能直接作为普通 JSON 返回。[下一篇文章](/lab-technology/tdxquant/build-http-service)封装内部行情服务时，会先把它转换成按日期排列的普通对象。
 
 ### 为什么字段以大写字母开头
 
@@ -342,13 +342,13 @@ Python + tqcenter
 
 ## 下一步
 
-[下一篇文章](/lab-technology/tdxquant/flask-service)将使用 Flask 和 Waitress 对 TdxQuant 进行工程化封装，统一返回结构，并加入初始化管理、调用锁、访问鉴权和异常处理。
+[下一篇文章](/lab-technology/tdxquant/build-http-service)将讨论如何把 TdxQuant 封装为内部行情服务，统一返回结构，并加入初始化管理、调用锁、访问鉴权和异常处理。
 
 最终形成下面的调用链路：
 
 ```text
 Spring Boot 等任务需要行情数据的服务
-→ Flask API
+→ 内部行情 API
 → TdxQuant
 → 通达信金融终端
 ```
