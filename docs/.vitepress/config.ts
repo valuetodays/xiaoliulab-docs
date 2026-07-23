@@ -126,6 +126,16 @@ export default defineConfig({
         },
       ],
     },
+    {
+      text: '踩坑记录',
+      collapsed: true,
+      items: [
+        {
+          text: '前复权行情随查询结束日期变化',
+          link: '/lab-technology/tdxquant/pitfalls/tdxquant_front_adjustment_end_time',
+        },
+      ],
+    },
   ],
       '/lab-fortune/': [
         {
