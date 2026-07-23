@@ -97,7 +97,7 @@ count = -1
 - 实际加载模块为 `C:\new_tdx64\PYPlugins\user\tqcenter.py`
 - 已下载或能够刷新 `512890.SH` 的日线行情
 
-本文代码不依赖 modestep 工程，可以直接连接本机 TdxQuant 执行。
+本文代码可以直接连接本机 TdxQuant 执行。
 
 ### 最小复现代码
 
