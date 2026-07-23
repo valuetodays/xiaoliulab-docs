@@ -119,20 +119,14 @@ export default defineConfig({
               link: '/lab-technology/tdxquant/basic-usage',
             },
             {
-              text: '使用 Flask 封装行情服务',
-              link: '/lab-technology/tdxquant/flask-service',
+              text: '封装内部行情服务',
+              link: '/lab-technology/tdxquant/build-http-service',
+            },
+            {
+              text: '踩坑：前复权行情随查询结束日期变化',
+              link: '/lab-technology/tdxquant/pitfalls/tdxquant_front_adjustment_end_time',
             },
           ],
-        },
-      ],
-    },
-    {
-      text: '踩坑记录',
-      collapsed: true,
-      items: [
-        {
-          text: '前复权行情随查询结束日期变化',
-          link: '/lab-technology/tdxquant/pitfalls/tdxquant_front_adjustment_end_time',
         },
       ],
     },
