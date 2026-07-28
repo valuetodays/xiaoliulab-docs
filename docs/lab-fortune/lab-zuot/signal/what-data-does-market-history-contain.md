@@ -194,7 +194,7 @@ head:
 
 ## 下一篇
 
-[《为什么历史数据不能直接告诉你答案？》](/lab-fortune/lab-zuot/signal/why-historical-data-cannot-give-answer)
+[《为什么历史数据不能直接给出交易答案？》](/lab-fortune/lab-zuot/signal/why-historical-data-cannot-give-answer)
 
 知道有哪些数据，只是第一步。
 
