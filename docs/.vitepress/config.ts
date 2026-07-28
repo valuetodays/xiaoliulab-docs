@@ -185,7 +185,7 @@ export default defineConfig({
                 },
               ],
             },
-            { text: '金融实验', link: '/lab-fortune/experiments/' },
+            { text: '策略实验', link: '/lab-fortune/experiments/' },
             { text: '内容路线图', link: '/lab-fortune/roadmap' },
           ],
         },
