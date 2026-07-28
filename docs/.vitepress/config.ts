@@ -173,6 +173,7 @@ export default defineConfig({
                     { text: '为什么历史行情值得研究？', link: '/lab-fortune/lab-zuot/signal/why-study-historical-market-data' },
                     { text: '历史行情里究竟有哪些数据？', link: '/lab-fortune/lab-zuot/signal/what-data-does-market-history-contain' },
                     { text: '为什么历史数据不能直接给出交易答案？', link: '/lab-fortune/lab-zuot/signal/why-historical-data-cannot-give-answer' },
+                    { text: '什么样的统计结果才值得相信？', link: '/lab-fortune/lab-zuot/signal/what-statistics-make-a-trading-signal-reliable' },
                   ],
                 },
               ],
