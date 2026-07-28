@@ -198,3 +198,8 @@ CCI：-120
 到这里，新的问题也更具体了：
 
 > 一个交易假设的成功率应该怎样计算，统计结果又需要满足哪些条件，才值得继续验证？
+
+## 下一篇
+
+[《什么样的统计结果才值得相信？》](/lab-fortune/lab-zuot/signal/what-statistics-make-a-trading-signal-reliable)
+
