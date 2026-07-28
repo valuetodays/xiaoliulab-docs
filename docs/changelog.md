@@ -15,7 +15,7 @@ head:
 
 ### ✨ 新增
 
-- 新增 [为什么历史数据不能直接告诉你答案？](/lab-fortune/lab-zuot/signal/why-historical-data-cannot-give-answer)，介绍历史数据无法直接产生交易结论的原因，以及如何通过假设、统计分析、回测和持续验证建立交易判断。
+- 新增 [为什么历史数据不能直接给出交易答案？](/lab-fortune/lab-zuot/signal/why-historical-data-cannot-give-answer)，介绍历史数据无法直接产生交易结论的原因，以及如何通过假设、统计分析、回测和持续验证建立交易判断。
 
 ## 2026-07-23
 
