@@ -17,6 +17,7 @@ head:
 
 - 新增 [为什么历史数据不能直接给出交易答案？](/lab-fortune/lab-zuot/signal/why-historical-data-cannot-give-answer)，介绍历史数据无法直接产生交易结论的原因，以及如何通过假设、统计分析、回测和持续验证建立交易判断。
 - 新增 [一个交易信号，什么样的统计结果才值得相信？](/lab-fortune/lab-zuot/signal/what-statistics-make-a-trading-signal-reliable)，介绍如何通过统计口径、样本、基准比较、收益风险分析和样本外验证，判断一个交易想法是否具备持续研究的价值。
+- 上线数据实验室，新增 [为什么投资研究需要可靠的数据来源？](/lab-fortune/lab-data/why-investment-research-needs-reliable-data)，介绍投资研究中数据来源的重要性，以及如何从来源、完整性、统计口径、时间一致性和可复现性等方面建立可靠的数据基础。
 
 ## 2026-07-23
 
