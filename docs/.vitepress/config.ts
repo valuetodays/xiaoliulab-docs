@@ -151,6 +151,13 @@ export default defineConfig({
               ],
             },
             {
+              text: '数据实验室',
+              collapsed: false,
+              items: [
+                { text: '为什么投资研究需要可靠的数据来源？', link: '/lab-fortune/lab-data/why-investment-research-needs-reliable-data' },
+              ],
+            },
+            {
               text: '做T实验室',
               link: '/lab-fortune/lab-zuot/',
               collapsed: false,
