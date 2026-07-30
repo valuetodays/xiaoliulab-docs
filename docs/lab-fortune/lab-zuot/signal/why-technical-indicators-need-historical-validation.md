@@ -248,6 +248,6 @@ head:
 
 > 面对大量历史数据，应该怎样从中寻找值得验证的交易机会？
 
-下一篇：
+## 下一篇
 
-**《如何利用历史数据寻找交易机会？》**
+[《如何利用历史数据寻找交易机会？》](/lab-fortune/lab-zuot/signal/how-to-find-trading-opportunities-with-historical-data)

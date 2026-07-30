@@ -182,6 +182,7 @@ export default defineConfig({
                     { text: '为什么历史数据不能直接给出交易答案？', link: '/lab-fortune/lab-zuot/signal/why-historical-data-cannot-give-answer' },
                     { text: '什么样的统计结果才值得相信？', link: '/lab-fortune/lab-zuot/signal/what-statistics-make-a-trading-signal-reliable' },
                     { text: '为什么技术指标需要历史验证？', link: '/lab-fortune/lab-zuot/signal/why-technical-indicators-need-historical-validation' },
+                    { text: '如何利用历史数据寻找交易机会？', link: '/lab-fortune/lab-zuot/signal/how-to-find-trading-opportunities-with-historical-data' },
                   ],
                 },
               ],
