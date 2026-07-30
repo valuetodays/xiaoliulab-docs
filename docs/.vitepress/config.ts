@@ -6,6 +6,7 @@ const siteUrl = 'https://docs.xiaoliulab.com';
 export default defineConfig({
   lang: 'zh-CN',
   title: '小刘实验室',
+  cleanUrls: true,
   description: '记录真实实验、真实验证与持续迭代的技术和金融实践。',
   base: '/',
   lastUpdated: true,
@@ -25,7 +26,7 @@ export default defineConfig({
   transformHead({ pageData }) {
     const relativePath = pageData.relativePath
       .replace(/index\.md$/, '')
-      .replace(/\.md$/, '.html');
+      .replace(/\.md$/, '');
     const canonicalUrl = `${siteUrl}/${relativePath}`;
 
     return [
