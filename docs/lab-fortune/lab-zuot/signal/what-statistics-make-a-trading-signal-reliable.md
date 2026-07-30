@@ -275,3 +275,7 @@ head:
 下一步还可以继续追问：
 
 > 如果一个信号来自技术指标，为什么不能直接使用指标默认参数，而要重新进行历史验证？
+
+## 下一篇
+
+[《为什么技术指标需要历史验证？》](/lab-fortune/lab-zuot/signal/why-technical-indicators-need-historical-validation)
