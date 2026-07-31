@@ -16,6 +16,8 @@ head:
 ### ✨ 新增
 
 - 新增 [为什么有探索金融？](/lab-fortune/lab-finance-exploration/why-this-finance-exploration)，记录从银行卡和第一笔存款开始，在解决真实问题的过程中逐步认识储蓄、现金管理、基金、ETF、融资、投资研究与全球资产的探索路线。
+- 新增 [为什么钱放在银行会有利息？](/lab-fortune/lab-finance-exploration/why-do-banks-pay-interest)，从储户与银行的不同视角出发，一步步理解银行为什么愿意支付利息，以及存款、借款与利息之间的关系。
+
 
 ## 2026-07-30
 
