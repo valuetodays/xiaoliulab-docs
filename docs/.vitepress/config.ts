@@ -164,7 +164,7 @@ export default defineConfig({
               link: '/lab-fortune/lab-finance-exploration/',
               collapsed: false,
               items: [
-                // { text: '为什么投资研究需要可靠的数据来源？', link: '/lab-fortune/lab-data/why-investment-research-needs-reliable-data' },
+                { text: '为什么有探索金融？', link: '/lab-fortune/lab-finance-exploration/why-this-finance-exploration' },
               ],
             },
             {
