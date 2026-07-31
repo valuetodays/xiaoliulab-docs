@@ -83,6 +83,7 @@ export default defineConfig({
       { text: '微信支付实验室', link: '/wechat/' },
       { text: '技术实验室', link: '/lab-technology/' },
       { text: '金融实验室', link: '/lab-fortune/' },
+      { text: '探索金融', link: '/lab-fortune/lab-finance-exploration/' },
       { text: '做T实验室', link: '/lab-fortune/lab-zuot/' },
       { text: '更新记录', link: '/changelog' },
     ],
@@ -156,6 +157,14 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '为什么投资研究需要可靠的数据来源？', link: '/lab-fortune/lab-data/why-investment-research-needs-reliable-data' },
+              ],
+            },
+            {
+              text: '探索金融',
+              link: '/lab-fortune/lab-finance-exploration/',
+              collapsed: false,
+              items: [
+                // { text: '为什么投资研究需要可靠的数据来源？', link: '/lab-fortune/lab-data/why-investment-research-needs-reliable-data' },
               ],
             },
             {

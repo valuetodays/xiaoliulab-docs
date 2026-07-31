@@ -19,6 +19,9 @@ hero:
     - theme: alt
       text: 做T实验室
       link: /lab-fortune/lab-zuot/
+    - theme: alt
+      text: 探索金融
+      link: /lab-fortune/lab-finance-exploration/
 
 features:
   - title: 基础认知
