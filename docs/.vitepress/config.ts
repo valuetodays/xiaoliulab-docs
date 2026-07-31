@@ -165,6 +165,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '为什么有探索金融？', link: '/lab-fortune/lab-finance-exploration/why-this-finance-exploration' },
+                { text: '为什么钱放在银行会有利息？', link: '/lab-fortune/lab-finance-exploration/why-do-banks-pay-interest' },
               ],
             },
             {
