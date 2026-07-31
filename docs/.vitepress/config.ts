@@ -166,6 +166,7 @@ export default defineConfig({
               items: [
                 { text: '为什么有探索金融？', link: '/lab-fortune/lab-finance-exploration/why-this-finance-exploration' },
                 { text: '为什么钱放在银行会有利息？', link: '/lab-fortune/lab-finance-exploration/why-do-banks-pay-interest' },
+                { text: '为什么把钱放进余额宝，不是把钱存进支付宝？', link: '/lab-fortune/lab-finance-exploration/why-isnt-money-in-yuebao-stored-by-alipay' },
               ],
             },
             {
