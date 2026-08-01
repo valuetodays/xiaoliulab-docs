@@ -146,4 +146,4 @@ head:
 
 “七日年化”到底是在表示什么？
 
-这个问题，留到下一篇继续探索。
+下一篇，我们继续探索：[为什么余额宝会显示“七日年化”？](/lab-fortune/lab-finance-exploration/why-does-yuebao-show-seven-day-annualized-rate)

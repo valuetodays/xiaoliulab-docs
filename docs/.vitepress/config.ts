@@ -169,6 +169,7 @@ export default defineConfig({
                 { text: '为什么把钱放进余额宝，不是把钱存进支付宝？', link: '/lab-fortune/lab-finance-exploration/why-isnt-money-in-yuebao-stored-by-alipay' },
                 { text: '为什么把钱放进余额宝后，它不会一直放在那里？', link: '/lab-fortune/lab-finance-exploration/why-doesnt-money-in-yuebao-stay-there' },
                 { text: '为什么余额宝里的金额经常变化？', link: '/lab-fortune/lab-finance-exploration/why-does-the-amount-in-yuebao-change-every-day' },
+                { text: '为什么余额宝会显示“七日年化”？', link: '/lab-fortune/lab-finance-exploration/why-does-yuebao-show-seven-day-annualized-rate' },
               ],
             },
             {
