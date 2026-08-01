@@ -15,6 +15,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [为什么余额宝里的钱能比较方便地转出？](/lab-fortune/lab-finance-exploration/why-can-money-in-yuebao-be-withdrawn-anytime)，从基金赎回、资产流动性和快速到账服务出发，理解转出便利背后依靠的是流动性管理，而不是资金一直停留在账户里。
 - 新增 [为什么余额宝会显示“七日年化”？](/lab-fortune/lab-finance-exploration/why-does-yuebao-show-seven-day-annualized-rate)，从最近七天的基金收益与年度折算方式出发，理解七日年化反映的是近期收益水平，而不是未来一年的收益承诺。
 - 新增 [为什么余额宝里的金额经常变化？](/lab-fortune/lab-finance-exploration/why-does-the-amount-in-yuebao-change-every-day)，继续追问货币基金的投资结果如何反映到页面金额，理解基金收益经过计算、分配并通过红利再投资转成新的基金份额，最终体现为余额变化。
 - 新增 [为什么把钱放进余额宝后，它不会一直放在那里？](/lab-fortune/lab-finance-exploration/why-doesnt-money-in-yuebao-stay-there)，继续追问货币基金收到资金后会如何运作，理解余额宝页面金额背后的基金资产并不会静止存放，而是会按照规则参与金融市场运作。
