@@ -121,6 +121,6 @@ head:
 
 但新的问题也出现了：
 
-> **为什么余额宝既显示"每万份收益"，又显示"七日年化"？**
+> **为什么余额宝既显示“每万份收益”，又显示“七日年化”？**
 
-这个问题，留到下一篇继续探索。
+下一篇，我们继续探索：[为什么余额宝既显示“每万份收益”，又显示“七日年化”？](/lab-fortune/lab-finance-exploration/why-does-yuebao-show-both-ten-thousand-yield-and-seven-day-annualized-rate)
