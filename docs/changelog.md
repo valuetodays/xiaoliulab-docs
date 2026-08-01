@@ -15,6 +15,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [为什么余额宝会显示“七日年化”？](/lab-fortune/lab-finance-exploration/why-does-yuebao-show-seven-day-annualized-rate)，从最近七天的基金收益与年度折算方式出发，理解七日年化反映的是近期收益水平，而不是未来一年的收益承诺。
 - 新增 [为什么余额宝里的金额经常变化？](/lab-fortune/lab-finance-exploration/why-does-the-amount-in-yuebao-change-every-day)，继续追问货币基金的投资结果如何反映到页面金额，理解基金收益经过计算、分配并通过红利再投资转成新的基金份额，最终体现为余额变化。
 - 新增 [为什么把钱放进余额宝后，它不会一直放在那里？](/lab-fortune/lab-finance-exploration/why-doesnt-money-in-yuebao-stay-there)，继续追问货币基金收到资金后会如何运作，理解余额宝页面金额背后的基金资产并不会静止存放，而是会按照规则参与金融市场运作。
 - 新增 [为什么把钱放进余额宝，不是把钱存进支付宝？](/lab-fortune/lab-finance-exploration/why-isnt-money-in-yuebao-stored-by-alipay)，从一次看似普通的转入出发，理解为什么把钱转入余额宝，并不是把钱存进支付宝，而是持有了一份货币基金。
