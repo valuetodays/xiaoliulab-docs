@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { getPageModeInitScript } from './theme/utils/page-mode';
 
 const siteUrl = 'https://docs.xiaoliulab.com';
 
@@ -11,6 +12,7 @@ export default defineConfig({
   base: '/',
   lastUpdated: true,
   head: [
+    ['script', {}, getPageModeInitScript()],
     [
       'script',
       {
