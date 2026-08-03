@@ -174,6 +174,13 @@ export default defineConfig({
                 { text: '为什么余额宝会显示“七日年化”？', link: '/lab-fortune/lab-finance-exploration/why-does-yuebao-show-seven-day-annualized-rate' },
                 { text: '为什么余额宝里的钱能比较方便地转出？', link: '/lab-fortune/lab-finance-exploration/why-can-money-in-yuebao-be-withdrawn-anytime' },
                 { text: '为什么同时显示每万份收益和七日年化？', link: '/lab-fortune/lab-finance-exploration/why-does-yuebao-show-both-ten-thousand-yield-and-seven-day-annualized-rate' },
+                {
+                  text: '重新认识金钱',
+                  collapsed: false,
+                  items: [
+                    { text: '为什么我开始重新学习金钱？', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-did-i-start-learning-about-money' },
+                  ],
+                },
               ],
             },
             {
