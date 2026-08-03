@@ -11,6 +11,12 @@ head:
 
 这里记录小刘实验室的重要更新，包括新增实验、文档完善、功能上线以及网站改进。最新内容排在最前面。
 
+## 2026-08-03
+
+### ✨ 新增
+
+- 新增 [为什么我开始重新学习金钱？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-did-i-start-learning-about-money)，记录从“会挣钱、会存钱”到主动理解金钱的认知变化，以及阅读如何让我开始不断追问那些每天都在接触、却从未认真思考过的问题。
+
 ## 2026-08-01
 
 ### ✨ 新增
