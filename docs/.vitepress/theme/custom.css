@@ -66,6 +66,55 @@
   margin-right: auto;
 }
 
+/* Page Mode: video */
+html[data-page-mode='video'] .VPNav,
+html[data-page-mode='video'] .VPLocalNav,
+html[data-page-mode='video'] .VPSidebar,
+html[data-page-mode='video'] .VPDoc .aside,
+html[data-page-mode='video'] .VPDocFooter,
+html[data-page-mode='video'] .VPFooter,
+html[data-page-mode='video'] .backdrop {
+  display: none;
+}
+
+html[data-page-mode='video'] .VPContent,
+html[data-page-mode='video'] .VPContent.has-sidebar {
+  margin-top: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+html[data-page-mode='video'] .VPDoc .container {
+  display: block;
+  max-width: none;
+}
+
+html[data-page-mode='video'] .VPDoc .content {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 0;
+  max-width: 784px;
+}
+
+html[data-page-mode='video'] .VPDoc .content-container,
+html[data-page-mode='video'] .VPDoc.has-aside .content-container {
+  max-width: none;
+}
+
+html[data-page-mode='video'] .vp-doc {
+  min-width: 0;
+}
+
+html[data-page-mode='video'] .vp-doc a {
+  overflow-wrap: anywhere;
+}
+
+html[data-page-mode='video'] .vp-doc img {
+  max-width: 100%;
+  height: auto;
+}
+
 .lab-topic-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
