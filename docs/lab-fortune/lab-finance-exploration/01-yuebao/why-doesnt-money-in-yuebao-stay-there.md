@@ -11,7 +11,7 @@ head:
 
 上一篇文章，我们沿着“钱是不是存进了支付宝”一路追问，最后发现：
 
-> [把钱转入余额宝，并不是把钱存进支付宝，而是在申购货币基金。](/lab-fortune/lab-finance-exploration/why-isnt-money-in-yuebao-stored-by-alipay)
+> [把钱转入余额宝，并不是把钱存进支付宝，而是在申购货币基金。](/lab-fortune/lab-finance-exploration/01-yuebao/why-isnt-money-in-yuebao-stored-by-alipay)
 
 上一篇回答了“转入以后持有什么”，却还没有回答份额背后的基金资产去了哪里。于是，这篇文章继续追问：
 
@@ -129,4 +129,4 @@ head:
 
 基金赚到的钱，是怎样一步步变成我账户里的金额变化的？
 
-下一篇，我们继续探索：[为什么余额宝里的金额经常变化？](/lab-fortune/lab-finance-exploration/why-does-the-amount-in-yuebao-change-every-day)
+下一篇，我们继续探索：[为什么余额宝里的金额经常变化？](/lab-fortune/lab-finance-exploration/01-yuebao/why-does-the-amount-in-yuebao-change-every-day)

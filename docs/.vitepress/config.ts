@@ -147,7 +147,7 @@ export default defineConfig({
               items: [
                 {
                   text: '交易基础',
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     { text: 'T+0 与 T+1', link: '/lab-fortune/foundation/trading/t0-vs-t1' },
                   ],
@@ -167,16 +167,22 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '为什么有探索金融？', link: '/lab-fortune/lab-finance-exploration/why-this-finance-exploration' },
-                { text: '为什么钱放在银行会有利息？', link: '/lab-fortune/lab-finance-exploration/why-do-banks-pay-interest' },
-                { text: '为什么把钱放进余额宝，不是把钱存进支付宝？', link: '/lab-fortune/lab-finance-exploration/why-isnt-money-in-yuebao-stored-by-alipay' },
-                { text: '为什么把钱放进余额宝后，它不会一直放在那里？', link: '/lab-fortune/lab-finance-exploration/why-doesnt-money-in-yuebao-stay-there' },
-                { text: '为什么余额宝里的金额经常变化？', link: '/lab-fortune/lab-finance-exploration/why-does-the-amount-in-yuebao-change-every-day' },
-                { text: '为什么余额宝会显示“七日年化”？', link: '/lab-fortune/lab-finance-exploration/why-does-yuebao-show-seven-day-annualized-rate' },
-                { text: '为什么余额宝里的钱能比较方便地转出？', link: '/lab-fortune/lab-finance-exploration/why-can-money-in-yuebao-be-withdrawn-anytime' },
-                { text: '为什么同时显示每万份收益和七日年化？', link: '/lab-fortune/lab-finance-exploration/why-does-yuebao-show-both-ten-thousand-yield-and-seven-day-annualized-rate' },
+                {
+                  text: '余额宝',
+                  collapsed: true,
+                  items: [
+                    { text: '为什么钱放在银行会有利息？', link: '/lab-fortune/lab-finance-exploration/01-yuebao/why-do-banks-pay-interest' },
+                    { text: '为什么把钱放进余额宝，不是把钱存进支付宝？', link: '/lab-fortune/lab-finance-exploration/01-yuebao/why-isnt-money-in-yuebao-stored-by-alipay' },
+                    { text: '为什么把钱放进余额宝后，它不会一直放在那里？', link: '/lab-fortune/lab-finance-exploration/01-yuebao/why-doesnt-money-in-yuebao-stay-there' },
+                    { text: '为什么余额宝里的金额经常变化？', link: '/lab-fortune/lab-finance-exploration/01-yuebao/why-does-the-amount-in-yuebao-change-every-day' },
+                    { text: '为什么余额宝会显示“七日年化”？', link: '/lab-fortune/lab-finance-exploration/01-yuebao/why-does-yuebao-show-seven-day-annualized-rate' },
+                    { text: '为什么余额宝里的钱能比较方便地转出？', link: '/lab-fortune/lab-finance-exploration/01-yuebao/why-can-money-in-yuebao-be-withdrawn-anytime' },
+                    { text: '为什么同时显示每万份收益和七日年化？', link: '/lab-fortune/lab-finance-exploration/01-yuebao/why-does-yuebao-show-both-ten-thousand-yield-and-seven-day-annualized-rate' },
+                  ],
+                },
                 {
                   text: '重新认识金钱',
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     { text: '为什么我开始重新学习金钱？', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-did-i-start-learning-about-money' },
                   ],
@@ -190,7 +196,7 @@ export default defineConfig({
               items: [
                 {
                   text: '基础认知',
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     { text: '为什么会有这个实验室', link: '/lab-fortune/lab-zuot/basics/why-this-lab' },
                     { text: '做T的数学基础', link: '/lab-fortune/lab-zuot/basics/math-foundation' },
@@ -201,7 +207,7 @@ export default defineConfig({
                 },
                 {
                   text: '信号研究',
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     { text: '为什么历史行情值得研究？', link: '/lab-fortune/lab-zuot/signal/why-study-historical-market-data' },
                     { text: '历史行情里究竟有哪些数据？', link: '/lab-fortune/lab-zuot/signal/what-data-does-market-history-contain' },
