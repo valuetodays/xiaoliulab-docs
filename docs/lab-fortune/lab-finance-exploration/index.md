@@ -58,7 +58,7 @@ head:
 
 很多人接触金融的第一步，不是买入股票或基金，而是拥有一张银行卡，并把第一笔钱存进账户。
 
-这条探索路线可以先从[为什么钱放在银行会有利息？](/lab-fortune/lab-finance-exploration/why-do-banks-pay-interest)开始，换到银行的角度重新理解我们熟悉的存款。
+这条探索路线可以先从[为什么钱放在银行会有利息？](/lab-fortune/lab-finance-exploration/01-yuebao/why-do-banks-pay-interest)开始，换到银行的角度重新理解我们熟悉的存款。
 
 从存钱开始，我们会逐渐认识利息如何产生、时间如何影响资金价值，以及为什么需要管理手里的钱。探索内容包括：
 

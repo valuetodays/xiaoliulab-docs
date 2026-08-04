@@ -11,7 +11,7 @@ head:
 
 上一篇文章，我们继续追问了余额宝里的资金去了哪里，最后发现：
 
-> [把钱转入余额宝以后，基金不会一直把资金放在那里，而是会按照规则投资货币市场工具。](/lab-fortune/lab-finance-exploration/why-doesnt-money-in-yuebao-stay-there)
+> [把钱转入余额宝以后，基金不会一直把资金放在那里，而是会按照规则投资货币市场工具。](/lab-fortune/lab-finance-exploration/01-yuebao/why-doesnt-money-in-yuebao-stay-there)
 
 上一篇回答了“基金资产去了哪里”，却还没有解释投资结果怎样来到我的页面上。于是，新的问题出现了：
 
@@ -146,4 +146,4 @@ head:
 
 “七日年化”到底是在表示什么？
 
-下一篇，我们继续探索：[为什么余额宝会显示“七日年化”？](/lab-fortune/lab-finance-exploration/why-does-yuebao-show-seven-day-annualized-rate)
+下一篇，我们继续探索：[为什么余额宝会显示“七日年化”？](/lab-fortune/lab-finance-exploration/01-yuebao/why-does-yuebao-show-seven-day-annualized-rate)

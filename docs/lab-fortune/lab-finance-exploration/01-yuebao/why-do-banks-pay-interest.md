@@ -127,7 +127,7 @@ head:
 
 理解银行存款之后，我又想到了一个相似的现象：
 
-> **[为什么把钱放进余额宝，不是把钱存进支付宝？](/lab-fortune/lab-finance-exploration/why-isnt-money-in-yuebao-stored-by-alipay)**
+> **[为什么把钱放进余额宝，不是把钱存进支付宝？](/lab-fortune/lab-finance-exploration/01-yuebao/why-isnt-money-in-yuebao-stored-by-alipay)**
 
 余额宝看起来也能转入、转出并产生收益，但它不是银行存款。在继续追问收益来源之前，需要先弄清楚：把钱转入余额宝后，我实际持有的究竟是什么？
 

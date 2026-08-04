@@ -11,13 +11,13 @@ head:
 
 上一篇文章，我们弄清楚了：
 
-> [七日年化借用“一年”的表达方式，描述的是最近七天的收益水平，并不是未来一年的收益承诺。](/lab-fortune/lab-finance-exploration/why-does-yuebao-show-seven-day-annualized-rate)
+> [七日年化借用“一年”的表达方式，描述的是最近七天的收益水平，并不是未来一年的收益承诺。](/lab-fortune/lab-finance-exploration/01-yuebao/why-does-yuebao-show-seven-day-annualized-rate)
 
 到这里，我们已经能够理解余额宝页面怎样展示近期收益。但真正需要使用这笔钱时，我更关心另一个问题。
 
 前面探索基金资产去了哪里时，我们还知道：
 
-> [余额宝页面上看见的是金额，背后对应的却是一组按照规则持续运作的货币基金资产。](/lab-fortune/lab-finance-exploration/why-doesnt-money-in-yuebao-stay-there)
+> [余额宝页面上看见的是金额，背后对应的却是一组按照规则持续运作的货币基金资产。](/lab-fortune/lab-finance-exploration/01-yuebao/why-doesnt-money-in-yuebao-stay-there)
 
 但这带来了一个看似矛盾的问题。
 
@@ -123,4 +123,4 @@ head:
 
 > **为什么余额宝既显示“每万份收益”，又显示“七日年化”？**
 
-下一篇，我们继续探索：[为什么余额宝既显示“每万份收益”，又显示“七日年化”？](/lab-fortune/lab-finance-exploration/why-does-yuebao-show-both-ten-thousand-yield-and-seven-day-annualized-rate)
+下一篇，我们继续探索：[为什么余额宝既显示“每万份收益”，又显示“七日年化”？](/lab-fortune/lab-finance-exploration/01-yuebao/why-does-yuebao-show-both-ten-thousand-yield-and-seven-day-annualized-rate)

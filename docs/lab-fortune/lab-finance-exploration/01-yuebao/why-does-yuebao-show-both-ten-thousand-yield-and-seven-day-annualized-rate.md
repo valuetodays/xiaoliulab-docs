@@ -11,7 +11,7 @@ head:
 
 上一篇文章，我们从收益指标转向资金使用，弄清了：
 
-> [余额宝能够比较方便地转出，背后依靠的是基金的流动性管理，以及有条件的赎回和快速到账服务。](/lab-fortune/lab-finance-exploration/why-can-money-in-yuebao-be-withdrawn-anytime)
+> [余额宝能够比较方便地转出，背后依靠的是基金的流动性管理，以及有条件的赎回和快速到账服务。](/lab-fortune/lab-finance-exploration/01-yuebao/why-can-money-in-yuebao-be-withdrawn-anytime)
 
 解决“需要用钱时怎么办”以后，我重新回到余额宝页面，又注意到两个并排出现的数字：
 
@@ -20,7 +20,7 @@ head:
 七日年化：1.48%
 ```
 
-前面已经探索过[七日年化描述的是最近七天的收益水平](/lab-fortune/lab-finance-exploration/why-does-yuebao-show-seven-day-annualized-rate)。既然如此，为什么页面还要再显示一个“每万份收益”？
+前面已经探索过[七日年化描述的是最近七天的收益水平](/lab-fortune/lab-finance-exploration/01-yuebao/why-does-yuebao-show-seven-day-annualized-rate)。既然如此，为什么页面还要再显示一个“每万份收益”？
 
 它们是不是同一件事的两种写法？
 

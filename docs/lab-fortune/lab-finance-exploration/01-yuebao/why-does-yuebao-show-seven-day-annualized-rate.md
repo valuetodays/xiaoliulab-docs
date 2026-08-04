@@ -11,7 +11,7 @@ head:
 
 上一篇文章，我们已经知道：
 
-> [余额宝里的金额经常变化，是因为货币基金会计算和分配收益，再通过红利再投资转成新的基金份额。](/lab-fortune/lab-finance-exploration/why-does-the-amount-in-yuebao-change-every-day)
+> [余额宝里的金额经常变化，是因为货币基金会计算和分配收益，再通过红利再投资转成新的基金份额。](/lab-fortune/lab-finance-exploration/01-yuebao/why-does-the-amount-in-yuebao-change-every-day)
 
 但打开余额宝页面时，我还会看到另一个数字：
 
@@ -132,4 +132,4 @@ head:
 
 基金怎样在投资资产的同时，应对投资者随时可能提出的赎回？
 
-下一篇，我们继续探索：[为什么余额宝里的钱能比较方便地转出？](/lab-fortune/lab-finance-exploration/why-can-money-in-yuebao-be-withdrawn-anytime)
+下一篇，我们继续探索：[为什么余额宝里的钱能比较方便地转出？](/lab-fortune/lab-finance-exploration/01-yuebao/why-can-money-in-yuebao-be-withdrawn-anytime)

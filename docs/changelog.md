@@ -21,19 +21,19 @@ head:
 
 ### ✨ 新增
 
-- 新增 [为什么余额宝既显示“每万份收益”，又显示“七日年化”？](/lab-fortune/lab-finance-exploration/why-does-yuebao-show-both-ten-thousand-yield-and-seven-day-annualized-rate)，从当天结果与近期水平两个时间尺度出发，理解每万份收益和七日年化分别回答什么问题，以及为什么不能互相替代。
-- 新增 [为什么余额宝里的钱能比较方便地转出？](/lab-fortune/lab-finance-exploration/why-can-money-in-yuebao-be-withdrawn-anytime)，从基金赎回、资产流动性和快速到账服务出发，理解转出便利背后依靠的是流动性管理，而不是资金一直停留在账户里。
-- 新增 [为什么余额宝会显示“七日年化”？](/lab-fortune/lab-finance-exploration/why-does-yuebao-show-seven-day-annualized-rate)，从最近七天的基金收益与年度折算方式出发，理解七日年化反映的是近期收益水平，而不是未来一年的收益承诺。
-- 新增 [为什么余额宝里的金额经常变化？](/lab-fortune/lab-finance-exploration/why-does-the-amount-in-yuebao-change-every-day)，继续追问货币基金的投资结果如何反映到页面金额，理解基金收益经过计算、分配并通过红利再投资转成新的基金份额，最终体现为余额变化。
-- 新增 [为什么把钱放进余额宝后，它不会一直放在那里？](/lab-fortune/lab-finance-exploration/why-doesnt-money-in-yuebao-stay-there)，继续追问货币基金收到资金后会如何运作，理解余额宝页面金额背后的基金资产并不会静止存放，而是会按照规则参与金融市场运作。
-- 新增 [为什么把钱放进余额宝，不是把钱存进支付宝？](/lab-fortune/lab-finance-exploration/why-isnt-money-in-yuebao-stored-by-alipay)，从一次看似普通的转入出发，理解为什么把钱转入余额宝，并不是把钱存进支付宝，而是持有了一份货币基金。
+- 新增 [为什么余额宝既显示“每万份收益”，又显示“七日年化”？](/lab-fortune/lab-finance-exploration/01-yuebao/why-does-yuebao-show-both-ten-thousand-yield-and-seven-day-annualized-rate)，从当天结果与近期水平两个时间尺度出发，理解每万份收益和七日年化分别回答什么问题，以及为什么不能互相替代。
+- 新增 [为什么余额宝里的钱能比较方便地转出？](/lab-fortune/lab-finance-exploration/01-yuebao/why-can-money-in-yuebao-be-withdrawn-anytime)，从基金赎回、资产流动性和快速到账服务出发，理解转出便利背后依靠的是流动性管理，而不是资金一直停留在账户里。
+- 新增 [为什么余额宝会显示“七日年化”？](/lab-fortune/lab-finance-exploration/01-yuebao/why-does-yuebao-show-seven-day-annualized-rate)，从最近七天的基金收益与年度折算方式出发，理解七日年化反映的是近期收益水平，而不是未来一年的收益承诺。
+- 新增 [为什么余额宝里的金额经常变化？](/lab-fortune/lab-finance-exploration/01-yuebao/why-does-the-amount-in-yuebao-change-every-day)，继续追问货币基金的投资结果如何反映到页面金额，理解基金收益经过计算、分配并通过红利再投资转成新的基金份额，最终体现为余额变化。
+- 新增 [为什么把钱放进余额宝后，它不会一直放在那里？](/lab-fortune/lab-finance-exploration/01-yuebao/why-doesnt-money-in-yuebao-stay-there)，继续追问货币基金收到资金后会如何运作，理解余额宝页面金额背后的基金资产并不会静止存放，而是会按照规则参与金融市场运作。
+- 新增 [为什么把钱放进余额宝，不是把钱存进支付宝？](/lab-fortune/lab-finance-exploration/01-yuebao/why-isnt-money-in-yuebao-stored-by-alipay)，从一次看似普通的转入出发，理解为什么把钱转入余额宝，并不是把钱存进支付宝，而是持有了一份货币基金。
 
 ## 2026-07-31
 
 ### ✨ 新增
 
 - 新增 [为什么有探索金融？](/lab-fortune/lab-finance-exploration/why-this-finance-exploration)，记录从银行卡和第一笔存款开始，在解决真实问题的过程中逐步认识储蓄、现金管理、基金、ETF、融资、投资研究与全球资产的探索路线。
-- 新增 [为什么钱放在银行会有利息？](/lab-fortune/lab-finance-exploration/why-do-banks-pay-interest)，从储户与银行的不同视角出发，一步步理解银行为什么愿意支付利息，以及存款、借款与利息之间的关系。
+- 新增 [为什么钱放在银行会有利息？](/lab-fortune/lab-finance-exploration/01-yuebao/why-do-banks-pay-interest)，从储户与银行的不同视角出发，一步步理解银行为什么愿意支付利息，以及存款、借款与利息之间的关系。
 
 
 ## 2026-07-30

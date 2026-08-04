@@ -111,4 +111,4 @@ head:
 
 它会像保管现金一样，让钱一直留在某个账户里，还是会用这些资金做其他事情？
 
-下一篇，我们继续探索：[为什么把钱放进余额宝后，它不会一直放在那里？](/lab-fortune/lab-finance-exploration/why-doesnt-money-in-yuebao-stay-there)
+下一篇，我们继续探索：[为什么把钱放进余额宝后，它不会一直放在那里？](/lab-fortune/lab-finance-exploration/01-yuebao/why-doesnt-money-in-yuebao-stay-there)
