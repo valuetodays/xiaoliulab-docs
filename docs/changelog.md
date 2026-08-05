@@ -15,6 +15,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [为什么不同市场状态，需要不同的历史统计？](/lab-fortune/lab-zuot/signal/why-different-market-regimes-need-different-statistics)，介绍如何按趋势、波动和流动性拆分历史样本，比较不同市场状态下的价格触达分布，并检查状态定义的时间顺序、样本量和稳定性。
 - 新增 [历史上，价格通常能走多远？](/lab-fortune/lab-zuot/signal/how-far-does-price-usually-move)，介绍如何以昨日收盘价为起点，通过历史最高价和最低价构造价格波动样本，并利用触达比例、历史分布和百分位方法理解目标价格的历史出现频率。
 - 新增 [为什么有些东西看起来很值钱，却不一定是资产？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-are-some-expensive-things-not-assets)，从价值与现金流两个视角重新理解资产，认识到同一个词在不同语境下，可能回答的是不同的问题。
 

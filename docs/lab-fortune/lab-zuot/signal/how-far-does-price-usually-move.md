@@ -320,4 +320,4 @@ P50、P90、P95 可以概括一个幅度在历史分布中的位置，但不能�
 
 下一篇：
 
-**《为什么不同市场状态，需要不同的概率模型？》**
+**[《为什么不同市场状态，需要不同的历史统计？》](/lab-fortune/lab-zuot/signal/why-different-market-regimes-need-different-statistics)**
