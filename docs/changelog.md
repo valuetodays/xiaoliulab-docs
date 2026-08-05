@@ -11,6 +11,12 @@ head:
 
 这里记录小刘实验室的重要更新，包括新增实验、文档完善、功能上线以及网站改进。最新内容排在最前面。
 
+## 2026-08-05
+
+### ✨ 新增
+
+- 新增 [为什么有些东西看起来很值钱，却不一定是资产？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-are-some-expensive-things-not-assets)，从价值与现金流两个视角重新理解资产，认识到同一个词在不同语境下，可能回答的是不同的问题。
+
 ## 2026-08-03
 
 ### ✨ 新增
