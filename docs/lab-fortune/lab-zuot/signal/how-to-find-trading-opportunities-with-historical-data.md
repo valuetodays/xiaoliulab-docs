@@ -380,4 +380,4 @@ CCI 可以用来描述价格偏离状态，均线可以辅助区分趋势，成�
 
 下一篇：
 
-**《P50/P90/P95：如何估计价格触达概率？》**
+**[《历史上，价格通常能走多远？》](/lab-fortune/lab-zuot/signal/how-far-does-price-usually-move)**
