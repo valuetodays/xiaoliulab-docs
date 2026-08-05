@@ -217,6 +217,7 @@ export default defineConfig({
                     { text: '为什么技术指标需要历史验证？', link: '/lab-fortune/lab-zuot/signal/why-technical-indicators-need-historical-validation' },
                     { text: '如何利用历史数据寻找交易机会？', link: '/lab-fortune/lab-zuot/signal/how-to-find-trading-opportunities-with-historical-data' },
                     { text: '历史上，价格通常能走多远？', link: '/lab-fortune/lab-zuot/signal/how-far-does-price-usually-move' },
+                    { text: '为什么不同市场状态，需要不同的历史统计？', link: '/lab-fortune/lab-zuot/signal/why-different-market-regimes-need-different-statistics' },
                   ],
                 },
               ],
