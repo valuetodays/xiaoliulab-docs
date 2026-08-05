@@ -113,6 +113,6 @@ head:
 
 这个词听起来并不陌生，但如果继续追问，问题很快就出现了：
 
-> **为什么有些东西看起来很值钱，却不一定是资产？**
+> **[为什么有些东西看起来很值钱，却不一定是资产？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-are-some-expensive-things-not-assets)**
 
 下一篇，我们从这个问题开始，继续梳理我对金钱的认识是怎样发生变化的。
