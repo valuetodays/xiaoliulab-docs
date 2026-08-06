@@ -11,6 +11,12 @@ head:
 
 这里记录小刘实验室的重要更新，包括新增实验、文档完善、功能上线以及网站改进。最新内容排在最前面。
 
+## 2026-08-06
+
+### ✨ 新增
+
+- 新增 [从收入支出开始，理解现金流与净资产](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/understanding-wealth-from-income-expenses)，从一个月的收入与支出开始，重新观察个人财务中的现金流、现金结余与净资产，并理解消费、资产配置和负债选择如何影响未来财务状态。
+
 ## 2026-08-05
 
 ### ✨ 新增
