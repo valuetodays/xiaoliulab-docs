@@ -224,6 +224,6 @@ head:
 
 那么新的问题来了：
 
-> **如果每个月都有结余，并且一直把钱存下来，财富就会自然增长吗？**
+> **[如果每个月都有结余，并且一直把钱存下来，财富就会自然增长吗？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-saving-money-may-not-grow-wealth)**
 
 接下来，我会继续观察储蓄、利息和购买力之间的关系。
