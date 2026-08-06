@@ -15,6 +15,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [投资收益到底来自哪里？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-investment-generates-returns)，从社会发展、企业价值创造和资产回报出发，探索长期投资收益形成背后的逻辑。
 - 新增 [普通投资者为什么需要了解投资？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-ordinary-investors-need-to-understand-investing)，从普通人的长期资金管理出发，重新认识投资的意义，以及资金、风险、收益和个人目标之间的关系。
 - 新增 [为什么账户余额增加，购买力却不一定同步增加？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-saving-money-may-not-grow-wealth)，从储蓄和购买力变化出发，重新观察账户余额、实际购买力与长期资金安排之间的关系。
 - 新增 [从收入支出开始，理解现金流与净资产](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/understanding-wealth-from-income-expenses)，从一个月的收入与支出开始，重新观察个人财务中的现金流、现金结余与净资产，并理解消费、资产配置和负债选择如何影响未来财务状态。
