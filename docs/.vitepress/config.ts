@@ -181,7 +181,7 @@ export default defineConfig({
                   ],
                 },
                 {
-                  text: '重新认识金钱',
+                  text: '金融认知起点',
                   collapsed: true,
                   items: [
                     { text: '为什么我开始重新学习金钱？', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-did-i-start-learning-about-money' },
