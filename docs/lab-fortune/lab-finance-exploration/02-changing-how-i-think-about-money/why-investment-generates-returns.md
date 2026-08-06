@@ -288,10 +288,6 @@ head:
 
 但新的问题也随之出现：
 
-如果投资收益来自经济发展和价值创造，
-
-为什么投资仍然可能亏损？
-
-为什么高收益往往伴随着高波动？
+> [风险与收益：为什么高收益伴随高波动？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-high-return-means-high-risk)
 
 下一篇文章，我会继续探索风险与收益之间的关系。
