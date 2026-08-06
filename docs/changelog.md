@@ -15,6 +15,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [风险与收益：为什么高收益伴随高波动？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-high-return-means-high-risk)，从投资收益的不确定性出发，理解风险的本质，以及投资如何在收益、风险和个人目标之间寻找平衡。
 - 新增 [投资收益到底来自哪里？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-investment-generates-returns)，从社会发展、企业价值创造和资产回报出发，探索长期投资收益形成背后的逻辑。
 - 新增 [普通投资者为什么需要了解投资？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-ordinary-investors-need-to-understand-investing)，从普通人的长期资金管理出发，重新认识投资的意义，以及资金、风险、收益和个人目标之间的关系。
 - 新增 [为什么账户余额增加，购买力却不一定同步增加？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-saving-money-may-not-grow-wealth)，从储蓄和购买力变化出发，重新观察账户余额、实际购买力与长期资金安排之间的关系。
