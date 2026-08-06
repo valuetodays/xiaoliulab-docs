@@ -187,6 +187,7 @@ export default defineConfig({
                     { text: '为什么我开始重新学习金钱？', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-did-i-start-learning-about-money' },
                     { text: '为什么有些东西看起来很值钱，却不一定是资产？', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-are-some-expensive-things-not-assets' },
                     { text: '从收入支出开始，理解现金流与净资产', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/understanding-wealth-from-income-expenses' },
+                    { text: '为什么账户余额增加，购买力却不一定同步增加？', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-saving-money-may-not-grow-wealth' },
                   ],
                 },
               ],
