@@ -16,12 +16,24 @@
 - 执行 `curl` 命令时要加参数 `--noproxy '*'`
 
 
-## 提交与推送
+## Git Commit and Push
 
-- 使用原生git提交代码并推送
-- 提交信息统一以`feat` / `fix` / `opt` / `refactor` / `docs` 开头，分别代码新功能/修复bug/优化/重构/文档，目前是这几个，以后根据需要添加
-- 提交信息统一使用英文
+- Use native git commands for commit and push operations.
+- Do not use GitHub CLI or other wrappers for normal commit/push workflows unless explicitly requested.
 
+### Commit Message Convention
+
+Commit messages must start with one of the following prefixes:
+
+- `feat`: add new features
+- `fix`: fix bugs
+- `opt`: optimize existing code or improve performance
+- `refactor`: refactor code without changing behavior
+- `docs`: update documentation
+
+Commit messages must be written in English.
+
+New commit types may be added in the future when needed.
 
 ## 文件名规范
 
