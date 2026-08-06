@@ -304,6 +304,6 @@ head:
 
 当这些基础概念建立以后，新的问题自然出现：
 
-> 普通投资者具体有哪些金融工具可以选择？
+> [投资收益到底来自哪里？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-investment-generates-returns)
 
-下一篇文章，我会继续探索现金、存款、债券、基金、ETF 和股票等不同工具，以及它们分别解决什么问题。
+下一篇文章，我会继续探索经济活动和企业价值创造如何转化为投资者可能获得的回报。

@@ -189,6 +189,7 @@ export default defineConfig({
                     { text: '从收入支出开始，理解现金流与净资产', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/understanding-wealth-from-income-expenses' },
                     { text: '为什么账户余额增加，购买力却不一定同步增加？', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-saving-money-may-not-grow-wealth' },
                     { text: '普通投资者为什么需要了解投资？', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-ordinary-investors-need-to-understand-investing' },
+                    { text: '投资收益到底来自哪里？', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-investment-generates-returns' },
                   ],
                 },
               ],
