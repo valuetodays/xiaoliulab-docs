@@ -151,6 +151,6 @@ head:
 
 当我们开始思考这个问题，就会进入下一个阶段：
 
-> 普通投资者有哪些方式，可以管理自己的长期资金？
+> [普通投资者为什么需要了解投资？](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-ordinary-investors-need-to-understand-investing)
 
-下一篇文章，我会继续探索不同金融工具，以及它们分别解决什么问题。
+下一篇文章，我会先从为什么需要了解投资开始，再继续探索不同金融工具分别解决什么问题。
