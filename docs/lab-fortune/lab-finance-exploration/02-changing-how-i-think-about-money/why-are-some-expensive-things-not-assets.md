@@ -114,4 +114,4 @@ head:
 
 为什么《穷爸爸，富爸爸》几乎一直围绕它展开？
 
-下一篇，我们继续从这个问题开始探索。
+下一篇，[从收入支出开始，理解现金流与净资产](/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/understanding-wealth-from-income-expenses)，我们继续从这个问题开始探索。
