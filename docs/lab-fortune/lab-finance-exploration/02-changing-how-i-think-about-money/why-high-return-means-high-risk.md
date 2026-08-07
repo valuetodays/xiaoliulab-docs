@@ -296,3 +296,5 @@ head:
 > 普通投资者具体有哪些金融工具可以选择？
 
 下一阶段，我会继续探索现金、存款、债券、基金、ETF 和股票等不同工具，以及它们分别解决什么问题。
+
+> [支付宝里的基金，到底是什么？](/lab-fortune/lab-finance-exploration/03-investment-tools/what-are-funds-on-alipay)

@@ -193,6 +193,13 @@ export default defineConfig({
                     { text: '风险与收益：为什么高收益伴随高波动？', link: '/lab-fortune/lab-finance-exploration/02-changing-how-i-think-about-money/why-high-return-means-high-risk' },
                   ],
                 },
+                {
+                  text: '投资工具',
+                  collapsed: true,
+                  items: [
+                    { text: '支付宝里的基金，到底是什么？', link: '/lab-fortune/lab-finance-exploration/03-investment-tools/what-are-funds-on-alipay' },
+                  ],
+                },
               ],
             },
             {
