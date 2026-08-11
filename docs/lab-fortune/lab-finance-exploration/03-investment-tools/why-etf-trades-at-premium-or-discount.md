@@ -407,6 +407,8 @@ ETF 的底层资产决定了它价值的基础，市场中的买卖又形成了�
 
 这也是我接下来想继续弄清楚的问题。
 
+> [同样跟踪一个指数的 ETF，为什么还会有区别？](/lab-fortune/lab-finance-exploration/03-investment-tools/why-etfs-tracking-the-same-index-differ)
+
 ---
 
 > 本文记录个人学习和实际接触投资工具的过程，仅用于知识整理，不构成投资建议。ETF 的申购赎回、交易方式及相关规则会因产品而异，具体请以基金合同、招募说明书、交易所及基金管理人披露的信息为准。

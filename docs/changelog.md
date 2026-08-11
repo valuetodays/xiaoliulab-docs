@@ -15,6 +15,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [同样跟踪一个指数的 ETF，为什么还会有区别？](/lab-fortune/lab-finance-exploration/03-investment-tools/why-etfs-tracking-the-same-index-differ)，从搜索沪深300 ETF 时出现多个结果的经历出发，认识基金规模、流动性、费用、跟踪效果、成立时间和单位价格等差异。
 - 新增 [ETF 为什么会出现折价和溢价？](/lab-fortune/lab-finance-exploration/03-investment-tools/why-etf-trades-at-premium-or-discount)，从基金净值与市场价格的差异出发，理解 ETF 折溢价的形成，以及申购赎回和套利机制如何影响市场价格。
 - 新增 [从支付宝基金到 ETF](/lab-fortune/lab-finance-exploration/03-investment-tools/from-alipay-fund-to-etf)，从场外基金的使用经历出发，探索证券账户和 ETF 带来的交易方式变化，理解基金净值、市场价格和成交机制之间的区别。
 
