@@ -199,6 +199,7 @@ export default defineConfig({
                   items: [
                     { text: '支付宝里的基金，到底是什么？', link: '/lab-fortune/lab-finance-exploration/03-investment-tools/what-are-funds-on-alipay' },
                     { text: '从支付宝基金到 ETF', link: '/lab-fortune/lab-finance-exploration/03-investment-tools/from-alipay-fund-to-etf' },
+                    { text: 'ETF 为什么会出现折价和溢价？', link: '/lab-fortune/lab-finance-exploration/03-investment-tools/why-etf-trades-at-premium-or-discount' },
                   ],
                 },
               ],

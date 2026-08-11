@@ -271,9 +271,11 @@ ETF 可以让我观察市场价格，也可以让我决定委托价格。
 
 但理解 ETF 的交易方式以后，一个新的问题也随之出现：
 
-> ETF为什么出现折价和溢价？
+> ETF 为什么会出现折价和溢价？
 
 下一篇，我会继续探索 ETF 的折价、溢价和申购赎回机制。
+
+> [ETF 为什么会出现折价和溢价？](/lab-fortune/lab-finance-exploration/03-investment-tools/why-etf-trades-at-premium-or-discount)
 
 ---
 
