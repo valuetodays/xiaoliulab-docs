@@ -1,6 +1,7 @@
 ---
 title: 探索技术：从具体问题出发，理解技术设计与演进
 description: 从开发中的具体问题出发，持续整理框架设计、工具演进、社区讨论、历史方案与技术取舍，在追问“为什么这样设计”的过程中建立更清晰的工程认知。
+articleMeta: false
 head:
   - - meta
     - name: keywords

@@ -1,6 +1,7 @@
 ---
 title: 探索金融：从真实问题认识资产、工具与选择
 description: 从储蓄、现金管理、基金与 ETF、股票、融资和全球资产等真实问题出发，逐步认识金融工具的用途、成本与风险。
+articleMeta: false
 head:
   - - meta
     - name: keywords

@@ -66,6 +66,18 @@
   margin-right: auto;
 }
 
+.article-meta {
+  margin: 0 0 8px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.article-meta-separator {
+  margin: 0 4px;
+  color: var(--vp-c-divider);
+}
+
 /* Page Mode: video */
 html[data-page-mode='video'] .VPNav,
 html[data-page-mode='video'] .VPLocalNav,

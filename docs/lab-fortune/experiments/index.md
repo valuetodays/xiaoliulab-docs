@@ -1,6 +1,7 @@
 ---
 title: 策略实验：用数据和记录验证想法
 description: 汇总策略实验的假设、方法、数据、过程和结果，通过可复查的记录验证想法，并持续修正分析框架。
+articleMeta: false
 head:
   - - meta
     - name: keywords

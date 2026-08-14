@@ -1,6 +1,7 @@
 ---
 title: 小刘实验室更新日志
 description: 记录小刘实验室网站的内容更新、功能调整与重要变化。
+articleMeta: false
 head:
   - - meta
     - name: keywords
@@ -16,6 +17,10 @@ head:
 ### ✨ 新增
 
 - 上线探索技术专题，新增 [从“一屏多看几个依赖”开始：一次 Maven POM 简化设计的历史探索](/lab-tech-exploration/maven-pom-simplification-history)，从依赖声明过于冗长的使用痛点出发，梳理 Maven 社区关于 XML attributes、GAV identity、POM authoring 与模型演进的历史讨论和设计取舍。
+
+### 🚀 改进
+
+- 普通文章页新增字数与预计阅读时间提示，自动统计中英文正文并排除代码块，无需手工维护文章字数。
 
 ## 2026-08-11
 
