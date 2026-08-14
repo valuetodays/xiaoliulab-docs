@@ -1,6 +1,7 @@
 ---
 title: 金融实验室内容路线图
 description: 展示金融实验室在金融基础、做T实验室和金融实验三个方向上的内容规划与建设进度。
+articleMeta: false
 head:
   - - meta
     - name: keywords

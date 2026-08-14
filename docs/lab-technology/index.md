@@ -1,6 +1,7 @@
 ---
 title: 技术实验室
 description: 记录小刘实验室在数据采集、系统集成、自动化运行和工程化实践方面的真实探索与验证。
+articleMeta: false
 head:
   - - meta
     - name: keywords

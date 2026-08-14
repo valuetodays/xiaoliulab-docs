@@ -1,6 +1,7 @@
 ---
 title: 金融基础：建立分析与决策所需的基本认知
 description: 整理金融市场、资产、收益、风险和常用指标等基础知识，为后续实验、分析与复盘建立共同的认知基础。
+articleMeta: false
 head:
   - - meta
     - name: keywords

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { articleMetadataPlugin } from './markdown/article-metadata';
 import { getPageModeInitScript } from './theme/utils/page-mode';
 
 const siteUrl = 'https://docs.xiaoliulab.com';
@@ -44,6 +45,12 @@ export default defineConfig({
   vite: {
     server: {
       allowedHosts: ['v200'],
+    },
+  },
+
+  markdown: {
+    config(markdown) {
+      markdown.use(articleMetadataPlugin);
     },
   },
 
