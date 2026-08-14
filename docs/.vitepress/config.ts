@@ -86,11 +86,24 @@ export default defineConfig({
       { text: '技术实验室', link: '/lab-technology/' },
       { text: '金融实验室', link: '/lab-fortune/' },
       { text: '探索金融', link: '/lab-fortune/lab-finance-exploration/' },
+      { text: '探索技术', link: '/lab-tech-exploration/' },
       { text: '做T实验室', link: '/lab-fortune/lab-zuot/' },
       { text: '更新记录', link: '/changelog' },
     ],
 
     sidebar: {
+      '/lab-tech-exploration/': [
+        {
+          text: '探索技术',
+          items: [
+            { text: '专题首页', link: '/lab-tech-exploration/' },
+            {
+              text: '从“一屏多看几个依赖”开始：一次 Maven POM 简化设计的历史探索',
+              link: '/lab-tech-exploration/maven-pom-simplification-history',
+            },
+          ],
+        },
+      ],
       '/wechat/': [
         {
           text: '微信支付实验',

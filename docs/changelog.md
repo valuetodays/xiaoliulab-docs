@@ -11,6 +11,12 @@ head:
 
 这里记录小刘实验室的重要更新，包括新增实验、文档完善、功能上线以及网站改进。最新内容排在最前面。
 
+## 2026-08-14
+
+### ✨ 新增
+
+- 上线探索技术专题，新增 [从“一屏多看几个依赖”开始：一次 Maven POM 简化设计的历史探索](/lab-tech-exploration/maven-pom-simplification-history)，从依赖声明过于冗长的使用痛点出发，梳理 Maven 社区关于 XML attributes、GAV identity、POM authoring 与模型演进的历史讨论和设计取舍。
+
 ## 2026-08-11
 
 ### ✨ 新增
