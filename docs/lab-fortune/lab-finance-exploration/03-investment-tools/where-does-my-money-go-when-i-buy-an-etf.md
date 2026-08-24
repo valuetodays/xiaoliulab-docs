@@ -228,4 +228,4 @@ ETF 除了可以在二级市场买卖，还存在一级市场的申购赎回机�
 
 这也成为接下来要继续探索的问题：
 
-**《ETF 的份额是怎么产生的？》**
+[《ETF 的份额是怎么产生的？》](/lab-fortune/lab-finance-exploration/03-investment-tools/how-are-etf-shares-created)
