@@ -12,6 +12,12 @@ head:
 
 这里记录小刘实验室的重要更新，包括新增实验、文档完善、功能上线以及网站改进。最新内容排在最前面。
 
+## 2026-08-24
+
+### ✨ 新增
+
+- 新增 [我在证券账户里买 ETF，钱到底去了哪里？](/lab-fortune/lab-finance-exploration/03-investment-tools/where-does-my-money-go-when-i-buy-an-etf)，从一次普通的 ETF 买入出发，区分二级市场买卖与基金申购，理解买入 ETF 时资金去了哪里，以及 ETF 份额发生了什么变化。
+
 ## 2026-08-14
 
 ### ✨ 新增
