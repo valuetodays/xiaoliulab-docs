@@ -9,11 +9,15 @@ head:
 
 # ETF 为什么会出现折价和溢价？
 
-[上一篇文章《从支付宝基金到 ETF》](/lab-fortune/lab-finance-exploration/03-investment-tools/from-alipay-fund-to-etf)里，我第一次把场外基金和 ETF 放在一起比较。
+[上一篇文章《ETF 的份额是怎么产生的？》](/lab-fortune/lab-finance-exploration/03-investment-tools/how-are-etf-shares-created)里，我弄清楚了 ETF 最初的份额如何通过募集期认购形成，以及基金成立后的申购赎回如何改变基金总份额。
 
-场外基金通常按照相应规则确认基金净值和份额，而 ETF 可以在证券市场中实时买卖。
+二级市场交易已经存在的 ETF 份额，一级市场的申购赎回则可以让基金总份额发生变化。
 
-也正是在理解 ETF 的交易方式以后，我注意到了一个以前没有遇到的问题：
+但这又带来了一个新问题：
+
+> 为什么会有人在一级市场和二级市场之间进行申购、赎回和交易？
+
+要回答这个问题，首先要注意 ETF 同时存在两种价格：
 
 > ETF 既有基金净值，又有市场交易价格。
 

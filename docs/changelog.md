@@ -16,6 +16,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [ETF 的份额是怎么产生的？](/lab-fortune/lab-finance-exploration/03-investment-tools/how-are-etf-shares-created)，从募集期认购与成立后的一级市场申购赎回出发，理解 ETF 最初的份额如何形成，以及基金总份额为什么还能继续增加或减少。
 - 新增 [我在证券账户里买 ETF，钱到底去了哪里？](/lab-fortune/lab-finance-exploration/03-investment-tools/where-does-my-money-go-when-i-buy-an-etf)，从一次普通的 ETF 买入出发，区分二级市场买卖与基金申购，理解买入 ETF 时资金去了哪里，以及 ETF 份额发生了什么变化。
 
 ## 2026-08-14
