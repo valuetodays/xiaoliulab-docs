@@ -16,6 +16,7 @@ head:
 
 ## 文档目录
 
+- [HTTPS 证书申请失败排查：secondary validation DNS timeout](/lab-tech-exploration/https-certificate-secondary-validation-dns-timeout)
 - [从“一屏多看几个依赖”开始：一次 Maven POM 简化设计的历史探索](/lab-tech-exploration/maven-pom-simplification-history)
 
 ## 探索方向
