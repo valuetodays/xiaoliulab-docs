@@ -11,6 +11,8 @@ head:
 
 # HTTPS 证书申请失败排查：secondary validation DNS timeout
 
+为了保护隐私，本文使用 `example.cn` 替代真实域名。
+
 在 1Panel 中为域名申请 HTTPS 证书时，遇到了：
 
 ```text
@@ -53,7 +55,7 @@ OpenResty / Nginx 具体版本
 底层 ACME 客户端具体版本
 ```
 
-测试涉及多个 `seenext.cn` 子域名。
+测试涉及多个 `example.cn` 子域名。
 
 开始排查前，已经确认：
 
@@ -81,10 +83,10 @@ urn:ietf:params:acme:error:dns ::
 During secondary validation:
 
 DNS problem:
-query timed out looking up A for fi.seenext.cn;
+query timed out looking up A for fi.example.cn;
 
 DNS problem:
-query timed out looking up AAAA for fi.seenext.cn
+query timed out looking up AAAA for fi.example.cn
 ```
 
 另一个子域名也出现类似错误。
@@ -132,7 +134,7 @@ flags: qr aa
 ANSWER: 0
 AUTHORITY: 1
 
-Authority 中存在 seenext.cn 的 SOA
+Authority 中存在 example.cn 的 SOA
 响应服务器为已查询的权威 DNS 地址
 查询耗时约 2~33 ms
 ```
@@ -153,7 +155,7 @@ status: NOERROR
 继续执行：
 
 ```bash
-dig +trace fi.seenext.cn
+dig +trace fi.example.cn
 ```
 
 能够完整走到：
@@ -161,9 +163,9 @@ dig +trace fi.seenext.cn
 ```text
 根 DNS
 → .cn
-→ seenext.cn
+→ example.cn
 → ns1/ns2.volcengine-dns.com
-→ fi.seenext.cn
+→ fi.example.cn
 ```
 
 还直接查询了当时解析得到的多个权威 DNS 地址，均能获得权威应答。
@@ -207,7 +209,7 @@ echo hello > /usr/share/nginx/html/.well-known/acme-challenge/test.txt
 
 ```bash
 curl --noproxy '*' \
-  http://fi.seenext.cn/.well-known/acme-challenge/test.txt
+  http://fi.example.cn/.well-known/acme-challenge/test.txt
 ```
 
 使用 `--noproxy '*'` 是为了避免本地 HTTP 代理改变实际访问路径。
@@ -242,7 +244,7 @@ CA 实际访问路径
 手工添加：
 
 ```text
-_acme-challenge.h5.seenext.cn
+_acme-challenge.h5.example.cn
 ```
 
 TXT 记录以后，可以通过 DNS 查询看到对应 token，随后 DNS-01 成功签发。
@@ -266,7 +268,7 @@ During secondary validation:
 
 DNS problem:
 query timed out looking up TXT for
-_acme-challenge.sh.seenext.cn
+_acme-challenge.sh.example.cn
 ```
 
 这里必须注意：
@@ -492,28 +494,28 @@ DNSFullAccess
 
 ```bash
 # 公共 DNS
-nslookup fi.seenext.cn 1.1.1.1
-nslookup fi.seenext.cn 8.8.8.8
+nslookup fi.example.cn 1.1.1.1
+nslookup fi.example.cn 8.8.8.8
 
 # 完整委派链
-dig +trace fi.seenext.cn
+dig +trace fi.example.cn
 
 # 权威 DNS
-nslookup -type=ns seenext.cn 8.8.8.8
+nslookup -type=ns example.cn 8.8.8.8
 
 # DNS-01 TXT
-dig TXT _acme-challenge.fi.seenext.cn
+dig TXT _acme-challenge.fi.example.cn
 
 # 假设当时查到的权威 DNS 地址为 180.184.1.138
-dig @180.184.1.138 TXT _acme-challenge.fi.seenext.cn
-dig +tcp @180.184.1.138 TXT _acme-challenge.fi.seenext.cn
+dig @180.184.1.138 TXT _acme-challenge.fi.example.cn
+dig +tcp @180.184.1.138 TXT _acme-challenge.fi.example.cn
 
 # 从实际申请域名向父级检查 CAA
-dig CAA fi.seenext.cn
-dig CAA seenext.cn
+dig CAA fi.example.cn
+dig CAA example.cn
 ```
 
-如果 `fi.seenext.cn` 是 CNAME，还应继续检查其目标名称链。
+如果 `fi.example.cn` 是 CNAME，还应继续检查其目标名称链。
 
 HTTP-01 测试前先创建测试文件：
 
@@ -526,7 +528,7 @@ echo hello > /usr/share/nginx/html/.well-known/acme-challenge/test.txt
 
 ```bash
 curl --noproxy '*' -i \
-  http://fi.seenext.cn/.well-known/acme-challenge/test.txt
+  http://fi.example.cn/.well-known/acme-challenge/test.txt
 ```
 
 ---
