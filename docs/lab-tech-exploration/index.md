@@ -14,18 +14,17 @@ head:
 
 这里从开发中的具体问题出发，沿着源码、文档、Issue 和社区讨论，理解技术方案背后的历史、约束与取舍。
 
-## 文档目录
+## 内容分类
 
-- [HTTPS 证书申请失败排查：secondary validation DNS timeout](/lab-tech-exploration/network-infrastructure/https-certificate-secondary-validation-dns-timeout)
-- [从“一屏多看几个依赖”开始：一次 Maven POM 简化设计的历史探索](/lab-tech-exploration/build-tools/maven-pom-simplification-history)
-
-## 探索方向
-
-1. Java 与 JVM 设计演进
-2. Maven 与构建工具
-3. Spring、Quarkus 与应用框架
-4. 开源项目与社区讨论
-5. 工具、IDE 与开发体验
-6. 软件设计与工程认知
+| 分类 | 长期容纳内容 |
+| --- | --- |
+| Java 与 JVM | Java 版本、GC、JVM 参数、内存、线程、性能 |
+| 应用框架 | Spring Boot、Spring Cloud、Quarkus、MyBatis、Web 框架 |
+| 构建与依赖 | Maven、Gradle、编译、依赖管理、插件 |
+| 数据库与中间件 | MySQL、PostgreSQL、Redis、NATS、RabbitMQ、RocketMQ、Nacos、XXL-JOB |
+| 容器与云环境 | Docker、Kubernetes、容器运行时、云主机、镜像 |
+| 网络与基础设施 | DNS、HTTPS、Nginx、TCP、VPN、防火墙、网络排障 |
+| 安全 | 漏洞、攻击事件、供应链安全、权限、暴露面 |
+| 工程实践 | 日志、监控、测试、发布、国际化、兼容性、工具链 |
 
 > 本专题更关注“为什么这样设计”，而不仅是“应该怎么使用”。
