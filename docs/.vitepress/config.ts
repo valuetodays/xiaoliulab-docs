@@ -122,8 +122,13 @@ export default defineConfig({
             { text: '专题首页', link: '/lab-tech-exploration/' },
             {
               text: 'Java 与 JVM',
-              collapsed: true,
-              items: [],
+              collapsed: false,
+              items: [
+                {
+                  text: 'Spring Boot 2.2 + Micrometer 中 JVM 指标消失：一次 MeterRegistry 提前初始化问题排查',
+                  link: '/lab-tech-exploration/java-jvm/spring-boot-micrometer-jvm-metrics-missing',
+                },
+              ],
             },
             {
               text: '应用框架',
