@@ -16,6 +16,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [Spring Boot 2.2 + Micrometer 中 JVM 指标消失：一次 MeterRegistry 提前初始化问题排查](/lab-tech-exploration/java-jvm/spring-boot-micrometer-jvm-metrics-missing)，记录自定义 `AsyncConfigurer` 构造器依赖 `MeterRegistry` 引发 JVM 指标缺失的排查与规避过程，并梳理 Spring Bean 初始化时序对监控指标注册的影响。
 - 新增 [微服务访问报 No route to host：一次 firewalld 端口未放行问题排查](/lab-tech-exploration/network-infrastructure/microservice-no-route-to-host)，记录微服务跨节点访问失败的定位与修复过程，并说明为什么 firewalld 未放行端口也可能表现为 `No route to host`。
 
 ## 2026-08-25
