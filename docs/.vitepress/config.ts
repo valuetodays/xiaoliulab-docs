@@ -1,8 +1,15 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig, type HeadConfig } from 'vitepress';
 import { articleMetadataPlugin } from './markdown/article-metadata';
 import { getPageModeInitScript } from './theme/utils/page-mode';
 
 const siteUrl = 'https://docs.xiaoliulab.com';
+
+// 已迁移页面的旧路径。
+// 旧页面仅用于历史链接跳转，不加入 sitemap。
+const sitemapExcludedPaths = [
+  'lab-tech-exploration/maven-pom-simplification-history',
+  'lab-tech-exploration/https-certificate-secondary-validation-dns-timeout',
+];
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
@@ -25,15 +32,24 @@ export default defineConfig({
   ],
   sitemap: {
     hostname: `${siteUrl}/`,
+    transformItems(items) {
+      return items.filter((item) => !sitemapExcludedPaths.includes(item.url));
+    },
   },
   transformHead({ pageData }) {
     const relativePath = pageData.relativePath
       .replace(/index\.md$/, '')
       .replace(/\.md$/, '');
-    const canonicalUrl = `${siteUrl}/${relativePath}`;
+    const frontmatterCanonical = pageData.frontmatter.head?.find(
+      ([tag, attrs]) => tag === 'link' && attrs.rel === 'canonical',
+    );
+    const canonicalUrl = frontmatterCanonical?.[1].href ?? `${siteUrl}/${relativePath}`;
+    const canonicalHead: HeadConfig[] = frontmatterCanonical
+      ? []
+      : [['link', { rel: 'canonical', href: canonicalUrl }]];
 
     return [
-      ['link', { rel: 'canonical', href: canonicalUrl }],
+      ...canonicalHead,
       ['meta', { property: 'og:type', content: 'article' }],
       ['meta', { property: 'og:locale', content: 'zh_CN' }],
       ['meta', { property: 'og:site_name', content: '小刘实验室' }],
@@ -95,7 +111,7 @@ export default defineConfig({
       { text: '探索金融', link: '/lab-fortune/lab-finance-exploration/' },
       { text: '探索技术', link: '/lab-tech-exploration/' },
       { text: '做T实验室', link: '/lab-fortune/lab-zuot/' },
-      { text: '更新记录', link: '/changelog' },
+      { text: '更新日志', link: '/changelog' },
     ],
 
     sidebar: {
@@ -105,8 +121,58 @@ export default defineConfig({
           items: [
             { text: '专题首页', link: '/lab-tech-exploration/' },
             {
-              text: '从“一屏多看几个依赖”开始：一次 Maven POM 简化设计的历史探索',
-              link: '/lab-tech-exploration/maven-pom-simplification-history',
+              text: 'Java 与 JVM',
+              collapsed: true,
+              items: [],
+            },
+            {
+              text: '应用框架',
+              collapsed: true,
+              items: [],
+            },
+            {
+              text: '构建与依赖',
+              collapsed: true,
+              items: [
+                {
+                  text: '从“一屏多看几个依赖”开始：一次 Maven POM 简化设计的历史探索',
+                  link: '/lab-tech-exploration/build-tools/maven-pom-simplification-history',
+                },
+              ],
+            },
+            {
+              text: '数据库与中间件',
+              collapsed: true,
+              items: [],
+            },
+            {
+              text: '容器与云环境',
+              collapsed: true,
+              items: [],
+            },
+            {
+              text: '网络与基础设施',
+              collapsed: false,
+              items: [
+                {
+                  text: 'HTTPS 证书申请失败排查：secondary validation DNS timeout',
+                  link: '/lab-tech-exploration/network-infrastructure/https-certificate-secondary-validation-dns-timeout',
+                },
+                {
+                  text: '微服务访问报 No route to host：一次 firewalld 端口未放行问题排查',
+                  link: '/lab-tech-exploration/network-infrastructure/microservice-no-route-to-host',
+                },
+              ],
+            },
+            {
+              text: '安全',
+              collapsed: true,
+              items: [],
+            },
+            {
+              text: '工程实践',
+              collapsed: true,
+              items: [],
             },
           ],
         },

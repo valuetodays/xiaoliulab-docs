@@ -12,6 +12,18 @@ head:
 
 这里记录小刘实验室的重要更新，包括新增实验、文档完善、功能上线以及网站改进。最新内容排在最前面。
 
+## 2026-08-27
+
+### ✨ 新增
+
+- 新增 [微服务访问报 No route to host：一次 firewalld 端口未放行问题排查](/lab-tech-exploration/network-infrastructure/microservice-no-route-to-host)，记录微服务跨节点访问失败的定位与修复过程，并说明为什么 firewalld 未放行端口也可能表现为 `No route to host`。
+
+## 2026-08-25
+
+### ✨ 新增
+
+- 新增 [HTTPS 证书申请失败排查：secondary validation DNS timeout](/lab-tech-exploration/network-infrastructure/https-certificate-secondary-validation-dns-timeout)，记录 1Panel 申请 HTTPS 证书时 DNS 查询超时的排查过程，包括现场保留、DNS 与 HTTP 链路验证、CA 对照实验及证据边界。
+
 ## 2026-08-24
 
 ### ✨ 新增
@@ -23,7 +35,7 @@ head:
 
 ### ✨ 新增
 
-- 上线探索技术专题，新增 [从“一屏多看几个依赖”开始：一次 Maven POM 简化设计的历史探索](/lab-tech-exploration/maven-pom-simplification-history)，从依赖声明过于冗长的使用痛点出发，梳理 Maven 社区关于 XML attributes、GAV identity、POM authoring 与模型演进的历史讨论和设计取舍。
+- 上线探索技术专题，新增 [从“一屏多看几个依赖”开始：一次 Maven POM 简化设计的历史探索](/lab-tech-exploration/build-tools/maven-pom-simplification-history)，从依赖声明过于冗长的使用痛点出发，梳理 Maven 社区关于 XML attributes、GAV identity、POM authoring 与模型演进的历史讨论和设计取舍。
 
 ### 🚀 改进
 
@@ -144,7 +156,7 @@ head:
 
 ### 🚀 改进
 
-- 新增全站更新记录页面，并在顶部导航中增加入口。
+- 新增全站更新日志页面，并在顶部导航中增加入口。
 - 金融实验室导航重新整理，更方便查找相关实验。
 - 在做T实验室下增加“基础认知”文档目录。
 
