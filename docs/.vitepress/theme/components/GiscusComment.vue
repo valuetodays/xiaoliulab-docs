@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { computed, nextTick, onMounted, watch } from 'vue';
+import { computed, nextTick, onMounted, ref, watch } from 'vue';
 import { useData, useRoute } from 'vitepress';
+import { isVideoMode } from '../utils/page-mode';
 
 const route = useRoute();
 const { frontmatter } = useData();
+const videoMode = ref(false);
 const commentsEnabled = computed(
-  () => frontmatter.value?.comments !== false,
+  () => frontmatter.value?.comments !== false && !videoMode.value,
 );
 
 function loadGiscus() {
@@ -38,6 +40,8 @@ function loadGiscus() {
 }
 
 async function reload() {
+  videoMode.value = isVideoMode();
+
   if (!commentsEnabled.value) {
     return;
   }
@@ -49,7 +53,7 @@ async function reload() {
 onMounted(reload);
 
 watch(
-  () => route.path,
+  () => [route.path, route.query],
   reload,
 );
 </script>
