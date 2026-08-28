@@ -16,6 +16,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [Logback 的 debug.log 和 info.log 为什么几乎一样：一次旧项目多 root 配置排查](/lab-tech-exploration/application-frameworks/logback-multiple-root-debug-info-log)，记录 Spring Boot 旧项目中两个日志文件内容近似的问题排查，解释多个 `root` 与 `ThresholdFilter` 共同作用下的日志行为，并将配置统一收敛为单一 `root`。
 - 新增 [Docker 旧服务端口配置失真：一次 `--net=host` 环境下的排查与统一维护](/lab-tech-exploration/containers-cloud/docker-old-service-port-config-drift)，记录旧 Docker 服务历史端口配置与 Java 实际监听不一致的排查过程，通过运行态反查、Dubbo QoS 识别和端口用途确认，重新建立可信的端口清单与统一维护方式。
 - 新增 [Docker 服务去除 --net=host：从 host 网络回到 bridge 的一次改造记录](/lab-tech-exploration/containers-cloud/docker-remove-host-network)，记录生产环境 Java 服务从 Docker host 网络迁移回 bridge 网络的改造过程，说明端口显式化、服务网络边界收敛，以及 Nacos 注册地址与跨宿主机访问问题的处理方式。
 - 新增 [Quarkus 容器 RSS 持续增长：一次 JVM Heap 正常但 Native Memory 膨胀的问题排查](/lab-tech-exploration/java-jvm/quarkus-container-rss-growth)，记录 Quarkus + JDK 21 服务在 Docker 中 RSS 持续增长的排查过程，并通过 `MALLOC_ARENA_MAX=2` 的正向与反向实验，进一步确认问题与 glibc malloc arena / native allocator 行为高度相关。
