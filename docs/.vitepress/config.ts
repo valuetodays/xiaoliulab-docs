@@ -195,7 +195,7 @@ export default defineConfig({
           text: '微信支付实验',
           items: [
             { text: '专题首页', link: '/wechat/' },
-            { text: '为什么会有这个实验室？', link: '/wechat/why-this-lab/' },
+            { text: '为什么会有这个“微信支付实验”？', link: '/wechat/why-this-lab/' },
             { text: '微信支付接入路线', link: '/wechat/getting-started/' },
             { text: '微信 Native Pay 最小接入指南', link: '/wechat/native-pay-mvp/' },
             { text: '微信 Code Pay 最小接入指南', link: '/wechat/code-pay-mvp/' },
@@ -315,7 +315,7 @@ export default defineConfig({
                   text: '基础认知',
                   collapsed: true,
                   items: [
-                    { text: '为什么会有这个实验室', link: '/lab-fortune/lab-zuot/basics/why-this-lab' },
+                    { text: '为什么会有这个“做T实验”？', link: '/lab-fortune/lab-zuot/basics/why-this-lab' },
                     { text: '做T的数学基础', link: '/lab-fortune/lab-zuot/basics/math-foundation' },
                     { text: '什么样的标的适合做T？', link: '/lab-fortune/lab-zuot/basics/what-makes-a-good-target' },
                     { text: '为什么我选择红利ETF？', link: '/lab-fortune/lab-zuot/basics/why-i-finally-chose-dividend-etf' },

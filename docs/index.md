@@ -15,11 +15,11 @@ hero:
       link: /lab-fortune/
 ---
 
-## 金融实验室
+## 金融实验
 
 <div class="lab-topic-grid">
   <a class="lab-topic-card" href="./lab-fortune/lab-zuot/">
-    <h3>做T实验室</h3>
+    <h3>做T实验</h3>
     <p>记录做T的基础、信号、执行、系统与实践复盘。</p>
   </a>
 </div>

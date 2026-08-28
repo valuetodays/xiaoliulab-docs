@@ -164,7 +164,7 @@ head:
 
 金融工具并不是孤立存在的。认识工具之后，还需要借助其他实验继续验证：
 
-- 在[做 T 实验室](/lab-fortune/lab-zuot/)中研究交易信号、执行过程与系统建设
+- 在[做 T 实验](/lab-fortune/lab-zuot/)中研究交易信号、执行过程与系统建设
 - 在[金融数据实验](/lab-fortune/lab-data/why-investment-research-needs-reliable-data)中理解可靠数据为何是验证判断的基础
 - 在[金融基础](/lab-fortune/foundation/)中补充资产、交易规则与成本等基础认知
 

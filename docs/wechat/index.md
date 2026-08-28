@@ -3,7 +3,7 @@ layout: home
 pageClass: lab-home
 
 hero:
-  name: 微信支付实验室
+  name: 微信支付
   text: 从第一次付款成功开始
   tagline: Native Pay、Code Pay、JSAPI Pay 的最小 MVP 实验。先跑通，再理解。
   actions:
@@ -38,9 +38,9 @@ features:
     details: notify_url、公网 HTTPS、匿名访问等排查。
 ---
 
-## 第一次来到实验室？
+## 第一次来到实验？
 
-先读一读[为什么会有这个实验室？](/wechat/why-this-lab/)，了解这里为什么强调真实验证，以及“先跑通，再理解”的学习方式。
+先读一读[为什么会有这个“微信支付实验”？](/wechat/why-this-lab/)，了解这里为什么强调真实验证，以及“先跑通，再理解”的学习方式。
 
 ## 这个专题适合谁？
 
