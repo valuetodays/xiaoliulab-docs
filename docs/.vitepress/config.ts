@@ -125,6 +125,10 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: '一个 4 年来从未生效的 JVM 参数：Docker 中 JAVA_OPTS 的误区',
+                  link: '/lab-tech-exploration/java-jvm/docker-java-opts-not-effective',
+                },
+                {
                   text: 'Spring Boot 2.2 + Micrometer 中 JVM 指标消失：一次 MeterRegistry 提前初始化问题排查',
                   link: '/lab-tech-exploration/java-jvm/spring-boot-micrometer-jvm-metrics-missing',
                 },

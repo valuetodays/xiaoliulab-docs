@@ -12,6 +12,12 @@ head:
 
 这里记录小刘实验室的重要更新，包括新增实验、文档完善、功能上线以及网站改进。最新内容排在最前面。
 
+## 2026-08-28
+
+### ✨ 新增
+
+- 新增 [一个 4 年来从未生效的 JVM 参数：Docker 中 JAVA_OPTS 的误区](/lab-tech-exploration/java-jvm/docker-java-opts-not-effective)，记录 Docker 环境中 `JAVA_OPTS` 不会被 JVM 自动读取的问题排查过程，并介绍通过 `JAVA_TOOL_OPTIONS` 让 JVM 参数生效及验证的方法。
+
 ## 2026-08-27
 
 ### ✨ 新增
