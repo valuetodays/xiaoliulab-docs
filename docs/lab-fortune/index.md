@@ -1,15 +1,15 @@
 ---
 layout: home
 pageClass: lab-home
-title: 金融实验室：金融知识、分析方法与实践记录
+title: 金融实验：金融知识、分析方法与实践记录
 description: 从基础认知出发，持续整理金融知识、分析方法、风险管理与实践复盘，在真实观察和验证中建立可持续迭代的金融认知框架。
 head:
   - - meta
     - name: keywords
-      content: 金融实验室,金融知识,投资基础,金融分析,风险管理,投资复盘
+      content: 金融实验,金融知识,投资基础,金融分析,风险管理,投资复盘
 
 hero:
-  name: 金融实验室
+  name: 金融实验
   text: 从理解开始，在实践中验证
   tagline: 整理金融知识、分析方法与实践记录，逐步建立可验证、可复盘的认知框架。
   actions:
@@ -17,7 +17,7 @@ hero:
       text: 金融基础
       link: /lab-fortune/foundation/
     - theme: alt
-      text: 做T实验室
+      text: 做T实验
       link: /lab-fortune/lab-zuot/
     - theme: alt
       text: 探索金融
