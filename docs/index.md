@@ -8,10 +8,10 @@ hero:
   tagline: 面向开发者的最小 MVP 实验室。每个实验都以「在线体验 + 可运行源码 + 明确成功结果」为目标。
   actions:
     - theme: brand
-      text: 微信支付实验室
+      text: 微信支付
       link: /wechat/
     - theme: alt
-      text: 金融实验室
+      text: 金融实验
       link: /lab-fortune/
 ---
 
@@ -24,11 +24,11 @@ hero:
   </a>
 </div>
 
-## 技术实验室
+## 技术实验
 
 <div class="lab-topic-grid">
   <a class="lab-topic-card" href="./wechat/">
-    <h3>微信支付实验室</h3>
+    <h3>微信支付</h3>
     <p>从第一次付款成功开始，跑通 Native Pay、JSAPI Pay、Code Pay 的最小流程。</p>
   </a>
   <a class="lab-topic-card" href="./wechat/native-pay-mvp/">

@@ -105,12 +105,12 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '微信支付实验室', link: '/wechat/' },
-      { text: '技术实验室', link: '/lab-technology/' },
-      { text: '金融实验室', link: '/lab-fortune/' },
+      { text: '微信支付', link: '/wechat/' },
+      { text: '技术实验', link: '/lab-technology/' },
+      { text: '金融实验', link: '/lab-fortune/' },
       { text: '探索金融', link: '/lab-fortune/lab-finance-exploration/' },
       { text: '探索技术', link: '/lab-tech-exploration/' },
-      { text: '做T实验室', link: '/lab-fortune/lab-zuot/' },
+      { text: '做T实验', link: '/lab-fortune/lab-zuot/' },
       { text: '更新日志', link: '/changelog' },
     ],
 
@@ -124,6 +124,10 @@ export default defineConfig({
               text: 'Java 与 JVM',
               collapsed: false,
               items: [
+                {
+                  text: 'Quarkus 容器 RSS 持续增长：一次 JVM Heap 正常但 Native Memory 膨胀的问题排查',
+                  link: '/lab-tech-exploration/java-jvm/quarkus-container-rss-growth',
+                },
                 {
                   text: '一个 4 年来从未生效的 JVM 参数：Docker 中 JAVA_OPTS 的误区',
                   link: '/lab-tech-exploration/java-jvm/docker-java-opts-not-effective',
@@ -202,7 +206,7 @@ export default defineConfig({
       ],
  '/lab-technology/': [
     {
-      text: '技术实验室',
+      text: '技术实验',
       items: [
         { text: '专题首页', link: '/lab-technology/' },
         {
@@ -232,7 +236,7 @@ export default defineConfig({
   ],
       '/lab-fortune/': [
         {
-          text: '金融实验室',
+          text: '金融实验',
           items: [
             { text: '专题首页', link: '/lab-fortune/' },
             {
@@ -250,7 +254,7 @@ export default defineConfig({
               ],
             },
             {
-              text: '数据实验室',
+              text: '数据实验',
               collapsed: false,
               items: [
                 { text: '为什么投资研究需要可靠的数据来源？', link: '/lab-fortune/lab-data/why-investment-research-needs-reliable-data' },
@@ -303,7 +307,7 @@ export default defineConfig({
               ],
             },
             {
-              text: '做T实验室',
+              text: '做T实验',
               link: '/lab-fortune/lab-zuot/',
               collapsed: false,
               items: [
