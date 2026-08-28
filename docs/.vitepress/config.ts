@@ -143,6 +143,10 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
+                  text: 'PageHelper 两种分页写法对比：一次泛型失真的排查与源码分析',
+                  link: '/lab-tech-exploration/application-frameworks/pagehelper-pagination-generic-type-safety',
+                },
+                {
                   text: 'Logback 的 debug.log 和 info.log 为什么几乎一样：一次旧项目多 root 配置排查',
                   link: '/lab-tech-exploration/application-frameworks/logback-multiple-root-debug-info-log',
                 },
