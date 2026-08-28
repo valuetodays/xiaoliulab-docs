@@ -16,6 +16,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [Docker 旧服务端口配置失真：一次 `--net=host` 环境下的排查与统一维护](/lab-tech-exploration/containers-cloud/docker-old-service-port-config-drift)，记录旧 Docker 服务历史端口配置与 Java 实际监听不一致的排查过程，通过运行态反查、Dubbo QoS 识别和端口用途确认，重新建立可信的端口清单与统一维护方式。
 - 新增 [Docker 服务去除 --net=host：从 host 网络回到 bridge 的一次改造记录](/lab-tech-exploration/containers-cloud/docker-remove-host-network)，记录生产环境 Java 服务从 Docker host 网络迁移回 bridge 网络的改造过程，说明端口显式化、服务网络边界收敛，以及 Nacos 注册地址与跨宿主机访问问题的处理方式。
 - 新增 [Quarkus 容器 RSS 持续增长：一次 JVM Heap 正常但 Native Memory 膨胀的问题排查](/lab-tech-exploration/java-jvm/quarkus-container-rss-growth)，记录 Quarkus + JDK 21 服务在 Docker 中 RSS 持续增长的排查过程，并通过 `MALLOC_ARENA_MAX=2` 的正向与反向实验，进一步确认问题与 glibc malloc arena / native allocator 行为高度相关。
 - 新增 [一个 4 年来从未生效的 JVM 参数：Docker 中 JAVA_OPTS 的误区](/lab-tech-exploration/java-jvm/docker-java-opts-not-effective)，记录 Docker 环境中 `JAVA_OPTS` 不会被 JVM 自动读取的问题排查过程，并介绍通过 `JAVA_TOOL_OPTIONS` 让 JVM 参数生效及验证的方法。
