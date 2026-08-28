@@ -141,7 +141,12 @@ export default defineConfig({
             {
               text: '应用框架',
               collapsed: true,
-              items: [],
+              items: [
+                {
+                  text: 'Logback 的 debug.log 和 info.log 为什么几乎一样：一次旧项目多 root 配置排查',
+                  link: '/lab-tech-exploration/application-frameworks/logback-multiple-root-debug-info-log',
+                },
+              ],
             },
             {
               text: '构建与依赖',
