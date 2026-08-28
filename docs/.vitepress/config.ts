@@ -143,6 +143,10 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
+                  text: '一次 User-Agent 解析引发的内存与登录性能问题：从 YAUAA 缓存怀疑到删除无用功能',
+                  link: '/lab-tech-exploration/application-frameworks/yauaa-user-agent-memory-login-performance',
+                },
+                {
                   text: 'PageHelper 两种分页写法对比：一次泛型失真的排查与源码分析',
                   link: '/lab-tech-exploration/application-frameworks/pagehelper-pagination-generic-type-safety',
                 },
