@@ -192,3 +192,7 @@ html[data-page-mode='video'] .vp-doc img {
     white-space: nowrap;
   }
 }
+
+.giscus-container {
+  margin-top: 48px;
+}
