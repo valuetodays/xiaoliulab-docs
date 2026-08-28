@@ -16,6 +16,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [Quarkus 容器 RSS 持续增长：一次 JVM Heap 正常但 Native Memory 膨胀的问题排查](/lab-tech-exploration/java-jvm/quarkus-container-rss-growth)，记录 Quarkus + JDK 21 服务在 Docker 中 RSS 持续增长的排查过程，并通过 `MALLOC_ARENA_MAX=2` 的正向与反向实验，进一步确认问题与 glibc malloc arena / native allocator 行为高度相关。
 - 新增 [一个 4 年来从未生效的 JVM 参数：Docker 中 JAVA_OPTS 的误区](/lab-tech-exploration/java-jvm/docker-java-opts-not-effective)，记录 Docker 环境中 `JAVA_OPTS` 不会被 JVM 自动读取的问题排查过程，并介绍通过 `JAVA_TOOL_OPTIONS` 让 JVM 参数生效及验证的方法。
 
 ## 2026-08-27
@@ -171,7 +172,7 @@ head:
 
 - 上线金融实验室，增加金融基础、做T实验室、金融实验和内容路线图。
 - 将“做T专题”统一更名为“做T实验室”，并重新整理相关链接与内容目录。
-- 完善微信支付实验室的页面说明、扩展阅读、常见问题和搜索引擎信息。
+- 完善“微信支付”的页面说明、扩展阅读、常见问题和搜索引擎信息。
 - 优化网站首页的实验室入口与页面样式。
 - 网站正式启用 docs.xiaoliulab.com 独立域名。
 
