@@ -163,6 +163,10 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
+                  text: 'Docker 旧服务端口配置失真：一次 `--net=host` 环境下的排查与统一维护',
+                  link: '/lab-tech-exploration/containers-cloud/docker-old-service-port-config-drift',
+                },
+                {
                   text: 'Docker 服务去除 --net=host：从 host 网络回到 bridge 的一次改造记录',
                   link: '/lab-tech-exploration/containers-cloud/docker-remove-host-network',
                 },
