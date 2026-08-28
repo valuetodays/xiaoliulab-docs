@@ -1,6 +1,7 @@
 ---
 title: 页面已移动
 search: false
+comments: false
 head:
   - - link
     - rel: canonical
