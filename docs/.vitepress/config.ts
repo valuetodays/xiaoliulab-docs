@@ -161,7 +161,12 @@ export default defineConfig({
             {
               text: '容器与云环境',
               collapsed: true,
-              items: [],
+              items: [
+                {
+                  text: 'Docker 服务去除 --net=host：从 host 网络回到 bridge 的一次改造记录',
+                  link: '/lab-tech-exploration/containers-cloud/docker-remove-host-network',
+                },
+              ],
             },
             {
               text: '网络与基础设施',
