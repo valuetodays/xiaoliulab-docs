@@ -30,10 +30,10 @@ keywords:
 实际日志类似：
 
 ```text
-2026-08-28 00:21:17.909 [http-nio-8004-exec-36] [aa8f5d1eae924d6bb9bd052b931db83e] INFO  jdbc.sqlonly.sqlOccurred:228 - insert into sysb_touch_log (id, log_type, token_info, user_name, user_id, source_info, ext_info,
+2026-08-28 00:21:17.909 [http-nio-8004-exec-36] [aa8f5d1eae924d6bb9bd0522931db83e] INFO  jdbc.sqlonly.sqlOccurred:228 - insert into sys_touch_log (id, log_type, token_info, user_name, user_id, source_info, ext_info,
 client_ip, dest_URL, `status`, utc_create, remark ) values ('20260828002117fdf6152a-7618-435f-9541-bf07d29e7701',
-'TOUCH', 'N', 'gkseafoodsupply888@gmail.com', '0', '520797799959994081291', NULL, NULL, 'ProductController.queryAllProductInfo',
-'VALID', 1787876477, 'normal' )
+'TOUCH', 'N', 'test888@example.com', '0', '94081291', NULL, NULL, 'TestController.test',
+'VALID', 1787871177, 'normal' )
 ```
 
 SQL 本身没有问题，但一条 SQL 被拆成多行后，日常查询日志会变得很不舒服。
