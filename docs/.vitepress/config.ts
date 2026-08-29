@@ -143,6 +143,10 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
+                  text: '从 JPA + MyBatis 到 MyBatis-Plus：一次旧项目数据访问层的维护性收敛',
+                  link: '/lab-tech-exploration/application-frameworks/jpa-mybatis-to-mybatis-plus-maintainability',
+                },
+                {
                   text: '从 log4jdbc 到 p6spy：后来才意识到，我需要的不只是单行 SQL',
                   link: '/lab-tech-exploration/application-frameworks/log4jdbc-to-p6spy-jdbc-observability',
                 },
