@@ -143,6 +143,10 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
+                  text: 'Spring Boot 2.7 YAML 国际化：一次从查不到合适方案到源码扩展点的探索',
+                  link: '/lab-tech-exploration/application-frameworks/spring-boot-2-7-yaml-i18n-source-extension',
+                },
+                {
                   text: '从 JPA + MyBatis 到 MyBatis-Plus：一次旧项目数据访问层的维护性收敛',
                   link: '/lab-tech-exploration/application-frameworks/jpa-mybatis-to-mybatis-plus-maintainability',
                 },
