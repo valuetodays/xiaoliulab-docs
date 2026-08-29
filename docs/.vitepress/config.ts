@@ -202,6 +202,10 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: '一次 VPN 访问收紧导致支付回调中断的事故复盘',
+                  link: '/lab-tech-exploration/network-infrastructure/vpn-payment-callback-incident',
+                },
+                {
                   text: 'HTTPS 证书申请失败排查：secondary validation DNS timeout',
                   link: '/lab-tech-exploration/network-infrastructure/https-certificate-secondary-validation-dns-timeout',
                 },
