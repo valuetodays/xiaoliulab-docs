@@ -143,6 +143,10 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
+                  text: '从 log4jdbc 到 p6spy：后来才意识到，我需要的不只是单行 SQL',
+                  link: '/lab-tech-exploration/application-frameworks/log4jdbc-to-p6spy-jdbc-observability',
+                },
+                {
                   text: '一次 User-Agent 解析引发的内存与登录性能问题：从 YAUAA 缓存怀疑到删除无用功能',
                   link: '/lab-tech-exploration/application-frameworks/yauaa-user-agent-memory-login-performance',
                 },
