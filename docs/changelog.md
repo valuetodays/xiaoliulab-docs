@@ -16,6 +16,8 @@ head:
 
 ### ✨ 新增
 
+
+- 新增 [Windows 通过 SSH 隧道远程调试 Docker 中的 Spring Boot（JDWP）](/lab-tech-exploration/engineering-practice/windows-ssh-tunnel-docker-spring-boot-jdwp)，介绍如何从 Windows 开发机通过 SSH 隧道连接 Linux Docker 容器中的 Spring Boot JDWP 调试端口，在不改变服务公网入口、不重新发布服务的情况下保留现场并进行临时远程调试。
 - 新增 [一次 VPN 访问收紧导致支付回调中断的事故复盘](/lab-tech-exploration/network-infrastructure/vpn-payment-callback-incident)，记录后台系统收紧 VPN 访问后第三方支付回调中断的生产事故，梳理网络边界误判与监控缺口，并总结 Internal / Public 接口边界、回调验签、限流及对账补偿等改进措施。
 - 新增 [Spring Boot 2.7 YAML 国际化：一次从查不到合适方案到源码扩展点的探索](/lab-tech-exploration/application-frameworks/spring-boot-2-7-yaml-i18n-source-extension)，记录 Spring Boot 2.7 项目实现 YAML 国际化语言包的探索过程，通过调试 `MessageSource` 加载链路并追踪资源定位逻辑，最终基于 `ResourceBundleMessageSource#doGetBundle` 实现可缓存的 YAML `MessageSource`，并提供可还原的最小示例。
 - 新增 [从 JPA + MyBatis 到 MyBatis-Plus：一次旧项目数据访问层的维护性收敛](/lab-tech-exploration/application-frameworks/jpa-mybatis-to-mybatis-plus-maintainability)，记录 Spring Boot 2.2 旧项目从 JPA 与原生 MyBatis 混用逐步收敛到 MyBatis-Plus 的过程，梳理简单 CRUD 与业务语义 SQL 的职责边界，以及数据访问层在字段变更与长期维护中的取舍。

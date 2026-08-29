@@ -223,7 +223,12 @@ export default defineConfig({
             {
               text: '工程实践',
               collapsed: true,
-              items: [],
+              items: [
+                {
+                  text: 'Windows 通过 SSH 隧道远程调试 Docker 中的 Spring Boot（JDWP）',
+                  link: '/lab-tech-exploration/engineering-practice/windows-ssh-tunnel-docker-spring-boot-jdwp',
+                },
+              ],
             },
           ],
         },
