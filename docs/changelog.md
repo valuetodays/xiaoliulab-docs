@@ -16,6 +16,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [一次 VPN 访问收紧导致支付回调中断的事故复盘](/lab-tech-exploration/network-infrastructure/vpn-payment-callback-incident)，记录后台系统收紧 VPN 访问后第三方支付回调中断的生产事故，梳理网络边界误判与监控缺口，并总结 Internal / Public 接口边界、回调验签、限流及对账补偿等改进措施。
 - 新增 [Spring Boot 2.7 YAML 国际化：一次从查不到合适方案到源码扩展点的探索](/lab-tech-exploration/application-frameworks/spring-boot-2-7-yaml-i18n-source-extension)，记录 Spring Boot 2.7 项目实现 YAML 国际化语言包的探索过程，通过调试 `MessageSource` 加载链路并追踪资源定位逻辑，最终基于 `ResourceBundleMessageSource#doGetBundle` 实现可缓存的 YAML `MessageSource`，并提供可还原的最小示例。
 - 新增 [从 JPA + MyBatis 到 MyBatis-Plus：一次旧项目数据访问层的维护性收敛](/lab-tech-exploration/application-frameworks/jpa-mybatis-to-mybatis-plus-maintainability)，记录 Spring Boot 2.2 旧项目从 JPA 与原生 MyBatis 混用逐步收敛到 MyBatis-Plus 的过程，梳理简单 CRUD 与业务语义 SQL 的职责边界，以及数据访问层在字段变更与长期维护中的取舍。
 - 新增 [从 log4jdbc 到 p6spy：后来才意识到，我需要的不只是单行 SQL](/lab-tech-exploration/application-frameworks/log4jdbc-to-p6spy-jdbc-observability)，复盘一次从 SQL 多行日志触发的 JDBC 日志组件替换，说明 log4jdbc 的单行配置能力，并梳理 p6spy 在执行耗时、连接上下文、JDBC URL、日志过滤和自定义格式化方面形成的轻量级可观测能力。
