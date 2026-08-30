@@ -143,7 +143,7 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
-                  text: '从 Spring Boot 迁移到 Quarkus：我先验证了哪些基础能力',
+                  text: '从 Spring Boot 迁移到 Quarkus：一份面向真实业务的基础能力验证清单',
                   link: '/lab-tech-exploration/application-frameworks/spring-boot-to-quarkus-capability-validation',
                 },
                 {
