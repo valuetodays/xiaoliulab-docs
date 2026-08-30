@@ -12,6 +12,14 @@ head:
 
 这里记录小刘实验室的重要更新，包括新增实验、文档完善、功能上线以及网站改进。最新内容排在最前面。
 
+## 2026-08-30
+
+### ✨ 新增
+
+- 新增 [Java 8 Alpine 容器中 jstack 与 Arthas 失败：一次 JVM 诊断能力补齐](/lab-tech-exploration/containers-cloud/java8-alpine-jstack-arthas-diagnostics)，记录 Java 8 服务运行在 Alpine 镜像时，`jps` 可以看到进程但 `jstack` 与 Arthas 无法正常工作的排查过程，并通过切换 Debian JDK 镜像恢复 JVM 诊断能力。
+- 新增 [一次 Docker 基础镜像切换后的签名异常：从生产回滚到默认字符集](/lab-tech-exploration/containers-cloud/docker-base-image-signature-default-charset)，记录 Java 8 服务从 Alpine 切换到 Debian 后第三方接口签名异常的生产问题，以及通过最小复现和三组 Dockerfile 对照实验定位 `String#getBytes()` 默认字符集风险的过程。
+- 新增 [Dockerfile 写了 LANG=en_US.UTF-8，真的代表 Locale 生效了吗？](/lab-tech-exploration/containers-cloud/alpine-lang-en-us-utf8-locale-validation)，从 Java 8 Docker 签名问题继续追查 Alpine Locale 行为，验证环境变量已设置并不等于对应 Locale 数据真实存在，并说明结论适用的版本与镜像边界。
+
 ## 2026-08-29
 
 ### ✨ 新增
