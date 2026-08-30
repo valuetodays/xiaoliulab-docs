@@ -188,6 +188,18 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
+                  text: 'Java 8 Alpine 容器中 jstack 与 Arthas 失败：一次 JVM 诊断能力补齐',
+                  link: '/lab-tech-exploration/containers-cloud/java8-alpine-jstack-arthas-diagnostics',
+                },
+                {
+                  text: '一次 Docker 基础镜像切换后的签名异常：从生产回滚到默认字符集',
+                  link: '/lab-tech-exploration/containers-cloud/docker-base-image-signature-default-charset',
+                },
+                {
+                  text: 'Dockerfile 写了 LANG=en_US.UTF-8，真的代表 Locale 生效了吗？',
+                  link: '/lab-tech-exploration/containers-cloud/alpine-lang-en-us-utf8-locale-validation',
+                },
+                {
                   text: 'Docker 旧服务端口配置失真：一次 `--net=host` 环境下的排查与统一维护',
                   link: '/lab-tech-exploration/containers-cloud/docker-old-service-port-config-drift',
                 },
