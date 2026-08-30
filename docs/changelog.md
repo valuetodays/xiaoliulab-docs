@@ -16,6 +16,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [从 Spring Boot 迁移到 Quarkus：我先验证了哪些基础能力](/lab-tech-exploration/application-frameworks/spring-boot-to-quarkus-capability-validation)，记录一次因 Spring Boot 启动速度而展开的轻量 Java Web 框架选型，在尝试 Spark Java、Blade、Micronaut、Solon、Jooby、Vert.x、Javalin、Helidon 等方案后，最终选择基础能力更完整的 Quarkus，并在迁移业务前逐项验证 REST、Bean、配置、事务、校验、定时任务、文件处理、异常处理和日志等能力。
 - 新增 [Java 8 Alpine 容器中 jstack 与 Arthas 失败：一次 JVM 诊断能力补齐](/lab-tech-exploration/containers-cloud/java8-alpine-jstack-arthas-diagnostics)，记录 Java 8 服务运行在 Alpine 镜像时，`jps` 可以看到进程但 `jstack` 与 Arthas 无法正常工作的排查过程，并通过切换 Debian JDK 镜像恢复 JVM 诊断能力。
 - 新增 [一次 Docker 基础镜像切换后的签名异常：从生产回滚到默认字符集](/lab-tech-exploration/containers-cloud/docker-base-image-signature-default-charset)，记录 Java 8 服务从 Alpine 切换到 Debian 后第三方接口签名异常的生产问题，以及通过最小复现和三组 Dockerfile 对照实验定位 `String#getBytes()` 默认字符集风险的过程。
 - 新增 [Dockerfile 写了 LANG=en_US.UTF-8，真的代表 Locale 生效了吗？](/lab-tech-exploration/containers-cloud/alpine-lang-en-us-utf8-locale-validation)，从 Java 8 Docker 签名问题继续追查 Alpine Locale 行为，验证环境变量已设置并不等于对应 Locale 数据真实存在，并说明结论适用的版本与镜像边界。

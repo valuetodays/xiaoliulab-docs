@@ -143,6 +143,10 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
+                  text: '从 Spring Boot 迁移到 Quarkus：我先验证了哪些基础能力',
+                  link: '/lab-tech-exploration/application-frameworks/spring-boot-to-quarkus-capability-validation',
+                },
+                {
                   text: 'Spring Boot 2.7 YAML 国际化：一次从查不到合适方案到源码扩展点的探索',
                   link: '/lab-tech-exploration/application-frameworks/spring-boot-2-7-yaml-i18n-source-extension',
                 },
