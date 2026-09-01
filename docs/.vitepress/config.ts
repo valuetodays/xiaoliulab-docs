@@ -170,6 +170,10 @@ export default defineConfig({
                   text: 'Logback 的 debug.log 和 info.log 为什么几乎一样：一次旧项目多 root 配置排查',
                   link: '/lab-tech-exploration/application-frameworks/logback-multiple-root-debug-info-log',
                 },
+                {
+                  text: '为什么我不再允许业务代码直接使用 MyBatis-Plus 的 insert 和 updateById',
+                  link: '/lab-tech-exploration/application-frameworks/avoid-mybatis-plus-insert-and-updatebyid-in-business-code',
+                },
               ],
             },
             {

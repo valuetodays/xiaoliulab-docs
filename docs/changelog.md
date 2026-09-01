@@ -12,6 +12,13 @@ head:
 
 这里记录小刘实验室的重要更新，包括新增实验、文档完善、功能上线以及网站改进。最新内容排在最前面。
 
+## 2026-09-01
+
+### ✨ 新增
+
+- 新增 [为什么我不再允许业务代码直接使用 MyBatis-Plus 的 insert 和 updateById](/lab-tech-exploration/application-frameworks/avoid-mybatis-plus-insert-and-updatebyid-in-business-code)，从一次 JPA 迁移到 MyBatis-Plus 时因 `save()` 与 `insert()` 语义差异导致的真实踩坑出发，重新审视 `BaseMapper` 中通用写方法在复杂业务系统里的维护成本，重点分析 `updateById()` 在更新字段、业务前置条件、Entity 写入边界、并发旧值覆盖风险以及 IDE 调用定位等方面的问题，并在调研 MyBatis-Plus 官方源码和 GitHub 讨论后，放弃 Fork 框架和继承 `BaseMapper` 后 override 的方案，最终通过 `BizBaseMapper + BizSqlInjector` 对通用写能力做项目级裁剪，同时使用 H2 示例工程对保留方法进行逐项验证，并保留官方 `BaseMapper` 作为对照组。
+
+
 ## 2026-08-30
 
 ### ✨ 新增
