@@ -386,7 +386,7 @@ export default defineConfig({
                   ],
                 },
                 {
-                  text: '信号研究',
+                  text: '统计与信号',
                   collapsed: true,
                   items: [
                     { text: '为什么历史行情值得研究？', link: '/lab-fortune/lab-zuot/signal/why-study-historical-market-data' },
@@ -399,6 +399,13 @@ export default defineConfig({
                     { text: '为什么不同市场状态，需要不同的历史统计？', link: '/lab-fortune/lab-zuot/signal/why-different-market-regimes-need-different-statistics' },
                   ],
                 },
+                {
+                  text: '交易工程',
+                  collapsed: true,
+                  items: [
+                    { text: '一轮做 T 是怎样完成的？', link: '/lab-fortune/lab-zuot/engineering/how-a-t-trade-cycle-works' },
+                  ],
+                }
               ],
             },
             { text: '策略实验', link: '/lab-fortune/experiments/' },
