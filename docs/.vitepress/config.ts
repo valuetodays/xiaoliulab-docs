@@ -20,6 +20,7 @@ export default defineConfig({
   base: '/',
   lastUpdated: true,
   head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['script', {}, getPageModeInitScript()],
     [
       'script',
