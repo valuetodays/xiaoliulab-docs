@@ -308,10 +308,19 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  text: '投资工具',
+                  collapsed: true,
+                  items: [
+                    { text: '宽基 ETF 和行业 ETF', link: '/lab-fortune/foundation/instruments/broad-vs-sector-etf' },
+                    { text: '交易成本', link: '/lab-fortune/foundation/instruments/stock-vs-etf' },
+                  ],
+                },
+                {
                   text: '交易基础',
                   collapsed: true,
                   items: [
                     { text: 'T+0 与 T+1', link: '/lab-fortune/foundation/trading/t0-vs-t1' },
+                    { text: '交易成本', link: '/lab-fortune/foundation/trading/trading-cost' },
                   ],
                 },
               ],
