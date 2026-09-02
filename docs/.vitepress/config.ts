@@ -423,7 +423,8 @@ export default defineConfig({
               link: '/lab-fortune/experiments/',
               collapsed: false,
               items: [
-                { text: 'FTX-0001 红利类 ETF 一年持有实验', link: '/lab-fortune/experiments/ftx-0001-dividend-etf-one-year-holding' },
+                { text: 'FTX-0001 红利类ETF一年持有实验', link: '/lab-fortune/experiments/ftx-0001-dividend-etf-one-year-holding' },
+                { text: 'FTX-0002 五年机会实验', link: '/lab-fortune/experiments/ftx-0002-five-year-opportunity-experiment' },
               ],
             },
             { text: '内容路线图', link: '/lab-fortune/roadmap' },
