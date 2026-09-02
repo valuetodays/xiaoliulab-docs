@@ -42,6 +42,7 @@ head:
 | --- | --- | --- |
 | FTX-0001 | [红利 ETF 一年持有实验](/lab-fortune/experiments/ftx-0001-dividend-etf-one-year-holding) | 进行中 |
 | FTX-0002 | [五年机会实验](/lab-fortune/experiments/ftx-0002-five-year-opportunity-experiment) | 进行中 |
+| FTX-0010 | [CCI 尾盘低位观察实验](/lab-fortune/experiments/ftx-0010-cci-tail-low-observation) | 已结束 |
 
 ## 实验想法池
 
