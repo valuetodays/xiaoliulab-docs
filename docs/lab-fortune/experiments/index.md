@@ -14,6 +14,23 @@ head:
 
 实验尽量保持目标明确、规则简单，并通过持续记录验证最初的假设。
 
+> Everything Talks.
+> 
+Markets, indicators, policies, volumes, events, and even failures are all expressing something.
+> 
+This platform does not try to predict the future.
+> 
+It tries to learn the language of the market.
+
+
+> 万物都会表达。
+> 
+市场、指标、政策、成交量、事件，甚至失败，本身都在表达信息。
+> 
+这个平台并不是为了预测未来。
+> 
+它真正的目标，是学习市场的语言。
+
 ## 核心原则
 
 - 先观察，再实验
