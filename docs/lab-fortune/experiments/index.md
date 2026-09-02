@@ -40,9 +40,10 @@ head:
 
 | 编号 | 实验 | 状态 |
 | --- | --- | --- |
-| FTX-0001 | [红利 ETF 一年持有实验](/lab-fortune/experiments/ftx-0001-dividend-etf-one-year-holding) | 进行中 |
+| FTX-0001 | [红利ETF一年持有实验](/lab-fortune/experiments/ftx-0001-dividend-etf-one-year-holding) | 进行中 |
 | FTX-0002 | [五年机会实验](/lab-fortune/experiments/ftx-0002-five-year-opportunity-experiment) | 进行中 |
-| FTX-0010 | [CCI 尾盘低位观察实验](/lab-fortune/experiments/ftx-0010-cci-tail-low-observation) | 已结束 |
+| FTX-0010 | [CCI尾盘低位观察实验](/lab-fortune/experiments/ftx-0010-cci-tail-low-observation) | 已结束 |
+| FTX-0011 | [510300 CCI超卖短期修复验证实验](/lab-fortune/experiments/ftx-0011-510300-cci-oversold-repair) | 已结束 |
 
 ## 实验想法池
 
