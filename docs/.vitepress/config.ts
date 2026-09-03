@@ -249,6 +249,10 @@ export default defineConfig({
                   text: 'Windows 通过 SSH 隧道远程调试 Docker 中的 Spring Boot（JDWP）',
                   link: '/lab-tech-exploration/engineering-practice/windows-ssh-tunnel-docker-spring-boot-jdwp',
                 },
+                {
+                  text: 'Spring Boot 单体应用中的接口安全边界设计',
+                  link: '/lab-tech-exploration/engineering-practice/spring-boot-api-security-boundary-design',
+                }
               ],
             },
           ],
