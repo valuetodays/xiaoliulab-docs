@@ -15,21 +15,21 @@ head:
 实验尽量保持目标明确、规则简单，并通过持续记录验证最初的假设。
 
 > Everything Talks.
-> 
-Markets, indicators, policies, volumes, events, and even failures are all expressing something.
-> 
-This platform does not try to predict the future.
-> 
-It tries to learn the language of the market.
+>
+> Markets, indicators, policies, volumes, events, and even failures are all expressing something.
+>
+> This platform does not try to predict the future.
+>
+> It tries to learn the language of the market.
 
 
 > 万物都会表达。
-> 
-市场、指标、政策、成交量、事件，甚至失败，本身都在表达信息。
-> 
-这个平台并不是为了预测未来。
-> 
-它真正的目标，是学习市场的语言。
+>
+> 市场、指标、政策、成交量、事件，甚至失败，本身都在表达信息。
+>
+> 这个平台并不是为了预测未来。
+>
+> 它真正的目标，是学习市场的语言。
 
 ## 核心原则
 
@@ -59,6 +59,7 @@ It tries to learn the language of the market.
 | --- | --- | --- |
 | FTX-0001 | [红利ETF一年持有实验](/lab-fortune/experiments/ftx-0001-dividend-etf-one-year-holding) | 进行中 |
 | FTX-0002 | [五年机会实验](/lab-fortune/experiments/ftx-0002-five-year-opportunity-experiment) | 进行中 |
+| FTX-0003 | [A股深度回撤修复实验](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment) | 未开始 |
 | FTX-0010 | [CCI尾盘低位观察实验](/lab-fortune/experiments/ftx-0010-cci-tail-low-observation) | 已结束 |
 | FTX-0011 | [510300 CCI超卖短期修复验证实验](/lab-fortune/experiments/ftx-0011-510300-cci-oversold-repair) | 已结束 |
 
