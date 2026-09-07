@@ -69,9 +69,9 @@ CCI < -100
 ## 阶段记录
 
 
-- [2026-06-15 实验记录](/lab-fortune/experiments/records/ftx-0010/2026-06-15)
-- [2026-06-16 实验记录](/lab-fortune/experiments/records/ftx-0010/2026-06-16)
-- [2026-06-17 实验记录](/lab-fortune/experiments/records/ftx-0010/2026-06-17)
+- [2026-06-15 实验记录](/lab-fortune/experiments/ftx-0010-docs/2026-06-15)
+- [2026-06-16 实验记录](/lab-fortune/experiments/ftx-0010-docs/2026-06-16)
+- [2026-06-17 实验记录](/lab-fortune/experiments/ftx-0010-docs/2026-06-17)
 
 ## 实验结论
 
