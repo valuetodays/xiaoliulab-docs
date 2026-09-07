@@ -295,6 +295,7 @@ library initialization failed - unable to allocate file descriptor table
 
 - [Java 8 Alpine 容器中 jstack 与 Arthas 失败：一次 JVM 诊断能力补齐](/lab-tech-exploration/containers-cloud/java8-alpine-jstack-arthas-diagnostics)
 - [Dockerfile 写了 LANG=en_US.UTF-8，真的代表 Locale 生效了吗？](/lab-tech-exploration/containers-cloud/alpine-lang-en-us-utf8-locale-validation)
+- [如何编写可维护的上游渠道调用代码](/lab-tech-exploration/engineering-practice/maintainable-upstream-channel-integration) —— 这次问题也说明，渠道中的签名、验签、加解密等基础能力不能只依赖“程序能启动”来证明正确，更适合通过可重复的 UnitTest/IntegrationTest 持续验证。
 
 ## 参考
 
