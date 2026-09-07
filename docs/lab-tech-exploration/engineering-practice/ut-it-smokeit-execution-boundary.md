@@ -330,10 +330,6 @@ thirdchannel/exchangerate/
     <version>${surefire-plugin.version}</version>
     <configuration>
         <skip>${skipUTs}</skip>
-        <systemPropertyVariables>
-            <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
-            <maven.home>${maven.home}</maven.home>
-        </systemPropertyVariables>
         <includes>
             <include>**/*UT.java</include>
         </includes>
@@ -363,13 +359,6 @@ thirdchannel/exchangerate/
         <excludes>
             <exclude>**/*UT.java</exclude>
         </excludes>
-        <systemPropertyVariables>
-            <native.image.path>
-                ${project.build.directory}/${project.build.finalName}-runner
-            </native.image.path>
-            <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
-            <maven.home>${maven.home}</maven.home>
-        </systemPropertyVariables>
     </configuration>
 </plugin>
 ```
