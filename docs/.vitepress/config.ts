@@ -252,7 +252,11 @@ export default defineConfig({
                 {
                   text: 'Spring Boot 单体应用中的接口安全边界设计',
                   link: '/lab-tech-exploration/engineering-practice/spring-boot-api-security-boundary-design',
-                }
+                },
+                {
+                  text: '别把所有测试都叫 Test：我如何用 UT、IT 和 SmokeIT 划分执行边界',
+                  link: '/lab-tech-exploration/engineering-practice/ut-it-smokeit-execution-boundary',
+                },
               ],
             },
           ],
