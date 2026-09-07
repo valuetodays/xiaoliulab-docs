@@ -1,6 +1,6 @@
 # 从历史峰谷回撤到分层加仓：深度回撤实验的参数设计
 
-本文档是 **[返回 FTX-0003 A股深度回撤修复实验](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment)** 的参数设计与研究依据。
+本文档是 **[FTX-0003 A股深度回撤修复实验](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment)** 的参数设计与研究依据。
 
 > **重要说明：本文中的绝对金额仅用于举例说明，不构成未来实验启动时的固定参数。**\
 > 本文真正预先确定的是资金层级、比例关系、风险边界和计算方法。实验正式启动时，再根据当时实际可支配资金，将比例实例化为绝对金额，并在启动记录中冻结。\
