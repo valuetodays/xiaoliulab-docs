@@ -64,8 +64,8 @@ export default defineConfig({
       allowedHosts: ['v200'],
     },
   },
-
   markdown: {
+    math: true,
     config(markdown) {
       markdown.use(articleMetadataPlugin);
     },
