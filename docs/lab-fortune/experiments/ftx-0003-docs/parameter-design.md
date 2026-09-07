@@ -53,8 +53,8 @@
 
 原始数据：
 
-- [510300 历史日线数据](/lab-fortune/experiments/ftx-0003-docs/data/510300-daily.xlsx)
-- [159915 历史日线数据](/lab-fortune/experiments/ftx-0003-docs/data/159915-daily.xlsx)
+- <a href="/lab-fortune/experiments/ftx-0003-docs/data/510300-daily.xlsx" download>510300 历史日线数据</a>
+- <a href="/lab-fortune/experiments/ftx-0003-docs/data/159915-daily.xlsx" download>159915 历史日线数据</a>
 
 ## 3. 为什么不用滚动 250 日高点直接执行
 
