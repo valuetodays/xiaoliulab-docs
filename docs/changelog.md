@@ -16,6 +16,7 @@ head:
 
 ### ✨ 新增
 
+- 新增 [如何编写可维护的上游渠道调用代码](/lab-tech-exploration/engineering-practice/maintainable-upstream-channel-integration)，从渠道边界、协议样本、UT/IT、加解密与签名、协议版本演进等方面，总结让上游渠道调用代码长期保持可维护、可理解、可验证和可演进的工程实践。
 - 新增 [别把所有测试都叫 Test：我如何用 UT、IT 和 SmokeIT 划分执行边界](/lab-tech-exploration/engineering-practice/ut-it-smokeit-execution-boundary)，介绍如何通过 `*UT`、`*IT` 与独立 SmokeIT 工程划分测试执行边界，并结合 Maven Surefire、Failsafe 和明确的触发机制降低误执行风险。
 - 新增 [FTX-0003 A股深度回撤修复实验](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment)，记录在市场深度回撤发生前制定的真实资金实验预案，明确启动条件、资金分层、现货加仓、有限融资、小额期权与风险边界，并配套参数设计依据和执行记录。
 

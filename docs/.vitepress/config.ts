@@ -257,6 +257,10 @@ export default defineConfig({
                   text: '别把所有测试都叫 Test：我如何用 UT、IT 和 SmokeIT 划分执行边界',
                   link: '/lab-tech-exploration/engineering-practice/ut-it-smokeit-execution-boundary',
                 },
+                {
+                  text: '如何编写可维护的上游渠道调用代码',
+                  link: '/lab-tech-exploration/engineering-practice/maintainable-upstream-channel-integration',
+                },
               ],
             },
           ],
