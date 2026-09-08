@@ -9,6 +9,7 @@ const COUNTED_INLINE_TOKEN_TYPES = new Set(['text', 'code_inline']);
 
 interface MarkdownEnvironment {
   frontmatter?: Record<string, unknown>;
+  articleMetaInjected?: boolean;
 }
 
 function extractReadableText(tokens: Token[]): string {
@@ -53,4 +54,27 @@ function collectArticleMetadata(state: StateCore): void {
 
 export function articleMetadataPlugin(markdown: MarkdownIt): void {
   markdown.core.ruler.push('article_metadata', collectArticleMetadata);
+
+  const defaultHeadingCloseRenderer = markdown.renderer.rules.heading_close;
+
+  markdown.renderer.rules.heading_close = (tokens, index, options, environment, self) => {
+    const renderedHeading = defaultHeadingCloseRenderer
+      ? defaultHeadingCloseRenderer(tokens, index, options, environment, self)
+      : self.renderToken(tokens, index, options);
+    const markdownEnvironment = environment as MarkdownEnvironment;
+    const frontmatter = markdownEnvironment.frontmatter;
+
+    if (
+      tokens[index].tag !== 'h1'
+      || markdownEnvironment.articleMetaInjected
+      || !frontmatter
+      || frontmatter.layout === 'home'
+      || frontmatter.articleMeta === false
+    ) {
+      return renderedHeading;
+    }
+
+    markdownEnvironment.articleMetaInjected = true;
+    return `${renderedHeading}<ArticleMeta />\n`;
+  };
 }

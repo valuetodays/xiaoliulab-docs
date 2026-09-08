@@ -13,6 +13,11 @@ tags:
 category:
   - 探索技术
   - 工程实践
+principles:
+  - boundary
+  - preserve-truth
+  - reproducible
+  - evolution
 ---
 
 # 如何编写可维护的上游渠道调用代码
