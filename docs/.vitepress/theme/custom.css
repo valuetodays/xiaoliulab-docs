@@ -86,27 +86,27 @@
   color: var(--vp-c-divider);
 }
 
-.article-principles,
-.principle-card-heading {
+.article-orientations,
+.orientation-card-heading {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
 }
 
-.article-principles-label {
+.article-orientations-label {
   color: var(--vp-c-text-2);
 }
 
-.vp-doc a.principle-tag {
-  --principle-color: var(--vp-c-brand-1);
+.vp-doc a.orientation-tag {
+  --orientation-color: var(--vp-c-brand-1);
   display: inline-flex;
   align-items: center;
   min-height: 22px;
   padding: 0 7px;
   color: color-mix(
     in srgb,
-    var(--principle-color) 26%,
+    var(--orientation-color) 26%,
     var(--vp-c-text-2)
   );
   font-size: 12px;
@@ -115,12 +115,12 @@
   text-decoration: none;
   background: color-mix(
     in srgb,
-    var(--principle-color) 5%,
+    var(--orientation-color) 5%,
     var(--vp-c-bg)
   );
   border: 1px solid color-mix(
     in srgb,
-    var(--principle-color) 18%,
+    var(--orientation-color) 18%,
     var(--vp-c-divider)
   );
   border-radius: 4px;
@@ -128,77 +128,77 @@
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
-.vp-doc a.principle-tag:hover {
+.vp-doc a.orientation-tag:hover {
   color: color-mix(
     in srgb,
-    var(--principle-color) 34%,
+    var(--orientation-color) 34%,
     var(--vp-c-text-1)
   );
   background: color-mix(
     in srgb,
-    var(--principle-color) 9%,
+    var(--orientation-color) 9%,
     var(--vp-c-bg)
   );
   border-color: color-mix(
     in srgb,
-    var(--principle-color) 28%,
+    var(--orientation-color) 28%,
     var(--vp-c-divider)
   );
 }
 
-.vp-doc a.principle-tag:focus-visible {
+.vp-doc a.orientation-tag:focus-visible {
   outline: 2px solid color-mix(
     in srgb,
-    var(--principle-color) 32%,
+    var(--orientation-color) 32%,
     var(--vp-c-divider)
   );
   outline-offset: 2px;
 }
 
-.dark .vp-doc a.principle-tag {
+.dark .vp-doc a.orientation-tag {
   color: color-mix(
     in srgb,
-    var(--principle-color) 18%,
+    var(--orientation-color) 18%,
     var(--vp-c-text-2)
   );
   background: color-mix(
     in srgb,
-    var(--principle-color) 7%,
+    var(--orientation-color) 7%,
     var(--vp-c-bg)
   );
   border-color: color-mix(
     in srgb,
-    var(--principle-color) 20%,
+    var(--orientation-color) 20%,
     var(--vp-c-divider)
   );
 }
 
-.dark .vp-doc a.principle-tag:hover {
+.dark .vp-doc a.orientation-tag:hover {
   color: color-mix(
     in srgb,
-    var(--principle-color) 24%,
+    var(--orientation-color) 24%,
     var(--vp-c-text-1)
   );
   background: color-mix(
     in srgb,
-    var(--principle-color) 11%,
+    var(--orientation-color) 11%,
     var(--vp-c-bg)
   );
   border-color: color-mix(
     in srgb,
-    var(--principle-color) 30%,
+    var(--orientation-color) 30%,
     var(--vp-c-divider)
   );
 }
 
-.principle-grid {
+.orientation-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 16px;
   margin: 24px 0;
 }
 
-.principle-card {
+.orientation-card {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -207,52 +207,52 @@
   border-radius: 12px;
 }
 
-.principle-card-heading {
+.orientation-card-heading {
   justify-content: space-between;
   color: var(--vp-c-text-2);
   font-size: 13px;
 }
 
-.principle-card p {
+.orientation-card p {
   flex: 1;
   margin: 16px 0;
   color: var(--vp-c-text-2);
   line-height: 1.7;
 }
 
-.vp-doc .principle-card-link {
+.vp-doc .orientation-card-link {
   align-self: flex-start;
   font-weight: 500;
   text-decoration: none;
 }
 
-.principle-detail > h1 {
+.orientation-detail > h1 {
   margin-top: 16px;
 }
 
-.vp-doc .principle-back-link {
+.vp-doc .orientation-back-link {
   color: var(--vp-c-text-2);
   font-size: 13px;
   font-weight: 500;
   text-decoration: none;
 }
 
-.vp-doc .principle-back-link:hover {
+.vp-doc .orientation-back-link:hover {
   color: var(--vp-c-text-1);
 }
 
-.principle-detail-description {
+.orientation-detail-description {
   margin: 20px 0 32px;
   color: var(--vp-c-text-2);
   font-size: 16px;
   line-height: 1.8;
 }
 
-.principle-article-list li + li {
+.orientation-article-list li + li {
   margin-top: 8px;
 }
 
-.principle-empty {
+.orientation-empty {
   color: var(--vp-c-text-2);
 }
 

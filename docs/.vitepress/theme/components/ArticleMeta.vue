@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useData } from 'vitepress';
-import { getPrinciple } from '../../data/principles';
-import PrincipleTag from './PrincipleTag.vue';
+import { getOrientation } from '../../data/orientations';
+import OrientationTag from './OrientationTag.vue';
 
 interface ArticleMetadata {
   wordCount: number;
@@ -37,30 +37,30 @@ const formattedWordCount = computed(() => (
   metadata.value ? numberFormatter.format(metadata.value.wordCount) : ''
 ));
 
-const currentPrinciples = computed(() => {
-  const value = frontmatter.value.principles;
+const currentOrientations = computed(() => {
+  const value = frontmatter.value.orientations;
 
   if (!Array.isArray(value)) {
     return [];
   }
 
   return value.filter((code): code is string => (
-    typeof code === 'string' && Boolean(getPrinciple(code))
+    typeof code === 'string' && Boolean(getOrientation(code))
   ));
 });
 </script>
 
 <template>
-  <div v-if="metadata || currentPrinciples.length" class="article-meta">
+  <div v-if="metadata || currentOrientations.length" class="article-meta">
     <p v-if="metadata" class="article-meta-reading">
       约 {{ formattedWordCount }} 字
       <span class="article-meta-separator" aria-hidden="true">·</span>
       预计阅读 {{ metadata.readingTime }} 分钟
     </p>
 
-    <div v-if="currentPrinciples.length" class="article-principles">
-      <PrincipleTag
-        v-for="code in currentPrinciples"
+    <div v-if="currentOrientations.length" class="article-orientations">
+      <OrientationTag
+        v-for="code in currentOrientations"
         :key="code"
         :code="code"
       />

@@ -1,8 +1,8 @@
-# 原则标签系统方案
+# 取向系统方案
 
 ## 1. 目标
 
-为文章增加一套独立于普通 `tags` 的“原则标签”。
+为文章增加一套独立于普通 `tags` 的“取向”。
 
 普通标签回答：
 
@@ -12,9 +12,9 @@
 
 `Java`、`Spring Boot`、`API`、`Docker`、`ETF`
 
-原则标签回答：
+取向回答：
 
-> 这篇文章体现了什么长期原则？
+> 这篇文章体现了什么长期取向？
 
 第一版固定 6 条：
 
@@ -31,18 +31,18 @@
 
 ---
 
-## 2. 原则统一定义
+## 2. 取向统一定义
 
 新增：
 
 ```text
-docs/.vitepress/data/principles.ts
+docs/.vitepress/data/orientations.ts
 ```
 
 定义：
 
 ```ts
-export interface PrincipleDefinition {
+export interface OrientationDefinition {
   code: string
   name: string
   color: string
@@ -53,7 +53,7 @@ export interface PrincipleDefinition {
 内容类似：
 
 ```ts
-export const principles: PrincipleDefinition[] = [
+export const orientations: OrientationDefinition[] = [
   {
     code: 'boundary',
     name: '边界',
@@ -93,7 +93,7 @@ export const principles: PrincipleDefinition[] = [
 ]
 ```
 
-原则定义只维护这一份。
+取向定义只维护这一份。
 
 ---
 
@@ -110,7 +110,7 @@ tags:
   - API
   - 安全
 
-principles:
+orientations:
   - boundary
   - explicit
 ---
@@ -137,7 +137,7 @@ docs/.vitepress/markdown/article-metadata.ts
 文章元数据增加：
 
 ```ts
-principles?: string[]
+orientations?: string[]
 ```
 
 例如：
@@ -147,7 +147,7 @@ export interface ArticleMeta {
   title: string
   link: string
   tags?: string[]
-  principles?: string[]
+  orientations?: string[]
 }
 ```
 
@@ -157,21 +157,21 @@ export interface ArticleMeta {
 {
   title: 'Spring Boot 单体应用中的接口安全边界设计',
   link: '/lab-tech-exploration/engineering-practice/...',
-  principles: ['boundary', 'explicit']
+  orientations: ['boundary', 'explicit']
 }
 ```
 
-原则数据全部在 **VitePress 构建阶段完成处理**，不让浏览器运行时扫描 Markdown。
+取向数据全部在 **VitePress 构建阶段完成处理**，不让浏览器运行时扫描 Markdown。
 
 ---
 
-## 5. 原则聚合
+## 5. 取向聚合
 
 基于 ArticleMeta 构造：
 
 ```ts
-export interface PrincipleGroup {
-  principle: PrincipleDefinition
+export interface OrientationGroup {
+  orientation: OrientationDefinition
   articles: ArticleMeta[]
 }
 ```
@@ -192,33 +192,33 @@ boundary -> [
 articles.length
 ```
 
-作为原则文章数量。
+作为取向文章数量。
 
 这里还应该做校验：
 
 如果文章写了：
 
 ```yaml
-principles:
+orientations:
   - abc
 ```
 
-但 `principles.ts` 不存在 `abc`，构建时输出明确 warning，避免拼错以后悄悄生成一个无效标签。
+但 `orientations.ts` 不存在 `abc`，构建时输出明确 warning，避免拼错以后悄悄生成一个无效标签。
 
 ---
 
-## 6. PrincipleTag 组件
+## 6. OrientationTag 组件
 
 新增：
 
 ```text
-docs/.vitepress/theme/components/PrincipleTag.vue
+docs/.vitepress/theme/components/OrientationTag.vue
 ```
 
 调用方式：
 
 ```vue
-<PrincipleTag code="boundary" />
+<OrientationTag code="boundary" />
 ```
 
 显示效果类似 Element Plus：
@@ -235,12 +235,12 @@ docs/.vitepress/theme/components/PrincipleTag.vue
 * hover 效果
 * 鼠标样式
 * 支持暗色模式
-* 点击跳转到原则页面
+* 点击跳转到取向页面
 
 目标 URL：
 
 ```text
-/principles/boundary
+/orientations/boundary
 ```
 
 这里**不需要引入 Element Plus**。
@@ -260,7 +260,7 @@ docs/.vitepress/theme/components/ArticleMeta.vue
 当文章：
 
 ```yaml
-principles:
+orientations:
   - boundary
   - reproducible
   - explicit
@@ -269,37 +269,37 @@ principles:
 页面标题下方自动显示：
 
 ```text
-原则  [边界] [复现] [显式]
+取向  [边界] [复现] [显式]
 ```
 
-其中三个都是 `PrincipleTag`。
+其中三个都是 `OrientationTag`。
 
 文章作者不需要手工写：
 
 ```vue
-<PrincipleTag />
+<OrientationTag />
 ```
 
 也就是说：
 
 > **frontmatter 负责声明，主题负责展示。**
 
-没有 `principles` 的旧文章不显示这一行，不影响现有页面。
+没有 `orientations` 的旧文章不显示这一行，不影响现有页面。
 
 ---
 
-# 8. 原则索引页
+# 8. 取向索引页
 
 新增：
 
 ```text
-docs/principles/index.md
+docs/orientations/index.md
 ```
 
 URL：
 
 ```text
-/principles/
+/orientations/
 ```
 
 页面建议显示成卡片：
@@ -321,12 +321,12 @@ URL：
 
 ---
 
-# 9. 原则详情页
+# 9. 取向详情页
 
 访问：
 
 ```text
-/principles/boundary
+/orientations/boundary
 ```
 
 页面：
@@ -346,14 +346,14 @@ URL：
 - 如何编写可维护的上游渠道调用代码
 ```
 
-其他原则：
+其他取向：
 
 ```text
-/principles/preserve-truth
-/principles/reproducible
-/principles/explicit
-/principles/restraint
-/principles/evolution
+/orientations/preserve-truth
+/orientations/reproducible
+/orientations/explicit
+/orientations/restraint
+/orientations/evolution
 ```
 
 ---
@@ -362,15 +362,15 @@ URL：
 
 我建议**不要手工维护 6 个 Markdown 详情页**。
 
-因为原则已经全部定义在：
+因为取向已经全部定义在：
 
 ```text
-principles.ts
+orientations.ts
 ```
 
 文章关系也已经在构建期聚合。
 
-因此原则详情页应该由同一份数据生成。
+因此取向详情页应该由同一份数据生成。
 
 这样以后新增：
 
@@ -386,13 +386,13 @@ principles.ts
 最终数据流：
 
 ```text
-principles.ts
+orientations.ts
       │
-      ├── 原则名称 / code / color / description
+      ├── 取向名称 / code / color / description
       │
 文章 frontmatter
       │
-      └── principles: [boundary, explicit]
+      └── orientations: [boundary, explicit]
                 ↓
       article-metadata.ts
                 ↓
@@ -400,9 +400,9 @@ principles.ts
                 ↓
         ┌───────┴────────┐
         ↓                ↓
-文章页 PrincipleTag    /principles/
+文章页 OrientationTag    /orientations/
                          ↓
-                 /principles/{code}
+                 /orientations/{code}
 ```
 
 ---
@@ -413,12 +413,12 @@ principles.ts
 
 ```text
 docs/
-├── principles/
+├── orientations/
 │   └── index.md
 │
 └── .vitepress/
     ├── data/
-    │   └── principles.ts
+    │   └── orientations.ts
     │
     ├── markdown/
     │   └── article-metadata.ts
@@ -426,14 +426,14 @@ docs/
     └── theme/
         ├── components/
         │   ├── ArticleMeta.vue
-        │   ├── PrincipleTag.vue
-        │   ├── PrincipleIndex.vue
-        │   └── PrincipleDetail.vue
+        │   ├── OrientationTag.vue
+        │   ├── OrientationIndex.vue
+        │   └── OrientationDetail.vue
         │
         └── index.ts
 ```
 
-具体是否需要 `PrincipleDetail.vue`，实现时可以根据 VitePress 的动态页面方案再决定。
+具体是否需要 `OrientationDetail.vue`，实现时可以根据 VitePress 的动态页面方案再决定。
 
 ---
 
@@ -442,7 +442,7 @@ docs/
 完成以后应该满足：
 
 ```yaml
-principles:
+orientations:
   - boundary
   - reproducible
 ```
@@ -450,10 +450,10 @@ principles:
 只需要在文章里增加这两行，就自动获得：
 
 1. 文章标题附近出现 `el-tag` 风格的 **边界、复现**
-2. 标签颜色来自统一原则定义
+2. 标签颜色来自统一取向定义
 3. 标签可以点击
-4. `/principles/` 能看到全部 6 条原则
-5. 每条原则显示说明和相关文章数量
+4. `/orientations/` 能看到全部 6 条取向
+5. 每条取向显示说明和相关文章数量
 6. 点击“边界”可以看到所有使用 `boundary` 的文章
-7. 修改 `principles.ts` 中的中文名、颜色或说明，所有页面自动同步
-8. 无效 principle code 在构建时能够被发现
+7. 修改 `orientations.ts` 中的中文名、颜色或说明，所有页面自动同步
+8. 无效 orientation code 在构建时能够被发现

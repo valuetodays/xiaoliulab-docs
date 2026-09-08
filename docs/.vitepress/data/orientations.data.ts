@@ -1,24 +1,24 @@
 import { createContentLoader } from 'vitepress';
 import {
-  getPrinciple,
-  principles,
-  type PrincipleDefinition,
-} from './principles';
+  getOrientation,
+  orientations,
+  type OrientationDefinition,
+} from './orientations';
 
 export interface ArticleMeta {
   title: string;
   link: string;
   tags?: string[];
-  principles?: string[];
+  orientations?: string[];
 }
 
-export interface PrincipleGroup {
-  principle: PrincipleDefinition;
+export interface OrientationGroup {
+  orientation: OrientationDefinition;
   articles: ArticleMeta[];
 }
 
-export interface PrinciplesData {
-  groups: PrincipleGroup[];
+export interface OrientationsData {
+  groups: OrientationGroup[];
 }
 
 function stringArray(value: unknown): string[] | undefined {
@@ -31,29 +31,29 @@ function stringArray(value: unknown): string[] | undefined {
 }
 
 export default createContentLoader('**/*.md', {
-  transform(pages): PrinciplesData {
+  transform(pages): OrientationsData {
     const articles: ArticleMeta[] = [];
 
     for (const page of pages) {
-      const articlePrinciples = stringArray(page.frontmatter.principles);
+      const articleOrientations = stringArray(page.frontmatter.orientations);
 
-      if (!articlePrinciples) {
+      if (!articleOrientations) {
         continue;
       }
 
-      for (const code of articlePrinciples) {
-        if (!getPrinciple(code)) {
+      for (const code of articleOrientations) {
+        if (!getOrientation(code)) {
           console.warn(
-            `[principles] Unknown principle code "${code}" in ${page.url}`,
+            `[orientations] Unknown orientation code "${code}" in ${page.url}`,
           );
         }
       }
 
-      const validPrinciples = [...new Set(
-        articlePrinciples.filter((code) => getPrinciple(code)),
+      const validOrientations = [...new Set(
+        articleOrientations.filter((code) => getOrientation(code)),
       )];
 
-      if (validPrinciples.length === 0) {
+      if (validOrientations.length === 0) {
         continue;
       }
 
@@ -63,15 +63,15 @@ export default createContentLoader('**/*.md', {
           : page.url,
         link: page.url,
         tags: stringArray(page.frontmatter.tags),
-        principles: validPrinciples,
+        orientations: validOrientations,
       });
     }
 
     return {
-      groups: principles.map((principle) => ({
-        principle,
+      groups: orientations.map((orientation) => ({
+        orientation,
         articles: articles.filter((article) => (
-          article.principles?.includes(principle.code)
+          article.orientations?.includes(orientation.code)
         )),
       })),
     };
