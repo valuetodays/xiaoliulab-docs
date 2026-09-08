@@ -1,6 +1,7 @@
 import { defineConfig, type HeadConfig } from 'vitepress';
 import { articleMetadataPlugin } from './markdown/article-metadata';
 import { getPageModeInitScript } from './theme/utils/page-mode';
+import { megaMenuTriggerTexts } from './theme/mega-menu';
 
 const siteUrl = 'https://docs.xiaoliulab.com';
 
@@ -107,18 +108,10 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '微信支付', link: '/wechat/' },
-      { text: '技术实验', link: '/lab-technology/' },
-      { text: '金融实验', link: '/lab-fortune/' },
-      { text: '探索金融', link: '/lab-fortune/lab-finance-exploration/' },
-      { text: '探索技术', link: '/lab-tech-exploration/' },
-      { text: '做T实验', link: '/lab-fortune/lab-zuot/' },
-      {
-        text: '更多',
-        items: [
-          { text: '取向', link: '/orientations/' },
-          { text: '更新日志', link: '/changelog' },
-        ],
-      },
+      ...megaMenuTriggerTexts.map((text) => ({
+        component: 'MegaMenuTrigger',
+        props: { text },
+      })),
     ],
 
     sidebar: {
