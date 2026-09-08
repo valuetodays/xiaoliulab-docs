@@ -1,11 +1,11 @@
-export interface PrincipleDefinition {
+export interface OrientationDefinition {
   code: string;
   name: string;
   color: string;
   description: string;
 }
 
-export const principles: PrincipleDefinition[] = [
+export const orientations: OrientationDefinition[] = [
   {
     code: 'boundary',
     name: '边界',
@@ -44,10 +44,10 @@ export const principles: PrincipleDefinition[] = [
   },
 ];
 
-const principleByCode = new Map(
-  principles.map((principle) => [principle.code, principle]),
+const orientationByCode = new Map(
+  orientations.map((orientation) => [orientation.code, orientation]),
 );
 
-export function getPrinciple(code: string): PrincipleDefinition | undefined {
-  return principleByCode.get(code);
+export function getOrientation(code: string): OrientationDefinition | undefined {
+  return orientationByCode.get(code);
 }

@@ -13,7 +13,7 @@ tags:
 category:
   - 探索技术
   - 工程实践
-principles:
+orientations:
   - boundary
   - preserve-truth
   - reproducible

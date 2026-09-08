@@ -115,7 +115,7 @@ export default defineConfig({
       {
         text: '更多',
         items: [
-          { text: '思维标签', link: '/thinking/' },
+          { text: '取向', link: '/orientations/' },
           { text: '更新日志', link: '/changelog' },
         ],
       },
