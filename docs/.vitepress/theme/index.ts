@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme';
 import './custom.css';
 import Layout from './Layout.vue';
 import ArticleMeta from './components/ArticleMeta.vue';
+import MegaMenuTrigger from './components/MegaMenuTrigger.vue';
 import { applyPageMode } from './utils/page-mode';
 
 export default {
@@ -10,6 +11,7 @@ export default {
   Layout,
   enhanceApp({ app, router }) {
     app.component('ArticleMeta', ArticleMeta);
+    app.component('MegaMenuTrigger', MegaMenuTrigger);
 
     if (typeof window === 'undefined') {
       return;
