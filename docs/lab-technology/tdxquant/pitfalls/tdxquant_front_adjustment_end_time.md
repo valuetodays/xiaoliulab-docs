@@ -5,6 +5,10 @@ head:
   - - meta
     - name: keywords
       content: TdxQuant,前复权,end_time,get_market_data,历史行情,通达信,ETF份额拆分
+orientations:
+  - preserve-truth
+  - reproducible
+  - explicit
 ---
 
 # TdxQuant 前复权行情随查询结束日期变化的踩坑记录

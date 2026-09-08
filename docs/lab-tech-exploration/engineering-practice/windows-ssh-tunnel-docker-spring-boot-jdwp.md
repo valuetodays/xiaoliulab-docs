@@ -10,6 +10,9 @@ keywords:
   - IntelliJ IDEA
   - Windows
   - 远程调试
+orientations:
+  - boundary
+  - restraint
 ---
 
 # Windows 通过 SSH 隧道远程调试 Docker 中的 Spring Boot（JDWP）

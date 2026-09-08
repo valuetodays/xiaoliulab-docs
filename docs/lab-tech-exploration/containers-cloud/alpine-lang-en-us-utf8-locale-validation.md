@@ -1,6 +1,10 @@
 ---
 title: Dockerfile 写了 LANG=en_US.UTF-8，真的代表 Locale 生效了吗？
 description: 从一次 Java 8 Docker 签名问题继续追查 Alpine Locale 行为，验证环境变量被设置并不等于对应 Locale 数据真实存在，并说明这一结论的版本和镜像边界。
+orientations:
+  - explicit
+  - reproducible
+  - restraint
 ---
 
 # Dockerfile 写了 LANG=en_US.UTF-8，真的代表 Locale 生效了吗？

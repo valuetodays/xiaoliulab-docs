@@ -5,6 +5,10 @@ head:
   - - meta
     - name: keywords
       content: 做T,第一笔交易,历史行情,数据分析,统计分析,ETF做T,交易概率
+orientations:
+  - explicit
+  - reproducible
+  - restraint
 ---
 
 # 为什么第一笔交易最难？

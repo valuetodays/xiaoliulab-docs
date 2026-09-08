@@ -1,6 +1,9 @@
 ---
 title: Java 8 Alpine 容器中 jstack 与 Arthas 失败：一次 JVM 诊断能力补齐
 description: 记录 Java 8 服务运行在 Alpine 镜像时，jps 可以看到进程但 jstack 与 Arthas 无法正常工作，最终通过切换 Debian JDK 镜像恢复 JVM 诊断能力的过程。
+orientations:
+  - reproducible
+  - evolution
 ---
 
 # Java 8 Alpine 容器中 jstack 与 Arthas 失败：一次 JVM 诊断能力补齐

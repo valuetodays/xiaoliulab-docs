@@ -6,6 +6,9 @@ head:
   - - meta
     - name: keywords
       content: Quarkus,JDK 21,Docker,RSS,Native Memory,glibc,malloc arena,MALLOC_ARENA_MAX,NMT,容器内存
+orientations:
+  - reproducible
+  - restraint
 ---
 
 # Quarkus 容器 RSS 持续增长：一次 JVM Heap 正常但 Native Memory 膨胀的问题排查

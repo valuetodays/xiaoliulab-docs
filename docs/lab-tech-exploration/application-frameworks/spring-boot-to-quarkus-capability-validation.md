@@ -1,6 +1,10 @@
 ---
 title: 从 Spring Boot 迁移到 Quarkus：一份面向真实业务的基础能力验证清单
 description: 因 Spring Boot 启动速度和资源占用问题，先后尝试多种轻量 Java Web 框架和 Go，最终将 Quarkus 作为业务系统候选，并从数据访问、配置、事务、校验、调度、监控、部署等方面逐项验证其是否能承载真实后台业务。
+orientations:
+  - reproducible
+  - restraint
+  - evolution
 ---
 
 # 从 Spring Boot 迁移到 Quarkus：一份面向真实业务的基础能力验证清单

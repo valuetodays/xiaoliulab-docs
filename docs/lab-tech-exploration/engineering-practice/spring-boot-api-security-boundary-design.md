@@ -11,6 +11,9 @@ tags:
 category:
   - 探索技术
   - Spring Boot
+orientations:
+  - boundary
+  - explicit
 ---
 
 # Spring Boot 单体应用中的接口安全边界设计

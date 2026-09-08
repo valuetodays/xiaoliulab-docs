@@ -6,6 +6,9 @@ head:
   - - meta
     - name: keywords
       content: Spring Boot,Micrometer,Prometheus,JVM Metrics,MeterRegistry,AsyncConfigurer,Actuator,Bean 生命周期
+orientations:
+  - reproducible
+  - restraint
 ---
 
 # Spring Boot 2.2 + Micrometer 中 JVM 指标为什么会突然消失

@@ -5,6 +5,9 @@ head:
   - - meta
     - name: keywords
       content: PageHelper 1.3.0,PageHelper,MyBatis,Spring Boot 2.2.10,分页,PageInfo,泛型,ISelect,doSelectPageInfo,Java 8
+orientations:
+  - explicit
+  - reproducible
 ---
 
 # PageHelper 两种分页写法对比：一次泛型失真的排查与源码分析

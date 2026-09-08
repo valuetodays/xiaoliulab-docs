@@ -6,6 +6,9 @@ head:
   - - meta
     - name: keywords
       content: 指数观察指标,ETF,红利低波,沪深300,中证1000,创业板50,纳斯达克100,估值,CCI,均线,回撤
+orientations:
+  - restraint
+  - evolution
 ---
 
 # 指数观察指标

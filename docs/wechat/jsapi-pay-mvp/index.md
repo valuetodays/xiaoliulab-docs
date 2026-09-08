@@ -5,6 +5,9 @@ head:
   - - meta
     - name: keywords
       content: 微信 JSAPI Pay,公众号微信支付,微信支付 openid,prepay_id,WeixinJSBridge,Spring Boot 微信支付,weixin-java
+orientations:
+  - explicit
+  - reproducible
 ---
 
 # 微信 JSAPI Pay 最小接入指南

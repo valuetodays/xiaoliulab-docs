@@ -9,6 +9,9 @@ keywords:
   - 慢 SQL
   - JDBC
   - 可观测性
+orientations:
+  - explicit
+  - evolution
 ---
 
 # 从 log4jdbc 到 p6spy：后来才意识到，我需要的不只是单行 SQL

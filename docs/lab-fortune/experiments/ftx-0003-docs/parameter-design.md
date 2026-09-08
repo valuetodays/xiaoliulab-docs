@@ -1,3 +1,10 @@
+---
+orientations:
+  - explicit
+  - restraint
+  - reproducible
+---
+
 # 从历史峰谷回撤到分层加仓：深度回撤实验的参数设计
 
 本文档是 **[FTX-0003 A股深度回撤修复实验](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment)** 的参数设计与研究依据。

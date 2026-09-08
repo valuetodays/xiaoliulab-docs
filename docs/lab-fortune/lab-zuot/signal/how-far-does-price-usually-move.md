@@ -5,6 +5,9 @@ head:
   - - meta
     - name: keywords
       content: 价格触达概率,历史行情,昨日收盘价,最高价,最低价,做T,P50,P90,P95,百分位,历史分布
+orientations:
+  - explicit
+  - reproducible
 ---
 
 # 历史上，价格通常能走多远？

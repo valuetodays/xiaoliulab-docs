@@ -13,7 +13,7 @@ const group = computed(() => data.groups.find(
 <template>
   <div v-if="group" class="orientation-detail">
     <a class="orientation-back-link" :href="withBase('/orientations/')">
-      ← 全部取向
+      ← 全部
     </a>
 
     <h1>{{ group.orientation.name }}</h1>

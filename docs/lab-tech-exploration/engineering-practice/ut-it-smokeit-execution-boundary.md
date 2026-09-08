@@ -12,6 +12,11 @@ tags:
 category:
   - 探索技术
   - 测试
+orientations:
+  - boundary
+  - explicit
+  - restraint
+  - reproducible
 ---
 
 # 别把所有测试都叫 Test：我如何用 UT、IT 和 SmokeIT 划分执行边界

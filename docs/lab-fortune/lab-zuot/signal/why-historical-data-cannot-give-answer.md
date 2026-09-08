@@ -5,6 +5,9 @@ head:
   - - meta
     - name: keywords
       content: 历史数据,量化交易,统计分析,概率,回测,交易信号,数据分析
+orientations:
+  - reproducible
+  - restraint
 ---
 
 # 为什么历史数据不能直接给出交易答案？
