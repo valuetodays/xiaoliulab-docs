@@ -112,7 +112,13 @@ export default defineConfig({
       { text: '探索金融', link: '/lab-fortune/lab-finance-exploration/' },
       { text: '探索技术', link: '/lab-tech-exploration/' },
       { text: '做T实验', link: '/lab-fortune/lab-zuot/' },
-      { text: '更新日志', link: '/changelog' },
+      {
+        text: '更多',
+        items: [
+          { text: '思维标签', link: '/thinking/' },
+          { text: '更新日志', link: '/changelog' },
+        ],
+      },
     ],
 
     sidebar: {
