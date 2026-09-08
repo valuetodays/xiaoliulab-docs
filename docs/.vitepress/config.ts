@@ -1,4 +1,5 @@
-import { defineConfig, type HeadConfig } from 'vitepress';
+import { createContentLoader, defineConfig, type HeadConfig } from 'vitepress';
+import { getOrientation } from './data/orientations';
 import { articleMetadataPlugin } from './markdown/article-metadata';
 import { getPageModeInitScript } from './theme/utils/page-mode';
 import { megaMenuTriggerTexts } from './theme/mega-menu';
@@ -34,7 +35,58 @@ export default defineConfig({
   ],
   sitemap: {
     hostname: `${siteUrl}/`,
-    transformItems(items) {
+    async transformItems(items) {
+      const sitemapItemByUrl = new Map(
+        items.map((item) => [item.url.replace(/^\/+/, ''), item]),
+      );
+      const pages = await createContentLoader('**/*.md').load();
+      const latestArticleByOrientation = new Map<
+        string,
+        { item: (typeof items)[number]; timestamp: number }
+      >();
+
+      for (const page of pages) {
+        const articleOrientations = page.frontmatter.orientations;
+
+        if (!Array.isArray(articleOrientations)) {
+          continue;
+        }
+
+        const sitemapItem = sitemapItemByUrl.get(page.url.replace(/^\/+/, ''));
+        const lastmod = sitemapItem?.lastmod;
+        const timestamp = lastmod instanceof Date
+          ? lastmod.getTime()
+          : typeof lastmod === 'number'
+            ? lastmod
+            : typeof lastmod === 'string'
+              ? Date.parse(lastmod)
+              : 0;
+
+        if (!(timestamp > 0) || !sitemapItem) {
+          continue;
+        }
+
+        for (const code of articleOrientations) {
+          if (typeof code !== 'string' || !getOrientation(code)) {
+            continue;
+          }
+
+          const current = latestArticleByOrientation.get(code);
+
+          if (!current || timestamp > current.timestamp) {
+            latestArticleByOrientation.set(code, { item: sitemapItem, timestamp });
+          }
+        }
+      }
+
+      for (const [code, latestArticle] of latestArticleByOrientation) {
+        const detailItem = sitemapItemByUrl.get(`orientations/${code}`);
+
+        if (detailItem) {
+          detailItem.lastmod = latestArticle.item.lastmod;
+        }
+      }
+
       return items.filter((item) => !sitemapExcludedPaths.includes(item.url));
     },
   },
