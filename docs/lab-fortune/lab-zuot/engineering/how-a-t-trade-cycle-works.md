@@ -16,6 +16,8 @@ keywords:
   - 反向委托
   - 交易执行
   - ETF
+orientations:
+  - explicit
 ---
 
 # 一轮做 T 是怎样完成的？

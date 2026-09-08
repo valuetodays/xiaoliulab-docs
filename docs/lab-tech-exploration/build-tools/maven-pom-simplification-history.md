@@ -7,6 +7,8 @@ head:
   - - meta
     - name: keywords
       content: Maven,Maven 4,POM,GAV,dependency,plugin,exclusion,ModelParser,Build POM,Consumer POM,XML,Java
+orientations:
+  - evolution
 ---
 
 # 从“一屏多看几个依赖”开始，我重新理解了 Maven POM 的复杂度

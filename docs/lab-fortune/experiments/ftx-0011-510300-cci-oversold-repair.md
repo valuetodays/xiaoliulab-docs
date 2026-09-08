@@ -11,6 +11,11 @@ tags:
 category:
   - 金融实验
   - 策略实验
+orientations:
+  - reproducible
+  - explicit
+  - restraint
+  - evolution
 ---
 
 # FTX-0011 510300 CCI 超卖短期修复验证实验

@@ -11,6 +11,10 @@ tags:
 category:
   - 金融实验
   - 策略实验
+orientations:
+  - preserve-truth
+  - explicit
+  - restraint
 ---
 
 # FTX-0003 A股深度回撤修复实验

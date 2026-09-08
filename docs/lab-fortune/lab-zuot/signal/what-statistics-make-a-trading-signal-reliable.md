@@ -5,6 +5,10 @@ head:
   - - meta
     - name: keywords
       content: 交易信号,统计验证,胜率,盈亏比,期望收益,最大回撤,样本外验证,量化交易
+orientations:
+  - explicit
+  - reproducible
+  - restraint
 ---
 
 # 一个交易信号，什么样的统计结果才值得相信？

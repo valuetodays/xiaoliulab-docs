@@ -1,3 +1,8 @@
+---
+orientations:
+  - preserve-truth
+---
+
 # FTX-0003 实验执行记录
 
 本文档用于记录 **[返回 FTX-0003 A股深度回撤修复实验](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment)** 启动后的实际执行过程。

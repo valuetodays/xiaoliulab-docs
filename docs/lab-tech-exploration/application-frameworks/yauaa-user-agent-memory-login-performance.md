@@ -5,6 +5,10 @@ head:
   - - meta
     - name: keywords
       content: Java,Spring Boot,YAUAA,User-Agent,Heap,Eclipse MAT,Arthas,HashMap,登录性能,eladmin,旧项目维护
+orientations:
+  - reproducible
+  - restraint
+  - evolution
 ---
 
 # 一次 User-Agent 解析引发的内存与登录性能问题：从 YAUAA 缓存怀疑到删除无用功能

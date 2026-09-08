@@ -20,6 +20,10 @@ keywords:
   - BizBaseMapper
   - BizSqlInjector
   - MyBatis-Plus SQL Injector
+orientations:
+  - boundary
+  - explicit
+  - restraint
 ---
 
 # 为什么我不再允许业务代码直接使用 MyBatis-Plus 的 insert 和 updateById

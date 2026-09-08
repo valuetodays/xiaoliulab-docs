@@ -10,6 +10,11 @@ tags:
 category:
   - 金融实验
   - 策略实验
+orientations:
+  - preserve-truth
+  - explicit
+  - restraint
+  - evolution
 ---
 
 # FTX-0002 五年机会实验

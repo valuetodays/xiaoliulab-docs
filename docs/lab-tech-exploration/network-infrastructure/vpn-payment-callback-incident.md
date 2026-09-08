@@ -10,6 +10,10 @@ keywords:
   - 生产事故
   - 事故复盘
   - 支付链路
+orientations:
+  - boundary
+  - preserve-truth
+  - evolution
 ---
 
 # 一次 VPN 访问收紧导致支付回调中断的事故复盘

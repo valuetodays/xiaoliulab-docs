@@ -6,6 +6,10 @@ head:
   - - meta
     - name: keywords
       content: Docker,host network,bridge network,--net=host,Nacos,Spring Boot,端口映射,容器网络,服务注册,网络隔离
+orientations:
+  - boundary
+  - explicit
+  - evolution
 ---
 
 # Docker 服务去除 `--net=host`：从 host 网络回到 bridge 的一次改造记录

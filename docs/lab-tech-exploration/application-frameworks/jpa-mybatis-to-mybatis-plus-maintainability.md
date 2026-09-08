@@ -11,6 +11,9 @@ keywords:
   - 数据访问层
   - CRUD
   - 维护性
+orientations:
+  - boundary
+  - evolution
 ---
 
 # 从 JPA + MyBatis 到 MyBatis-Plus：一次旧项目数据访问层的维护性收敛

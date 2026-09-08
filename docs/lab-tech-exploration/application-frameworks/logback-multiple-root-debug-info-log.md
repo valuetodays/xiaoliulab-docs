@@ -6,6 +6,8 @@ head:
   - - meta
     - name: keywords
       content: Spring Boot 2.2.10,Logback,logback.xml,root logger,ThresholdFilter,debug.log,info.log,旧项目维护,日志配置
+orientations:
+  - explicit
 ---
 
 # Logback 的 debug.log 和 info.log 为什么几乎一样：一次旧项目多 root 配置排查

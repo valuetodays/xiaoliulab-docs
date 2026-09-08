@@ -5,6 +5,9 @@ head:
   - - meta
     - name: keywords
       content: 微信 Native Pay,微信支付 Java,Spring Boot 微信支付,weixin-java,微信支付二维码,微信支付回调
+orientations:
+  - explicit
+  - reproducible
 ---
 
 # 微信 Native Pay 最小接入指南

@@ -5,6 +5,9 @@ head:
   - content: 做T,历史行情,数据分析,统计分析,ETF做T,交易研究
     name: keywords
 title: 为什么历史行情值得研究？
+orientations:
+  - preserve-truth
+  - reproducible
 ---
 
 # 为什么历史行情值得研究？

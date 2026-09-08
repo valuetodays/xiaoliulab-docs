@@ -5,6 +5,9 @@ head:
   - - meta
     - name: keywords
       content: 金融探索,储蓄,现金管理,ETF,融资,投资研究,全球资产
+orientations:
+  - preserve-truth
+  - evolution
 ---
 
 # 为什么有探索金融？

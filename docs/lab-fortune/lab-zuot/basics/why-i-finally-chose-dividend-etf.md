@@ -5,6 +5,9 @@ head:
   - - meta
     - name: keywords
       content: 红利ETF,ETF做T,做T标的,长期投资,高股息,资产配置
+orientations:
+  - restraint
+  - evolution
 ---
 
 # 为什么我最终选择了红利ETF？

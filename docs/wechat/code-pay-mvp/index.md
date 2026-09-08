@@ -5,6 +5,9 @@ head:
   - - meta
     - name: keywords
       content: 微信 Code Pay,微信付款码支付,微信支付 auth_code,商户扫码收款,Spring Boot 微信支付,weixin-java
+orientations:
+  - explicit
+  - reproducible
 ---
 
 # 微信 Code Pay 最小接入指南

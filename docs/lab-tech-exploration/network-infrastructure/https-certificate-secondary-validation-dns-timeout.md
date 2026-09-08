@@ -7,6 +7,10 @@ head:
   - - meta
     - name: keywords
       content: HTTPS, ACME, Let's Encrypt, ZeroSSL, 1Panel, HTTP-01, DNS-01, secondary validation, DNS timeout, CAA, 火山引擎 DNS
+orientations:
+  - preserve-truth
+  - reproducible
+  - restraint
 ---
 
 # HTTPS 证书申请失败排查：secondary validation DNS timeout

@@ -6,6 +6,9 @@ head:
   - - meta
     - name: keywords
       content: Docker,Spring Boot,--net=host,端口映射,-p,netstat,ss,Dubbo,Dubbo QoS,22222,旧服务维护,端口治理
+orientations:
+  - preserve-truth
+  - explicit
 ---
 
 # Docker 旧服务端口配置失真：一次 `--net=host` 环境下的排查与统一维护

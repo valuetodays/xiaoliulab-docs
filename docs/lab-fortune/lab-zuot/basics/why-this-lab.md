@@ -6,6 +6,10 @@ head:
   - - meta
     - name: keywords
       content: 做T实验,做T研究,市场波动,交易策略,程序化交易,资产配置
+orientations:
+  - preserve-truth
+  - reproducible
+  - evolution
 ---
 
 # 为什么会有“做T实验”？

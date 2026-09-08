@@ -10,6 +10,10 @@ keywords:
   - ResourceBundleMessageSource
   - ReloadableResourceBundleMessageSource
   - YamlPropertiesFactoryBean
+orientations:
+  - boundary
+  - reproducible
+  - restraint
 ---
 
 # Spring Boot 2.7 YAML 国际化：一次从查不到合适方案到源码扩展点的探索

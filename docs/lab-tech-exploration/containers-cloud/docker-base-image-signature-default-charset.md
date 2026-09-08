@@ -1,6 +1,11 @@
 ---
 title: 一次 Docker 基础镜像切换后的签名异常：从生产回滚到默认字符集
 description: 记录 Java 8 服务从 Alpine 切换到 Debian 后第三方接口签名异常的生产问题，以及两个月后通过最小复现、三组 Dockerfile 对照实验最终定位 String.getBytes() 默认字符集风险的过程。
+orientations:
+  - preserve-truth
+  - reproducible
+  - explicit
+  - evolution
 ---
 
 # 一次 Docker 基础镜像切换后的签名异常：从生产回滚到默认字符集

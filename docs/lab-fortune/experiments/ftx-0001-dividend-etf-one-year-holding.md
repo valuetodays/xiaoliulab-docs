@@ -9,6 +9,10 @@ tags:
 category:
   - 金融实验
   - 策略实验
+orientations:
+  - preserve-truth
+  - explicit
+  - restraint
 ---
 
 # FTX-0001 红利 ETF 一年持有实验
