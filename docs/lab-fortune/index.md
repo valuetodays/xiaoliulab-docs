@@ -22,6 +22,9 @@ hero:
     - theme: alt
       text: 探索金融
       link: /lab-fortune/lab-finance-exploration/
+    - theme: alt
+      text: 策略实验
+      link: /lab-fortune/experiments/
 
 features:
   - title: 基础认知
