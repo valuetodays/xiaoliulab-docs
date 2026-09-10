@@ -312,6 +312,10 @@ export default defineConfig({
                   text: '如何编写可维护的上游渠道调用代码',
                   link: '/lab-tech-exploration/engineering-practice/maintainable-upstream-channel-integration',
                 },
+                {
+                  text: '一个留学缴费遗留系统的治理：边界、验证与工程判断',
+                  link: '/lab-tech-exploration/engineering-practice/a-remit-system-governance',
+                },
               ],
             },
           ],
