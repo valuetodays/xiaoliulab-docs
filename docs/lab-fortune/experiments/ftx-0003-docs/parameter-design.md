@@ -1,4 +1,5 @@
 ---
+title: 从历史峰谷回撤到分层加仓：深度回撤实验的参数设计
 orientations:
   - explicit
   - restraint
