@@ -321,6 +321,10 @@ export default defineConfig({
                   link: '/lab-tech-exploration/engineering-practice/ut-it-smokeit-execution-boundary',
                 },
                 {
+                  text: 'Mapper 测试为什么只需要最小 Spring 上下文',
+                  link: '/lab-tech-exploration/engineering-practice/minimal-spring-context-for-mapper-tests',
+                },
+                {
                   text: '如何编写可维护的上游渠道调用代码',
                   link: '/lab-tech-exploration/engineering-practice/maintainable-upstream-channel-integration',
                 },
