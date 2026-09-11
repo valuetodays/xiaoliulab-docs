@@ -922,7 +922,7 @@ src/main/java/.../base/BizBaseMapper.java
 
 配套工程：
 
-- [springboot2-sample-mybatisplus-bizbasemapper.zip](./springboot2-sample-mybatisplus-bizbasemapper.zip)
+<a href="https://cdn.jsdelivr.net/gh/valuetodays/supreme-octo-palm-tree@main/attachment/springboot2-sample-mybatisplus-bizbasemapper.zip">代码</a>
 
 ### BizSqlInjector 的职责
 
@@ -986,7 +986,8 @@ BizBaseMapper
 
 工程：
 
-- [springboot2-sample-mybatisplus-bizbasemapper.zip](./springboot2-sample-mybatisplus-bizbasemapper.zip)
+<a href="https://cdn.jsdelivr.net/gh/valuetodays/supreme-octo-palm-tree@main/attachment/springboot2-sample-mybatisplus-bizbasemapper.zip">代码</a>
+
 
 测试使用内存 H2，并通过 `schema.sql` 和 `data.sql` 建立固定初始数据。
 
