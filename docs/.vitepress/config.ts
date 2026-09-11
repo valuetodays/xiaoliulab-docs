@@ -267,6 +267,10 @@ export default defineConfig({
                   text: 'Docker 服务去除 --net=host：从 host 网络回到 bridge 的一次改造记录',
                   link: '/lab-tech-exploration/containers-cloud/docker-remove-host-network',
                 },
+                {
+                  text: '从 SSL 证书过期到 CDN：一次 OSS 资源地址的来回调整',
+                  link: '/lab-tech-exploration/containers-cloud/oss-resource-url-design-after-ssl-expiration',
+                },
               ],
             },
             {
