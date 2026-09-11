@@ -313,6 +313,10 @@ export default defineConfig({
                   link: '/lab-tech-exploration/engineering-practice/tenant-context-from-header-to-trusted-token',
                 },
                 {
+                  text: '什么时候该把文件处理接口改成异步任务',
+                  link: '/lab-tech-exploration/engineering-practice/async-file-processing-task',
+                },
+                {
                   text: '别把所有测试都叫 Test：我如何用 UT、IT 和 SmokeIT 划分执行边界',
                   link: '/lab-tech-exploration/engineering-practice/ut-it-smokeit-execution-boundary',
                 },
