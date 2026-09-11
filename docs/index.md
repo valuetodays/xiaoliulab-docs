@@ -13,16 +13,11 @@ hero:
     - theme: alt
       text: 金融实验
       link: /lab-fortune/
+    - theme: alt
+      text: 探索技术
+      link: /lab-tech-exploration/
 ---
 
-## 金融实验
-
-<div class="lab-topic-grid">
-  <a class="lab-topic-card" href="./lab-fortune/lab-zuot/">
-    <h3>做T实验</h3>
-    <p>记录做T的基础、信号、执行、系统与实践复盘。</p>
-  </a>
-</div>
 
 ## 技术实验
 
@@ -42,6 +37,15 @@ hero:
   <a class="lab-topic-card" href="./wechat/code-pay-mvp/">
     <h3>第一次 Code Pay</h3>
     <p>使用用户付款码完成扫码付款，面向扫码枪、收银台等场景。</p>
+  </a>
+</div>
+
+## 金融实验
+
+<div class="lab-topic-grid">
+  <a class="lab-topic-card" href="./lab-fortune/lab-zuot/">
+    <h3>做T实验</h3>
+    <p>记录做T的基础、信号、执行、系统与实践复盘。</p>
   </a>
 </div>
 
