@@ -33,6 +33,14 @@
   border-top: 0;
 }
 
+.VPFooter {
+  display: none;
+}
+
+.site-home .VPFooter {
+  display: block;
+}
+
 .beian-links,
 .beian-public-security,
 .beian-link {
