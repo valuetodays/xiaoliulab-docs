@@ -309,6 +309,10 @@ export default defineConfig({
                   link: '/lab-tech-exploration/engineering-practice/spring-boot-api-security-boundary-design',
                 },
                 {
+                  text: '从请求头到可信 Token：一次跨模块租户上下文改造',
+                  link: '/lab-tech-exploration/engineering-practice/tenant-context-from-header-to-trusted-token',
+                },
+                {
                   text: '别把所有测试都叫 Test：我如何用 UT、IT 和 SmokeIT 划分执行边界',
                   link: '/lab-tech-exploration/engineering-practice/ut-it-smokeit-execution-boundary',
                 },
