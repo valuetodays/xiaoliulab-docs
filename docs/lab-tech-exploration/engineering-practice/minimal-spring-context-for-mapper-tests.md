@@ -119,6 +119,31 @@ BookMapperIT#selectList
 
 修改 Mapper XML 后，如果不确定 SQL 有没有写错，可以直接在 IDE 中运行对应测试方法。
 
+在实际项目里，这个差异会更加明显。
+
+公司开发机配置一般，启动完整 Spring Boot 应用大约需要约 50 秒或更久。而运行这套最小 Mapper 测试，从启动 Spring 上下文到得到结果大约只需要约 3 秒。
+
+以前遇到过不少很小的 Mapper XML 修改，例如只是增加或删除一个查询字段，结果 `SELECT` 后面的字段列表多了一个逗号，或者少了一个逗号。
+
+这种错误本身很简单，但如果本地没有一个低成本的验证入口，就可能一直到重新部署以后才发现：
+
+```text
+修改 Mapper XML
+→ 打包
+→ 部署
+→ 启动应用
+→ 进入业务流程
+→ SQL 执行失败
+→ 再修改
+→ 再部署
+```
+
+一个本来几秒钟就能发现的问题，最后变成了一次完整的重新部署。
+
+所以这里真正想缩短的，不只是 Spring 的启动时间，而是：
+
+> **从“刚刚改完代码”到“知道这次修改有没有问题”之间的时间。**
+
 开发过程就可以变成：
 
 ```text
@@ -440,7 +465,6 @@ common-mapper
 > **`common-mapper` 自己就能够完成 Mapper 测试，不需要通过 `web` 模块启动完整 Spring Boot 应用。**
 
 ## Spring Boot 2.2.10 示例
-
 
 <a href="https://cdn.jsdelivr.net/gh/valuetodays/supreme-octo-palm-tree@main/attachment/springboot2-sample-common-mapper.zip">点此下载最小化工程代码</a>
 
