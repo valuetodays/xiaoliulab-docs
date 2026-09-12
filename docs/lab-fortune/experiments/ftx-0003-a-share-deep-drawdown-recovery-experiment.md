@@ -395,6 +395,8 @@ Call 权利金允许全部损失，不承担主仓功能。
 
 加仓梯度、固定基准价、现金结构和融资压力测试的研究过程记录在[从历史峰谷回撤到分层加仓：深度回撤实验的参数设计](/lab-fortune/experiments/ftx-0003-docs/parameter-design)。
 
+当前正在形成的版本为[参数设计方案 V2](/lab-fortune/experiments/ftx-0003-docs/parameter-design-v2)。
+
 该文档包括：
 
 - 为什么不用滚动 250 日高点作为执行坐标；

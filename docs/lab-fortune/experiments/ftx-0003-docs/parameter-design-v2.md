@@ -11,9 +11,12 @@ orientations:
 
 > **状态：设计中**
 >
-> 本文记录 FTX-0003 的参数设计方案 V2。
+> 本文记录 [FTX-0003](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment) 的参数设计方案 V2。
 >
-> 方案 V1 已退役，原文继续保留。
+> [方案 V1](./parameter-design-v1)已退役，原文继续保留。
+
+
+本文档是 **[FTX-0003 A股深度回撤修复实验](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment)** 的参数设计与研究依据。
 
 ## 1. 为什么形成方案 V2
 
@@ -429,7 +432,7 @@ START
 
 拆分为三个独立概念。
 
-方案 V1 的原始内容不再修改，另行通过反思文档记录它为什么被推翻，以及从中得到的模型审查方法。
+方案 V1 的原始内容不再修改，另行通过[反思文档](./parameter-design-v1-retrospective)记录它为什么被推翻，以及从中得到的模型审查方法。
 
 如果方案 V2 以后被新的证据推翻，也继续保留本文，并建立参数设计方案 V3。
 
@@ -439,7 +442,7 @@ FTX-0003 针对的是**下一次实际发生的深度回撤**。
 
 它不是所有未来深度回撤永久共用的模板。
 
-本轮实验结束以后，将根据：
+本轮实验结束以后，将根据[FTX-0003 实验执行记录](./execution-log)中保存的：
 
 - 实际 START 时点；
 - 当时的政策环境；

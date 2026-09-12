@@ -7,7 +7,7 @@ orientations:
 
 # 一个看起来完整的模型，为什么后来被推翻
 
-FTX-0003 的参数设计方案 V1 形成以后，一度看起来已经比较完整。
+[FTX-0003](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment) 的[参数设计方案 V1](./parameter-design-v1)形成以后，一度看起来已经比较完整。
 
 它有固定的 Anchor，有明确的回撤百分比，有分层加仓，有资金释放比例，也做过历史数据回测。
 
@@ -345,7 +345,7 @@ Anchor -30% 买入
 
 方案 V1 仍然保留，不是因为它还可以继续执行，而是因为它完整记录了一次模型形成、获得完整感、暴露反例并最终退役的过程。
 
-如果只保留后来的方案 V2，能够看到的是：
+如果只保留后来的[方案 V2](./parameter-design-v2)，能够看到的是：
 
 > Anchor、START 和局部回撤梯度应该分开。
 
