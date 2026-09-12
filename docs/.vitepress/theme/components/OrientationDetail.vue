@@ -2,7 +2,6 @@
 import { computed } from 'vue';
 import { useData, withBase } from 'vitepress';
 import { data } from '../../data/orientations.data';
-import OrientationTag from './OrientationTag.vue';
 
 const { params } = useData();
 const group = computed(() => data.groups.find(
@@ -17,8 +16,6 @@ const group = computed(() => data.groups.find(
     </a>
 
     <h1>{{ group.orientation.name }}</h1>
-
-    <OrientationTag :code="group.orientation.code" />
 
     <p class="orientation-detail-description">
       {{ group.orientation.description }}
