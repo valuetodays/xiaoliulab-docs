@@ -4,7 +4,8 @@ import { articleMetadataPlugin } from './markdown/article-metadata';
 import { getPageModeInitScript } from './theme/utils/page-mode';
 import { megaMenuTriggerTexts } from './theme/mega-menu';
 
-const siteUrl = 'https://docs.xiaoliulab.com';
+const siteHostname = 'docs.xiaoliulab.com';
+const siteUrl = `https://${siteHostname}`;
 
 // 已迁移页面的旧路径。
 // 旧页面仅用于历史链接跳转，不加入 sitemap。
@@ -26,11 +27,25 @@ export default defineConfig({
     ['script', {}, getPageModeInitScript()],
     [
       'script',
-      {
-        defer: '',
-        src: 'https://myanalytics.pages.dev/tracker.min.js',
-        'data-website-id': 'a-web-xiaoliulab-docs',
-      },
+      {},
+      `
+        (() => {
+          const isAllowedHost = window.location.hostname === '${siteHostname}';
+
+          if (
+            !isAllowedHost ||
+            document.querySelector('[data-website-id="a-web-xiaoliulab-docs"]')
+          ) {
+            return;
+          }
+
+          const script = document.createElement('script');
+          script.src = 'https://myanalytics.pages.dev/tracker.min.js';
+          script.defer = true;
+          script.dataset.websiteId = 'a-web-xiaoliulab-docs';
+          document.head.appendChild(script);
+        })();
+      `,
     ],
   ],
   sitemap: {
