@@ -14,7 +14,8 @@ orientations:
 > 本文记录参数设计方案V1。
 > 当前执行方案已迁移至[参数设计v2](./parameter-design-v2)。
 >
-> 本文保留用于记录当时的模型、推导过程，自退役后不再修改。
+> 本文保留用于记录当时的模型、推导过程，自退役后不再修改正文内容。
+> 方案退役的原因与后续反证过程记录在[参数设计方案 V1：方案反思](./parameter-design-v1-retrospective)中。
 
 本文档是 **[FTX-0003 A股深度回撤修复实验](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment)** 的参数设计与研究依据。
 

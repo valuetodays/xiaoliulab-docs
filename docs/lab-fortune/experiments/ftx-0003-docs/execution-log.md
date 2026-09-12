@@ -8,6 +8,8 @@ orientations:
 
 本文档用于记录 **[FTX-0003 A股深度回撤修复实验](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment)** 启动后的实际执行过程。
 
+执行参数来自[参数设计方案](./parameter-design)，正式启动时以冻结版本为准。
+
 
 ## 实验启动记录
 

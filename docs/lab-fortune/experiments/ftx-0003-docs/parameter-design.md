@@ -18,3 +18,5 @@ orientations:
 - [参数设计方案V2（设计中）](/lab-fortune/experiments/ftx-0003-docs/parameter-design-v2)
 - [参数设计方案V1（已退役）](./parameter-design-v1)
   + [参数设计方案V1：方案反思](./parameter-design-v1-retrospective)
+
+实验启动后的实际操作记录在[FTX-0003 实验执行记录](./execution-log)中。
