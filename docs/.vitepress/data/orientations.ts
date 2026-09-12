@@ -42,6 +42,12 @@ export const orientations: OrientationDefinition[] = [
     color: '#00A6A6',
     description: '接受当前结论并非最终答案，在保留历史的基础上持续修正和演进。',
   },
+  {
+    code: 'falsification',
+    name: '反证',
+    color: '#F56C6C',
+    description: '方案形成后，不只验证它为什么成立，也主动寻找能够推翻它的反例、极端场景和隐藏假设。',
+  },
 ];
 
 const orientationByCode = new Map(
