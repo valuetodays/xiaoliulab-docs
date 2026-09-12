@@ -1,10 +1,12 @@
 ---
 title: 深度回撤实验：参数设计方案 V2
-description: 记录 FTX-0003 参数设计方案 V2。将 Anchor、START 与 START 后局部回撤梯度拆分为三个独立职责，并研究政策、资金与市场状态如何共同决定启动时机。
+description: 记录 FTX-0003 参数设计方案 V2。将 Anchor、START 与 START 后局部回撤梯度拆分为独立职责，并在历史验证、风险边界和现场判断之间建立可执行的资金释放框架。
 orientations:
   - explicit
   - restraint
   - reproducible
+  - falsification
+  - evolution
 ---
 
 # 从历史峰谷回撤到分层加仓：深度回撤实验的参数设计-V2
