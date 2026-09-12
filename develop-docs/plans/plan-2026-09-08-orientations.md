@@ -1,8 +1,8 @@
-# 取向系统方案
+# 内核思想系统方案
 
 ## 1. 目标
 
-为文章增加一套独立于普通 `tags` 的“取向”。
+为文章增加一套独立于普通 `tags` 的“内核思想”。
 
 普通标签回答：
 
@@ -12,9 +12,9 @@
 
 `Java`、`Spring Boot`、`API`、`Docker`、`ETF`
 
-取向回答：
+内核思想回答：
 
-> 这篇文章体现了什么长期取向？
+> 这篇文章体现了什么长期内核思想？
 
 第一版固定 6 条：
 
@@ -31,7 +31,7 @@
 
 ---
 
-## 2. 取向统一定义
+## 2. 内核思想统一定义
 
 新增：
 
@@ -93,7 +93,7 @@ export const orientations: OrientationDefinition[] = [
 ]
 ```
 
-取向定义只维护这一份。
+内核思想定义只维护这一份。
 
 ---
 
@@ -161,11 +161,11 @@ export interface ArticleMeta {
 }
 ```
 
-取向数据全部在 **VitePress 构建阶段完成处理**，不让浏览器运行时扫描 Markdown。
+内核思想数据全部在 **VitePress 构建阶段完成处理**，不让浏览器运行时扫描 Markdown。
 
 ---
 
-## 5. 取向聚合
+## 5. 内核思想聚合
 
 基于 ArticleMeta 构造：
 
@@ -192,7 +192,7 @@ boundary -> [
 articles.length
 ```
 
-作为取向文章数量。
+作为内核思想文章数量。
 
 这里还应该做校验：
 
@@ -235,7 +235,7 @@ docs/.vitepress/theme/components/OrientationTag.vue
 * hover 效果
 * 鼠标样式
 * 支持暗色模式
-* 点击跳转到取向页面
+* 点击跳转到内核思想页面
 
 目标 URL：
 
@@ -269,7 +269,7 @@ orientations:
 页面标题下方自动显示：
 
 ```text
-取向  [边界] [复现] [显式]
+内核思想  [边界] [复现] [显式]
 ```
 
 其中三个都是 `OrientationTag`。
@@ -288,7 +288,7 @@ orientations:
 
 ---
 
-# 8. 取向索引页
+# 8. 内核思想索引页
 
 新增：
 
@@ -321,7 +321,7 @@ URL：
 
 ---
 
-# 9. 取向详情页
+# 9. 内核思想详情页
 
 访问：
 
@@ -346,7 +346,7 @@ URL：
 - 如何编写可维护的上游渠道调用代码
 ```
 
-其他取向：
+其他内核思想：
 
 ```text
 /orientations/preserve-truth
@@ -362,7 +362,7 @@ URL：
 
 我建议**不要手工维护 6 个 Markdown 详情页**。
 
-因为取向已经全部定义在：
+因为内核思想已经全部定义在：
 
 ```text
 orientations.ts
@@ -370,7 +370,7 @@ orientations.ts
 
 文章关系也已经在构建期聚合。
 
-因此取向详情页应该由同一份数据生成。
+因此内核思想详情页应该由同一份数据生成。
 
 这样以后新增：
 
@@ -388,7 +388,7 @@ orientations.ts
 ```text
 orientations.ts
       │
-      ├── 取向名称 / code / color / description
+      ├── 内核思想名称 / code / color / description
       │
 文章 frontmatter
       │
@@ -450,10 +450,10 @@ orientations:
 只需要在文章里增加这两行，就自动获得：
 
 1. 文章标题附近出现 `el-tag` 风格的 **边界、复现**
-2. 标签颜色来自统一取向定义
+2. 标签颜色来自统一内核思想定义
 3. 标签可以点击
-4. `/orientations/` 能看到全部 6 条取向
-5. 每条取向显示说明和相关文章数量
+4. `/orientations/` 能看到全部 6 条内核思想
+5. 每条内核思想显示说明和相关文章数量
 6. 点击“边界”可以看到所有使用 `boundary` 的文章
 7. 修改 `orientations.ts` 中的中文名、颜色或说明，所有页面自动同步
 8. 无效 orientation code 在构建时能够被发现
