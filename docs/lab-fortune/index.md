@@ -25,6 +25,9 @@ hero:
     - theme: alt
       text: 策略实验
       link: /lab-fortune/experiments/
+    - theme: alt
+      text: 金融历史
+      link: /lab-fortune/financial-history/
 
 features:
   - title: 基础认知
@@ -37,7 +40,12 @@ features:
 
 ## 文档目录
 
-专题正在建设中，后续文档会在这里持续补充。
+- [金融基础](/lab-fortune/foundation/)：从资产、交易规则和常用指标建立基础认知，也可以从[宽基 ETF 和行业 ETF](/lab-fortune/foundation/instruments/broad-vs-sector-etf)开始。
+- [数据实验：为什么投资研究需要可靠的数据来源？](/lab-fortune/lab-data/why-investment-research-needs-reliable-data)：理解数据来源、口径与可复现性。
+- [探索金融](/lab-fortune/lab-finance-exploration/)：从真实问题认识储蓄、基金与 ETF，入口文章是[为什么有探索金融？](/lab-fortune/lab-finance-exploration/why-this-finance-exploration)
+- [做T实验](/lab-fortune/lab-zuot/)：记录交易认知、历史验证与执行工程，可以先阅读[为什么会有这个“做T实验”？](/lab-fortune/lab-zuot/basics/why-this-lab)
+- [策略实验](/lab-fortune/experiments/)：通过真实数据和持续记录验证投资想法，包括 [FTX-0001 红利类 ETF 一年持有实验](/lab-fortune/experiments/ftx-0001-dividend-etf-one-year-holding)。
+- [金融历史](/lab-fortune/financial-history/)：从市场事件与机构案例理解风险，当前可阅读[从 LTCM 到 JWM](/lab-fortune/financial-history/ltcm-to-jwm-survival-risk)。
 
 ## 内容规划
 
