@@ -426,6 +426,13 @@ export default defineConfig({
               ],
             },
             {
+              text: '金融历史',
+              collapsed: false,
+              items: [
+                { text: '从 LTCM 到 JWM：把房子建得更高之后，为什么还是被洪水淹了', link: '/lab-fortune/financial-history/ltcm-to-jwm-survival-risk' },
+              ],
+            },
+            {
               text: '数据实验',
               collapsed: false,
               items: [
