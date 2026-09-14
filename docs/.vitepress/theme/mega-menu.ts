@@ -20,8 +20,11 @@ export const megaMenuGroups = [
     title: '金融',
     items: [
       { text: '金融实验', link: '/lab-fortune/' },
+      { text: '金融基础', link: '/lab-fortune/foundation/' },
       { text: '探索金融', link: '/lab-fortune/lab-finance-exploration/' },
       { text: '做T实验', link: '/lab-fortune/lab-zuot/' },
+      { text: '策略实验', link: '/lab-fortune/experiments/' },
+      { text: '金融历史', link: '/lab-fortune/financial-history/' },
     ],
   },
   {

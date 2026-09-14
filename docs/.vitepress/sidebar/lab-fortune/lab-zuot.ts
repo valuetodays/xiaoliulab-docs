@@ -8,7 +8,7 @@ export const labZuotSidebar: DefaultTheme.SidebarItem[] = [
       { text: '做T实验首页', link: '/lab-fortune/lab-zuot/' },
       {
         text: '基础认知',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '为什么会有这个“做T实验”？', link: '/lab-fortune/lab-zuot/basics/why-this-lab' },
           { text: '做T的数学基础', link: '/lab-fortune/lab-zuot/basics/math-foundation' },
@@ -19,7 +19,7 @@ export const labZuotSidebar: DefaultTheme.SidebarItem[] = [
       },
       {
         text: '统计与信号',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '为什么历史行情值得研究？', link: '/lab-fortune/lab-zuot/signal/why-study-historical-market-data' },
           { text: '历史行情里究竟有哪些数据？', link: '/lab-fortune/lab-zuot/signal/what-data-does-market-history-contain' },
@@ -33,7 +33,7 @@ export const labZuotSidebar: DefaultTheme.SidebarItem[] = [
       },
       {
         text: '交易工程',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '一轮做 T 是怎样完成的？', link: '/lab-fortune/lab-zuot/engineering/how-a-t-trade-cycle-works' },
         ],

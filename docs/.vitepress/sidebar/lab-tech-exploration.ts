@@ -25,7 +25,7 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
       },
       {
         text: '应用框架',
-        collapsed: true,
+        collapsed: false,
         items: [
           {
             text: '从 Spring Boot 迁移到 Quarkus：一份面向真实业务的基础能力验证清单',
@@ -63,7 +63,7 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
       },
       {
         text: '构建与依赖',
-        collapsed: true,
+        collapsed: false,
         items: [
           {
             text: '从“一屏多看几个依赖”开始：一次 Maven POM 简化设计的历史探索',
@@ -73,12 +73,12 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
       },
       {
         text: '数据库与中间件',
-        collapsed: true,
+        collapsed: false,
         items: [],
       },
       {
         text: '容器与云环境',
-        collapsed: true,
+        collapsed: false,
         items: [
           {
             text: 'Java 8 Alpine 容器中 jstack 与 Arthas 失败：一次 JVM 诊断能力补齐',
@@ -126,12 +126,12 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
       },
       {
         text: '安全',
-        collapsed: true,
+        collapsed: false,
         items: [],
       },
       {
         text: '工程实践',
-        collapsed: true,
+        collapsed: false,
         items: [
           {
             text: 'Windows 通过 SSH 隧道远程调试 Docker 中的 Spring Boot（JDWP）',
