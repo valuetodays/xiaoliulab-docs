@@ -1,6 +1,7 @@
 import { createContentLoader, defineConfig, type HeadConfig } from 'vitepress';
 import { getOrientation } from './data/orientations';
 import { articleMetadataPlugin } from './markdown/article-metadata';
+import { deepDrawdownSidebar } from './sidebar/lab-fortune/deep-drawdown';
 import { experimentsSidebar } from './sidebar/lab-fortune/experiments';
 import { financialHistorySidebar } from './sidebar/lab-fortune/financial-history';
 import { foundationSidebar } from './sidebar/lab-fortune/foundation';
@@ -195,6 +196,7 @@ export default defineConfig({
       '/lab-tech-exploration/': labTechExplorationSidebar,
       '/wechat/': wechatSidebar,
       '/lab-technology/': labTechnologySidebar,
+      '/lab-fortune/deep-drawdown/': deepDrawdownSidebar,
       '/lab-fortune/financial-history/': financialHistorySidebar,
       '/lab-fortune/foundation/': foundationSidebar,
       '/lab-fortune/lab-data/': labDataSidebar,
