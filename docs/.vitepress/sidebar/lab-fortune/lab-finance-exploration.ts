@@ -45,6 +45,14 @@ export const financeExplorationSidebar: DefaultTheme.SidebarItem[] = [
           { text: '同样跟踪一个指数的 ETF，为什么还会有区别？', link: '/lab-fortune/lab-finance-exploration/03-investment-tools/why-etfs-tracking-the-same-index-differ' },
         ],
       },
+      {
+        text: '番外',
+        collapsed: false,
+        items: [
+          { text: '证券账户里的闲钱怎么办？——国债逆回购', link: '/lab-fortune/lab-finance-exploration/extras/idle-cash-in-brokerage-account-treasury-reverse-repo' },
+          { text: '融资账户里的闲钱怎么办？——场内货币基金', link: '/lab-fortune/lab-finance-exploration/extras/idle-cash-in-margin-account-huabao-tianyi' },
+        ],
+      },
     ],
   },
 ];
