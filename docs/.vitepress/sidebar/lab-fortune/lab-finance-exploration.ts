@@ -50,6 +50,7 @@ export const financeExplorationSidebar: DefaultTheme.SidebarItem[] = [
         collapsed: false,
         items: [
           { text: '从 ETF 到股票：我买一只股票时，究竟在看什么？', link: '/lab-fortune/lab-finance-exploration/04-stocks/from-etf-to-stock-what-i-look-at' },
+          { text: '股票分红，真的是左手换右手吗？', link: '/lab-fortune/lab-finance-exploration/04-stocks/stock-dividends-left-hand-right-hand' },
         ],
       },
       {
