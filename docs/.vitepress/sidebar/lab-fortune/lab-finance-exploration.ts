@@ -46,6 +46,13 @@ export const financeExplorationSidebar: DefaultTheme.SidebarItem[] = [
         ],
       },
       {
+        text: '股票',
+        collapsed: false,
+        items: [
+          { text: '从 ETF 到股票：我买一只股票时，究竟在看什么？', link: '/lab-fortune/lab-finance-exploration/04-stocks/from-etf-to-stock-what-i-look-at' },
+        ],
+      },
+      {
         text: '番外',
         collapsed: false,
         items: [
