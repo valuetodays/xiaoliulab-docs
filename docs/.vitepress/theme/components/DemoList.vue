@@ -30,7 +30,7 @@ import { data } from '../../data/demos.data';
           target="_blank"
           rel="noopener noreferrer"
         >
-          下载 Demo<span v-if="attachment.format">（{{ attachment.format }}）</span>
+          下载<span v-if="attachment.format">（{{ attachment.format }}）</span>
         </a>
       </div>
     </article>
