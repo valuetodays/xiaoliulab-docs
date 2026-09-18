@@ -31,6 +31,7 @@ export const megaMenuGroups = [
     title: '站点',
     items: [
       { text: '内核思想', link: '/orientations/' },
+      { text: 'Demo', link: '/demos/' },
       { text: '更新日志', link: '/changelog' },
     ],
   },
