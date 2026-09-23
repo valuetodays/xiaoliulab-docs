@@ -165,6 +165,10 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
             text: '一个留学缴费遗留系统的治理：边界、验证与工程判断',
             link: '/lab-tech-exploration/engineering-practice/a-remit-system-governance',
           },
+          {
+            text: '当一次订单创建不再是一个事务：Service、Manager 与 Channel 的职责划分',
+            link: '/lab-tech-exploration/engineering-practice/service-manager-channel-boundary',
+          },
         ],
       },
     ],
