@@ -58,6 +58,28 @@ export default defineConfig({
         })();
       `,
     ],
+    [
+      'script',
+      {},
+      `
+        (() => {
+          const isAllowedHost = window.location.hostname === '${siteHostname}';
+
+          if (
+            !isAllowedHost ||
+            document.querySelector('[data-website-id="db0bb7bc-ca11-4a48-8f3f-6688967e6711"]')
+          ) {
+            return;
+          }
+
+          const script = document.createElement('script');
+          script.src = 'https://analytics.seenext.cn/script.js';
+          script.defer = true;
+          script.dataset.websiteId = 'db0bb7bc-ca11-4a48-8f3f-6688967e6711';
+          document.head.appendChild(script);
+        })();
+      `,
+    ],
   ],
   sitemap: {
     hostname: `${siteUrl}/`,
