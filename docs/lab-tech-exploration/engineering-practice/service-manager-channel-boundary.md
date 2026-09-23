@@ -1,3 +1,28 @@
+---
+title: 当一次订单创建不再是一个事务：Service、Manager 与 Channel 的职责划分
+date: 2026-09-23
+description: 讨论订单类业务接入外部渠道后，如何划分 Service、Manager、Mapper 与 Channel 的职责边界，以及如何通过幂等、状态约束、主动查询、异步通知和数据对比能力处理外部调用带来的不确定性。
+category:
+  - 探索技术
+  - 工程实践
+
+tags:
+  - Java
+  - Spring
+  - Backend Architecture
+  - System Design
+  - Transaction
+  - Distributed System
+  - Channel Integration
+  - Engineering Practice
+
+orientations:
+  - boundary
+  - explicit
+  - evolution
+
+---
+
 # 当一次订单创建不再是一个事务：Service、Manager 与 Channel 的职责划分
 
 ## 1. 背景：传统三层结构遇到复杂业务
@@ -96,12 +121,12 @@ Service
         External Channel
 ```
 
-  组件      职责
-  --------- ------------------
-  Service   业务流程编排
-  Manager   本地业务操作单元
-  Mapper    数据访问
-  Channel   外部渠道协议边界
+| 组件 | 职责 |
+| --- | --- |
+| Service | 业务流程编排 |
+| Manager | 本地业务操作单元 |
+| Mapper | 数据访问 |
+| Channel | 外部渠道协议边界 |
 
 ## 4. Service：负责业务流程编排
 
@@ -336,13 +361,13 @@ Service
         External Channel
 ```
 
-  组件         职责
-  ------------ ------------------
-  Controller   接口入口
-  Service      业务流程编排
-  Manager      本地业务操作单元
-  Mapper       数据访问
-  Channel      外部渠道协议
+| 组件 | 职责 |
+| --- | --- |
+| Controller | 接口入口 |
+| Service | 业务流程编排 |
+| Manager | 本地业务操作单元 |
+| Mapper | 数据访问 |
+| Channel | 外部渠道协议 |
 
 本文关注的是职责划分本身。
 
