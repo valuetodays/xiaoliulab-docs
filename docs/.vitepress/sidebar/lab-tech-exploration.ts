@@ -162,6 +162,10 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
             link: '/lab-tech-exploration/engineering-practice/maintainable-upstream-channel-integration',
           },
           {
+            text: '外部渠道调用中的数据一致性问题：如何实现最终一致性',
+            link: '/lab-tech-exploration/engineering-practice/external-channel-consistency',
+          },
+          {
             text: '一个留学缴费遗留系统的治理：边界、验证与工程判断',
             link: '/lab-tech-exploration/engineering-practice/a-remit-system-governance',
           },
