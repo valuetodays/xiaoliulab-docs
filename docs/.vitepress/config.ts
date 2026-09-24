@@ -1,5 +1,5 @@
 import { createContentLoader, defineConfig, type HeadConfig } from 'vitepress';
-import { getCorePrinciple } from './data/core-principles';
+import { corePrinciples, getCorePrinciple } from './data/core-principles';
 import { articleMetadataPlugin } from './markdown/article-metadata';
 import { deepDrawdownSidebar } from './sidebar/lab-fortune/deep-drawdown';
 import { experimentsSidebar } from './sidebar/lab-fortune/experiments';
@@ -23,6 +23,8 @@ const siteUrl = `https://${siteHostname}`;
 const sitemapExcludedPaths = [
   'lab-tech-exploration/maven-pom-simplification-history',
   'lab-tech-exploration/https-certificate-secondary-validation-dns-timeout',
+  'orientations/',
+  ...corePrinciples.map(({ code }) => `orientations/${code}`),
 ];
 
 // refer https://vitepress.dev/reference/site-config for details
@@ -128,7 +130,7 @@ export default defineConfig({
       }
 
       for (const [code, latestArticle] of latestArticleByCorePrinciple) {
-        const detailItem = sitemapItemByUrl.get(`orientations/${code}`);
+        const detailItem = sitemapItemByUrl.get(`core-principles/${code}`);
 
         if (detailItem) {
           detailItem.lastmod = latestArticle.item.lastmod;
@@ -145,7 +147,10 @@ export default defineConfig({
     const frontmatterCanonical = pageData.frontmatter.head?.find(
       ([tag, attrs]) => tag === 'link' && attrs.rel === 'canonical',
     );
-    const canonicalUrl = frontmatterCanonical?.[1].href ?? `${siteUrl}/${relativePath}`;
+    const frontmatterCanonicalPath = pageData.frontmatter.canonical;
+    const canonicalUrl = typeof frontmatterCanonicalPath === 'string'
+      ? new URL(frontmatterCanonicalPath, `${siteUrl}/`).toString()
+      : frontmatterCanonical?.[1].href ?? `${siteUrl}/${relativePath}`;
     const canonicalHead: HeadConfig[] = frontmatterCanonical
       ? []
       : [['link', { rel: 'canonical', href: canonicalUrl }]];

@@ -8,7 +8,7 @@ const props = defineProps<{
 }>();
 
 const corePrinciple = computed(() => getCorePrinciple(props.code));
-const href = computed(() => withBase(`/orientations/${props.code}`));
+const href = computed(() => withBase(`/core-principles/${props.code}`));
 </script>
 
 <template>

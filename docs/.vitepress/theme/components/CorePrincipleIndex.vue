@@ -20,7 +20,7 @@ import CorePrincipleTag from './CorePrincipleTag.vue';
 
       <a
         class="core-principle-card-link"
-        :href="withBase(`/orientations/${group.corePrinciple.code}`)"
+        :href="withBase(`/core-principles/${group.corePrinciple.code}`)"
       >
         查看相关文章 →
       </a>
