@@ -11,7 +11,7 @@ const group = computed(() => data.groups.find(
 
 <template>
   <div v-if="group" class="core-principle-detail">
-    <a class="core-principle-back-link" :href="withBase('/orientations/')">
+    <a class="core-principle-back-link" :href="withBase('/core-principles/')">
       ← 全部
     </a>
 

@@ -1,15 +1,17 @@
 ---
-title: 内核思想
-description: 小刘实验室在技术与金融实践中长期体现的内核思想。
+title: 页面已移动
+search: false
+comments: false
 articleMeta: false
+canonical: /core-principles/
+head:
+  - - meta
+    - http-equiv: refresh
+      content: "0; url=/core-principles/"
 ---
 
-<script setup lang="ts">
-import CorePrincipleIndex from '../.vitepress/theme/components/CorePrincipleIndex.vue'
-</script>
+# 页面已移动
 
-# 内核思想
+内核思想页面已移动到新地址：
 
-“内核思想”用来记录一篇文章体现的长期思考方式。它不回答文章在讲什么，而是回答文章在探索、验证和迭代中体现了怎样的内核思想。
-
-<CorePrincipleIndex />
+[前往内核思想](/core-principles/)
