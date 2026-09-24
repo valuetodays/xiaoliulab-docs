@@ -19,7 +19,8 @@ const siteHostname = 'docs.xiaoliulab.com';
 const siteUrl = `https://${siteHostname}`;
 
 // 已迁移页面的旧路径。
-// 旧页面仅用于历史链接跳转，不加入 sitemap。
+// 页面仍永久保留用于兼容历史链接和跳转，
+// 但不再作为正式页面加入 sitemap。
 const sitemapExcludedPaths = [
   'lab-tech-exploration/maven-pom-simplification-history',
   'lab-tech-exploration/https-certificate-secondary-validation-dns-timeout',
