@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: Java,Spring Boot,YAUAA,User-Agent,Heap,Eclipse MAT,Arthas,HashMap,登录性能,eladmin,旧项目维护
-orientations:
+core-principles:
   - reproducible
   - restraint
   - evolution

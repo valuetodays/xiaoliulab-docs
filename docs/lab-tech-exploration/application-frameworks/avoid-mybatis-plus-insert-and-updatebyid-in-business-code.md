@@ -20,7 +20,7 @@ keywords:
   - BizBaseMapper
   - BizSqlInjector
   - MyBatis-Plus SQL Injector
-orientations:
+core-principles:
   - boundary
   - explicit
   - restraint

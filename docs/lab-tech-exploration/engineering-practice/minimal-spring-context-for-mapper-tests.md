@@ -10,7 +10,7 @@ tags:
   - 快速反馈
 category:
   - 技术探索
-orientations:
+core-principles:
   - boundary
   - explicit
   - restraint

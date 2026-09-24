@@ -10,7 +10,7 @@ keywords:
   - 生产事故
   - 事故复盘
   - 支付链路
-orientations:
+core-principles:
   - boundary
   - preserve-truth
   - evolution

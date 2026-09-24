@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: 历史数据,量化交易,统计分析,概率,回测,交易信号,数据分析
-orientations:
+core-principles:
   - reproducible
   - restraint
 ---

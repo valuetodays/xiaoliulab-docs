@@ -6,7 +6,7 @@ head:
   - - meta
     - name: keywords
       content: 做T实验,做T研究,市场波动,交易策略,程序化交易,资产配置
-orientations:
+core-principles:
   - preserve-truth
   - reproducible
   - evolution

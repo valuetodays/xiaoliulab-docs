@@ -1,24 +1,27 @@
 import { defineRoutes } from 'vitepress';
-import { getOrientation, orientations } from '../.vitepress/data/orientations';
+import {
+  corePrinciples,
+  getCorePrinciple,
+} from '../.vitepress/data/core-principles';
 
 export default defineRoutes({
-  paths: orientations.map((orientation) => ({
-    params: { code: orientation.code },
+  paths: corePrinciples.map((corePrinciple) => ({
+    params: { code: corePrinciple.code },
   })),
   transformPageData(pageData) {
-    const orientation = getOrientation(pageData.params?.code);
+    const corePrinciple = getCorePrinciple(pageData.params?.code);
 
-    if (!orientation) {
+    if (!corePrinciple) {
       return;
     }
 
     return {
-      title: orientation.name,
-      description: orientation.description,
+      title: corePrinciple.name,
+      description: corePrinciple.description,
       frontmatter: {
         ...pageData.frontmatter,
-        title: orientation.name,
-        description: orientation.description,
+        title: corePrinciple.name,
+        description: corePrinciple.description,
       },
     };
   },

@@ -12,7 +12,7 @@ tags:
 category:
   - 探索技术
   - 测试
-orientations:
+core-principles:
   - boundary
   - explicit
   - restraint

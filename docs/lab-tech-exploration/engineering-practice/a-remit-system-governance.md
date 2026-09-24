@@ -12,7 +12,7 @@ tags:
   - 测试
   - 工程实践
   - 技术债
-orientations:
+core-principles:
   - boundary
   - preserve-truth
   - reproducible

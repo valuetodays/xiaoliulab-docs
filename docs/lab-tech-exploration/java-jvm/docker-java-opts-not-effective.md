@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: Java,Docker,JAVA_OPTS,JAVA_TOOL_OPTIONS,JVM 参数,jinfo,jcmd,Spring Boot,容器内存
-orientations:
+core-principles:
   - explicit
   - reproducible
 ---

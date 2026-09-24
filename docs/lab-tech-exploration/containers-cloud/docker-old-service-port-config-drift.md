@@ -6,7 +6,7 @@ head:
   - - meta
     - name: keywords
       content: Docker,Spring Boot,--net=host,端口映射,-p,netstat,ss,Dubbo,Dubbo QoS,22222,旧服务维护,端口治理
-orientations:
+core-principles:
   - preserve-truth
   - explicit
 ---

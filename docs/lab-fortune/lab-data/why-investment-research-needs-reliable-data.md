@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: 投资研究,数据来源,交易所数据,Wind,AkShare,东方财富,股票数据,ETF数据,幸存者偏差
-orientations:
+core-principles:
   - preserve-truth
   - reproducible
   - explicit

@@ -6,7 +6,7 @@ head:
   - - meta
     - name: keywords
       content: Docker,host network,bridge network,--net=host,Nacos,Spring Boot,端口映射,容器网络,服务注册,网络隔离
-orientations:
+core-principles:
   - boundary
   - explicit
   - evolution

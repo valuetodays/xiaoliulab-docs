@@ -16,7 +16,7 @@ keywords:
   - 反向委托
   - 交易执行
   - ETF
-orientations:
+core-principles:
   - explicit
 ---
 

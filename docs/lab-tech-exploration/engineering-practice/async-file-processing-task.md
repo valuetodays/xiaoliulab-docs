@@ -10,7 +10,7 @@ tags:
   - 后端设计
 category:
   - 技术探索
-orientations:
+core-principles:
   - boundary
   - explicit
   - restraint

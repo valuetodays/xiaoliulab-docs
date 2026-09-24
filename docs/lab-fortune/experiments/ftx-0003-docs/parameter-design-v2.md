@@ -1,7 +1,7 @@
 ---
 title: 深度回撤实验：参数设计方案 V2
 description: 记录 FTX-0003 参数设计方案 V2。将 START 前证据评估、START 与 START 后局部回撤梯度拆分为不同职责，并研究政策、资金与市场状态如何共同决定启动时机。
-orientations:
+core-principles:
   - explicit
   - restraint
   - reproducible

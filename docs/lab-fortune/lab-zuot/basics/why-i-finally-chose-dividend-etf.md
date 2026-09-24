@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: 红利ETF,ETF做T,做T标的,长期投资,高股息,资产配置
-orientations:
+core-principles:
   - restraint
   - evolution
 ---

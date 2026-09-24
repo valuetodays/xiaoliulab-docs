@@ -11,7 +11,7 @@ keywords:
   - 数据访问层
   - CRUD
   - 维护性
-orientations:
+core-principles:
   - boundary
   - evolution
 ---
