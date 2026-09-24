@@ -6,7 +6,7 @@ head:
   - - meta
     - name: keywords
       content: Spring Boot,Micrometer,Prometheus,JVM Metrics,MeterRegistry,AsyncConfigurer,Actuator,Bean 生命周期
-orientations:
+core-principles:
   - reproducible
   - restraint
 ---

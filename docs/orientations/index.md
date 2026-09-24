@@ -5,11 +5,11 @@ articleMeta: false
 ---
 
 <script setup lang="ts">
-import OrientationIndex from '../.vitepress/theme/components/OrientationIndex.vue'
+import CorePrincipleIndex from '../.vitepress/theme/components/CorePrincipleIndex.vue'
 </script>
 
 # 内核思想
 
 “内核思想”用来记录一篇文章体现的长期思考方式。它不回答文章在讲什么，而是回答文章在探索、验证和迭代中体现了怎样的内核思想。
 
-<OrientationIndex />
+<CorePrincipleIndex />

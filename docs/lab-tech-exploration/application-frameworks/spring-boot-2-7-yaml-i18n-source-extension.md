@@ -10,7 +10,7 @@ keywords:
   - ResourceBundleMessageSource
   - ReloadableResourceBundleMessageSource
   - YamlPropertiesFactoryBean
-orientations:
+core-principles:
   - boundary
   - reproducible
   - restraint

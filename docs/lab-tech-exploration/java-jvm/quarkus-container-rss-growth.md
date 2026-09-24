@@ -6,7 +6,7 @@ head:
   - - meta
     - name: keywords
       content: Quarkus,JDK 21,Docker,RSS,Native Memory,glibc,malloc arena,MALLOC_ARENA_MAX,NMT,容器内存
-orientations:
+core-principles:
   - reproducible
   - restraint
 ---

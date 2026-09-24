@@ -16,7 +16,7 @@ tags:
   - Channel Integration
   - Engineering Practice
 
-orientations:
+core-principles:
   - boundary
   - explicit
   - evolution

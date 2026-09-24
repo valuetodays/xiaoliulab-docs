@@ -1,7 +1,7 @@
 ---
 title: 一个看起来完整的模型，为什么后来被推翻
 description: 记录 FTX-0003 参数设计方案 V1 被现实反例推翻的过程，以及从中得到的模型审查与反证方法。
-orientations:
+core-principles:
   - falsification
 ---
 

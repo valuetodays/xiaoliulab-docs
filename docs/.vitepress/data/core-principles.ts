@@ -1,11 +1,11 @@
-export interface OrientationDefinition {
+export interface CorePrincipleDefinition {
   code: string;
   name: string;
   color: string;
   description: string;
 }
 
-export const orientations: OrientationDefinition[] = [
+export const corePrinciples: CorePrincipleDefinition[] = [
   {
     code: 'boundary',
     name: '边界',
@@ -50,10 +50,10 @@ export const orientations: OrientationDefinition[] = [
   },
 ];
 
-const orientationByCode = new Map(
-  orientations.map((orientation) => [orientation.code, orientation]),
+const corePrincipleByCode = new Map(
+  corePrinciples.map((corePrinciple) => [corePrinciple.code, corePrinciple]),
 );
 
-export function getOrientation(code: string): OrientationDefinition | undefined {
-  return orientationByCode.get(code);
+export function getCorePrinciple(code: string): CorePrincipleDefinition | undefined {
+  return corePrincipleByCode.get(code);
 }

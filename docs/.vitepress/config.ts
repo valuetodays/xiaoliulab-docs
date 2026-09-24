@@ -1,5 +1,5 @@
 import { createContentLoader, defineConfig, type HeadConfig } from 'vitepress';
-import { getOrientation } from './data/orientations';
+import { getCorePrinciple } from './data/core-principles';
 import { articleMetadataPlugin } from './markdown/article-metadata';
 import { deepDrawdownSidebar } from './sidebar/lab-fortune/deep-drawdown';
 import { experimentsSidebar } from './sidebar/lab-fortune/experiments';
@@ -88,15 +88,15 @@ export default defineConfig({
         items.map((item) => [item.url.replace(/^\/+/, ''), item]),
       );
       const pages = await createContentLoader('**/*.md').load();
-      const latestArticleByOrientation = new Map<
+      const latestArticleByCorePrinciple = new Map<
         string,
         { item: (typeof items)[number]; timestamp: number }
       >();
 
       for (const page of pages) {
-        const articleOrientations = page.frontmatter.orientations;
+        const articleCorePrinciples = page.frontmatter['core-principles'];
 
-        if (!Array.isArray(articleOrientations)) {
+        if (!Array.isArray(articleCorePrinciples)) {
           continue;
         }
 
@@ -114,20 +114,20 @@ export default defineConfig({
           continue;
         }
 
-        for (const code of articleOrientations) {
-          if (typeof code !== 'string' || !getOrientation(code)) {
+        for (const code of articleCorePrinciples) {
+          if (typeof code !== 'string' || !getCorePrinciple(code)) {
             continue;
           }
 
-          const current = latestArticleByOrientation.get(code);
+          const current = latestArticleByCorePrinciple.get(code);
 
           if (!current || timestamp > current.timestamp) {
-            latestArticleByOrientation.set(code, { item: sitemapItem, timestamp });
+            latestArticleByCorePrinciple.set(code, { item: sitemapItem, timestamp });
           }
         }
       }
 
-      for (const [code, latestArticle] of latestArticleByOrientation) {
+      for (const [code, latestArticle] of latestArticleByCorePrinciple) {
         const detailItem = sitemapItemByUrl.get(`orientations/${code}`);
 
         if (detailItem) {

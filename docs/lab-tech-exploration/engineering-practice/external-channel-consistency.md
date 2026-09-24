@@ -12,7 +12,7 @@ tags:
   - 数据对比
   - 补偿机制
 
-orientations:
+core-principles:
   - boundary
   - preserve-truth
   - explicit

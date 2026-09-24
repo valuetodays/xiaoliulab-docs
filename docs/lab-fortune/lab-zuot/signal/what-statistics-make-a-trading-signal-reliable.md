@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: 交易信号,统计验证,胜率,盈亏比,期望收益,最大回撤,样本外验证,量化交易
-orientations:
+core-principles:
   - explicit
   - reproducible
   - restraint

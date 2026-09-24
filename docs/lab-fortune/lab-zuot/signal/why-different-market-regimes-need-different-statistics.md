@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: 市场状态,历史统计,条件统计,趋势分析,波动分析,价格分布,做T,交易研究,MarketRegime
-orientations:
+core-principles:
   - reproducible
   - restraint
   - evolution

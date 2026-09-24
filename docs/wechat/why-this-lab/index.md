@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: 微信支付,微信支付教程,微信支付接入,微信支付开发,微信支付真实案例,微信支付问题排查
-orientations:
+core-principles:
   - reproducible
   - restraint
 ---

@@ -7,7 +7,7 @@ head:
   - - meta
     - name: keywords
       content: HTTPS, ACME, Let's Encrypt, ZeroSSL, 1Panel, HTTP-01, DNS-01, secondary validation, DNS timeout, CAA, 火山引擎 DNS
-orientations:
+core-principles:
   - preserve-truth
   - reproducible
   - restraint

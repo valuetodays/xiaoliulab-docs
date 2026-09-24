@@ -1,5 +1,7 @@
 # 内核思想系统方案
 
+> 命名变更说明：后续已将内部数据文件、代码标识符与 Markdown frontmatter 从 `orientations` 调整为 `core-principles`；已对外发布的 `/orientations/` URL 保持不变。本文下文保留原方案中的历史命名。
+
 ## 1. 目标
 
 为文章增加一套独立于普通 `tags` 的“内核思想”。

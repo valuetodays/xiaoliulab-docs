@@ -6,7 +6,7 @@ head:
   - - meta
     - name: keywords
       content: Spring Boot 2.2.10,Logback,logback.xml,root logger,ThresholdFilter,debug.log,info.log,旧项目维护,日志配置
-orientations:
+core-principles:
   - explicit
 ---
 

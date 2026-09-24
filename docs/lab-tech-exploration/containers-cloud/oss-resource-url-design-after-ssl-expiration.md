@@ -14,7 +14,7 @@ tags:
 category:
   - 技术探索
 
-orientations:
+core-principles:
   - preserve-truth
   - explicit
   - evolution

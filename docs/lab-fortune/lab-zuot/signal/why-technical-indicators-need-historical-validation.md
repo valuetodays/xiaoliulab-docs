@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: 技术指标,历史验证,MACD,CCI,KDJ,交易信号,统计分析,量化研究
-orientations:
+core-principles:
   - reproducible
   - restraint
 ---

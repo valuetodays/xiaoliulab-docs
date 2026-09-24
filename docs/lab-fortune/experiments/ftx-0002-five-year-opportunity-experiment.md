@@ -10,7 +10,7 @@ tags:
 category:
   - 金融实验
   - 策略实验
-orientations:
+core-principles:
   - preserve-truth
   - explicit
   - restraint

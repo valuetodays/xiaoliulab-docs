@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: PageHelper 1.3.0,PageHelper,MyBatis,Spring Boot 2.2.10,分页,PageInfo,泛型,ISelect,doSelectPageInfo,Java 8
-orientations:
+core-principles:
   - explicit
   - reproducible
 ---

@@ -13,7 +13,7 @@ tags:
 category:
   - 技术探索
 
-orientations:
+core-principles:
   - boundary
   - explicit
   - evolution

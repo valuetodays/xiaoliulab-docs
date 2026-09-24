@@ -7,7 +7,7 @@ head:
   - - meta
     - name: keywords
       content: Maven,Maven 4,POM,GAV,dependency,plugin,exclusion,ModelParser,Build POM,Consumer POM,XML,Java
-orientations:
+core-principles:
   - evolution
 ---
 

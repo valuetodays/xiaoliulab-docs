@@ -3,7 +3,7 @@ articleMeta: false
 ---
 
 <script setup lang="ts">
-import OrientationDetail from '../.vitepress/theme/components/OrientationDetail.vue'
+import CorePrincipleDetail from '../.vitepress/theme/components/CorePrincipleDetail.vue'
 </script>
 
-<OrientationDetail />
+<CorePrincipleDetail />

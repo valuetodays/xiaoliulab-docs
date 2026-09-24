@@ -10,7 +10,7 @@ keywords:
   - IntelliJ IDEA
   - Windows
   - 远程调试
-orientations:
+core-principles:
   - boundary
   - restraint
 ---

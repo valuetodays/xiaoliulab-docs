@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: 历史数据,交易机会,统计分析,交易信号,量化研究,回测,概率优势
-orientations:
+core-principles:
   - explicit
   - reproducible
   - restraint

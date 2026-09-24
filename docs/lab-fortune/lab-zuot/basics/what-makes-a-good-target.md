@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: 做T标的,ETF做T,红利ETF,长期持有,资产配置,流动性,手续费
-orientations:
+core-principles:
   - explicit
   - restraint
 ---

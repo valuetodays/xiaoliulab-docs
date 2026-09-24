@@ -5,7 +5,7 @@ head:
   - - meta
     - name: keywords
       content: TdxQuant,前复权,end_time,get_market_data,历史行情,通达信,ETF份额拆分
-orientations:
+core-principles:
   - preserve-truth
   - reproducible
   - explicit

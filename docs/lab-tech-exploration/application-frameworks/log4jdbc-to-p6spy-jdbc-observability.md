@@ -9,7 +9,7 @@ keywords:
   - 慢 SQL
   - JDBC
   - 可观测性
-orientations:
+core-principles:
   - explicit
   - evolution
 ---

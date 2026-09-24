@@ -11,7 +11,7 @@ tags:
 category:
   - 探索技术
   - Spring Boot
-orientations:
+core-principles:
   - boundary
   - explicit
 ---
