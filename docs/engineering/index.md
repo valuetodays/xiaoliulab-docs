@@ -10,6 +10,7 @@ articleMeta: false
 
 
 - [一个留学缴费遗留系统的治理：边界、验证与工程判断](/lab-tech-exploration/engineering-practice/a-remit-system-governance)
+- [高质量的系统演进：让变化始终处于可验证、可控制的范围内](/lab-tech-exploration/engineering-practice/high-quality-system-evolution)
 - [别把所有测试都叫 Test：UT、IT 和 SmokeIT](/lab-tech-exploration/engineering-practice/ut-it-smokeit-execution-boundary)
 - [如何编写可维护的上游渠道调用代码](/lab-tech-exploration/engineering-practice/maintainable-upstream-channel-integration)
 - [当一次订单创建不再是一个事务：Service、Manager 与 Channel 的职责划分](/lab-tech-exploration/engineering-practice/service-manager-channel-boundary)
