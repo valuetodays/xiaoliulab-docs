@@ -134,6 +134,10 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
         collapsed: false,
         items: [
           {
+            text: '高质量的系统演进：让变化始终处于可验证、可控制的范围内',
+            link: '/lab-tech-exploration/engineering-practice/high-quality-system-evolution',
+          },
+          {
             text: 'Windows 通过 SSH 隧道远程调试 Docker 中的 Spring Boot（JDWP）',
             link: '/lab-tech-exploration/engineering-practice/windows-ssh-tunnel-docker-spring-boot-jdwp',
           },
