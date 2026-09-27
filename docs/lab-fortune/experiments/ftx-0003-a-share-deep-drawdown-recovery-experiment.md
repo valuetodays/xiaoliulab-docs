@@ -361,7 +361,21 @@ Call 权利金允许全部损失，不承担主仓功能。
 
 ## 参数设计与研究依据
 
-加仓梯度、START、现金结构和融资压力测试的研究过程记录在[从历史峰谷回撤到分层加仓：深度回撤实验的参数设计](/lab-fortune/experiments/ftx-0003-docs/parameter-design)。
+FTX-0003 的规则不是一次性设计完成的，而是在历史回放和问题验证过程中逐步形成。
+
+早期方案主要根据价格回撤确定 START，并在 START 后按照固定回撤梯度继续加仓。
+
+第一次无上帝视角验证见：
+
+- [2008 年股灾无上帝视角回放：机械加仓规则第一次验证](/lab-fortune/experiments/ftx-0003-docs/2008-crash-no-hindsight-replay)
+
+2008 年回放暴露出一个重要问题：**START 的位置与 START 之后的加仓规则不能完全割裂。**
+
+如果 START 本身已经处于非常深的位置，仍然机械等待 -10%、-20%、-30% 的新增跌幅，可能导致整个深度回撤过程中几乎无法部署资金。
+
+这次验证也促使后续方案开始把强制卖出状态、政策变化以及公开确认的国家资本实际买入纳入 START 的观察范围。
+
+完整的参数研究过程记录在[从历史峰谷回撤到分层加仓：深度回撤实验的参数设计](/lab-fortune/experiments/ftx-0003-docs/parameter-design)。
 
 当前正在形成的版本为[参数设计方案 V2](/lab-fortune/experiments/ftx-0003-docs/parameter-design-v2)。
 
