@@ -23,7 +23,7 @@ core-principles:
 
 ## 1. 这一次验证的不是原始规则
 
-2008年的第一次回放结束以后，原始方案暴露出了几个明显问题。
+[2008年的第一次回放](/lab-fortune/experiments/ftx-0003-docs/2008-crash-no-hindsight-replay)结束以后，原始方案暴露出了几个明显问题。
 
 其中最重要的是：
 
