@@ -368,6 +368,7 @@ FTX-0003 的规则不是一次性设计完成的，而是在历史回放和问�
 第一次无上帝视角验证见：
 
 - [2008 年股灾无上帝视角回放：机械加仓规则第一次验证](/lab-fortune/experiments/ftx-0003-docs/2008-crash-no-hindsight-replay)
+- [2015—2016 年股灾无上帝视角回放：机械加仓规则第二次验证](/lab-fortune/experiments/ftx-0003-docs/2015-2016-crash-no-hindsight-replay)
 
 2008 年回放暴露出一个重要问题：**START 的位置与 START 之后的加仓规则不能完全割裂。**
 
