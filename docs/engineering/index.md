@@ -10,6 +10,7 @@ articleMeta: false
 
 
 - [一个留学缴费遗留系统的治理：边界、验证与工程判断](/lab-tech-exploration/engineering-practice/a-remit-system-governance)
+- [遗留支付系统模块化重构：为什么坚持小步修改、小步发布](/lab-tech-exploration/engineering-practice/legacy-payment-modular-refactoring-in-small-steps)
 - [高质量的系统演进：让变化始终处于可验证、可控制的范围内](/lab-tech-exploration/engineering-practice/high-quality-system-evolution)
 - [别把所有测试都叫 Test：UT、IT 和 SmokeIT](/lab-tech-exploration/engineering-practice/ut-it-smokeit-execution-boundary)
 - [如何编写可维护的上游渠道调用代码](/lab-tech-exploration/engineering-practice/maintainable-upstream-channel-integration)
