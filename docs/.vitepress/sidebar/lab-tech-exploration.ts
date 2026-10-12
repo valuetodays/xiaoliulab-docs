@@ -174,6 +174,10 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
             link: '/lab-tech-exploration/engineering-practice/a-remit-system-governance',
           },
           {
+            text: '遗留支付系统模块化重构：为什么坚持小步修改、小步发布',
+            link: '/lab-tech-exploration/engineering-practice/legacy-payment-modular-refactoring-in-small-steps',
+          },
+          {
             text: '当一次订单创建不再是一个事务：Service、Manager 与 Channel 的职责划分',
             link: '/lab-tech-exploration/engineering-practice/service-manager-channel-boundary',
           },
