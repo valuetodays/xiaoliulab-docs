@@ -185,6 +185,10 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
             text: '当一次订单创建不再是一个事务：Service、Manager 与 Channel 的职责划分',
             link: '/lab-tech-exploration/engineering-practice/service-manager-channel-boundary',
           },
+          {
+            text: '从 Dubbo 到 HTTP：关于内部系统解耦的一次架构思考',
+            link: '/lab-tech-exploration/engineering-practice/dubbo-to-http-system-decoupling',
+          },
         ],
       },
     ],
