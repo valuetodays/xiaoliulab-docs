@@ -28,6 +28,10 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
         collapsed: false,
         items: [
           {
+            text: '一次未完成的 Spring Boot 升级：从 2.2.10 到 2.5.14 的工程复盘',
+            link: '/lab-tech-exploration/application-frameworks/spring-boot-2-2-to-2-5-upgrade-retrospective',
+          },
+          {
             text: '从 Spring Boot 迁移到 Quarkus：一份面向真实业务的基础能力验证清单',
             link: '/lab-tech-exploration/application-frameworks/spring-boot-to-quarkus-capability-validation',
           },
