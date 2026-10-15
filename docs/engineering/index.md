@@ -15,6 +15,7 @@ articleMeta: false
 - [别把所有测试都叫 Test：UT、IT 和 SmokeIT](/lab-tech-exploration/engineering-practice/ut-it-smokeit-execution-boundary)
 - [如何编写可维护的上游渠道调用代码](/lab-tech-exploration/engineering-practice/maintainable-upstream-channel-integration)
 - [当一次订单创建不再是一个事务：Service、Manager 与 Channel 的职责划分](/lab-tech-exploration/engineering-practice/service-manager-channel-boundary)
+- [从 Dubbo 到 HTTP：关于内部系统解耦的一次架构思考](/lab-tech-exploration/engineering-practice/dubbo-to-http-system-decoupling)
 - [从 JPA + MyBatis 到 MyBatis-Plus](/lab-tech-exploration/application-frameworks/jpa-mybatis-to-mybatis-plus-maintainability)
 - [一次未完成的 Spring Boot 升级：从 2.2.10 到 2.5.14 的工程复盘](/lab-tech-exploration/application-frameworks/spring-boot-2-2-to-2-5-upgrade-retrospective)
 - [Docker 基础镜像切换后的签名异常](/lab-tech-exploration/containers-cloud/docker-base-image-signature-default-charset)
