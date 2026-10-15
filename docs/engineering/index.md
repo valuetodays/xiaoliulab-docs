@@ -16,6 +16,7 @@ articleMeta: false
 - [如何编写可维护的上游渠道调用代码](/lab-tech-exploration/engineering-practice/maintainable-upstream-channel-integration)
 - [当一次订单创建不再是一个事务：Service、Manager 与 Channel 的职责划分](/lab-tech-exploration/engineering-practice/service-manager-channel-boundary)
 - [从 JPA + MyBatis 到 MyBatis-Plus](/lab-tech-exploration/application-frameworks/jpa-mybatis-to-mybatis-plus-maintainability)
+- [一次未完成的 Spring Boot 升级：从 2.2.10 到 2.5.14 的工程复盘](/lab-tech-exploration/application-frameworks/spring-boot-2-2-to-2-5-upgrade-retrospective)
 - [Docker 基础镜像切换后的签名异常](/lab-tech-exploration/containers-cloud/docker-base-image-signature-default-charset)
 - [PageHelper 分页泛型与隐式行为](/lab-tech-exploration/application-frameworks/pagehelper-pagination-generic-type-safety)
 - [`--net=host` 治理](/lab-tech-exploration/containers-cloud/docker-remove-host-network)
