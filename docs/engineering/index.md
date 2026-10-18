@@ -27,6 +27,7 @@ articleMeta: false
 ## 代码之外
 
 - [功能开发完成了，为什么半年还没上线？](/lab-beyond-code/delivery/feature-developed-but-not-released)
+- [接手一个没有单元测试的遗留系统，我会从哪里开始？](/lab-beyond-code/governance/legacy-system-unit-testing-start-guide)
 
 ---
 

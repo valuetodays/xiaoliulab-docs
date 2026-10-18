@@ -23,7 +23,12 @@ export const labBeyondCodeSidebar: DefaultTheme.SidebarItem[] = [
       {
         text: '工程治理',
         collapsed: false,
-        items: [],
+        items: [
+          {
+            text: '接手一个没有单元测试的遗留系统，我会从哪里开始？',
+            link: '/lab-beyond-code/governance/legacy-system-unit-testing-start-guide',
+          },
+        ],
       },
       {
         text: '经验与成长',
