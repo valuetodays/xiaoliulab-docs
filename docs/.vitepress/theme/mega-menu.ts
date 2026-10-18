@@ -34,6 +34,7 @@ export const megaMenuGroups = [
       { text: '内核思想', link: '/core-principles/' },
       { text: 'Demo', link: '/demos/' },
       { text: '更新日志', link: '/changelog' },
+      { text: '工程实践', link: '/engineering' },
     ],
   },
 ] as const satisfies readonly MegaMenuGroup[];

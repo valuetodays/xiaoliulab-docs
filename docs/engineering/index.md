@@ -1,14 +1,14 @@
 ---
-title: 工程实践与思考
-description: Java 后端开发、系统治理与软件工程实践记录。
+title: 工程实践
+description: 记录软件开发、系统治理与工程交付中的实践和思考。
 articleMeta: false
 ---
 
-# 工程实践与思考
+# 工程实践
 
 记录实际开发、系统维护与团队协作中的问题、实践和思考。
 
-## 工程实践
+## 技术实践
 
 - [一个留学缴费遗留系统的治理：边界、验证与工程判断](/lab-tech-exploration/engineering-practice/a-remit-system-governance)
 - [遗留支付系统模块化重构：为什么坚持小步修改、小步发布](/lab-tech-exploration/engineering-practice/legacy-payment-modular-refactoring-in-small-steps)
