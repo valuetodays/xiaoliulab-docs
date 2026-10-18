@@ -8,7 +8,12 @@ export const labBeyondCodeSidebar: DefaultTheme.SidebarItem[] = [
       {
         text: '工程交付',
         collapsed: false,
-        items: [],
+        items: [
+          {
+            text: '功能开发完成了，为什么半年还没上线？',
+            link: '/lab-beyond-code/delivery/feature-developed-but-not-released',
+          },
+        ],
       },
       {
         text: '团队与协作',
