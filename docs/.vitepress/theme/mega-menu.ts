@@ -14,6 +14,7 @@ export const megaMenuGroups = [
     items: [
       { text: '技术实验', link: '/lab-technology/' },
       { text: '探索技术', link: '/lab-tech-exploration/' },
+      { text: '代码之外', link: '/lab-beyond-code/' },
     ],
   },
   {
