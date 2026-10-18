@@ -28,6 +28,10 @@ export const labBeyondCodeSidebar: DefaultTheme.SidebarItem[] = [
             text: '接手一个没有单元测试的遗留系统，我会从哪里开始？',
             link: '/lab-beyond-code/governance/legacy-system-unit-testing-start-guide',
           },
+          {
+            text: '单元测试跑起来了，为什么后来又停了？',
+            link: '/lab-beyond-code/governance/unit-test-ci-sustainability',
+          },
         ],
       },
       {

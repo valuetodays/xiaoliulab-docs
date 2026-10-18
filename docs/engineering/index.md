@@ -8,6 +8,12 @@ articleMeta: false
 
 记录实际开发、系统维护与团队协作中的问题、实践和思考。
 
+## 代码之外
+
+- [功能开发完成了，为什么半年还没上线？](/lab-beyond-code/delivery/feature-developed-but-not-released)
+- [接手一个没有单元测试的遗留系统，我会从哪里开始？](/lab-beyond-code/governance/legacy-system-unit-testing-start-guide)
+- [单元测试跑起来了，为什么后来又停了？](/lab-beyond-code/governance/unit-test-ci-sustainability)
+
 ## 技术实践
 
 - [一个留学缴费遗留系统的治理：边界、验证与工程判断](/lab-tech-exploration/engineering-practice/a-remit-system-governance)
@@ -23,11 +29,6 @@ articleMeta: false
 - [PageHelper 分页泛型与隐式行为](/lab-tech-exploration/application-frameworks/pagehelper-pagination-generic-type-safety)
 - [`--net=host` 治理](/lab-tech-exploration/containers-cloud/docker-remove-host-network)
 - [Logback 多 root 排查](/lab-tech-exploration/application-frameworks/logback-multiple-root-debug-info-log)
-
-## 代码之外
-
-- [功能开发完成了，为什么半年还没上线？](/lab-beyond-code/delivery/feature-developed-but-not-released)
-- [接手一个没有单元测试的遗留系统，我会从哪里开始？](/lab-beyond-code/governance/legacy-system-unit-testing-start-guide)
 
 ---
 
