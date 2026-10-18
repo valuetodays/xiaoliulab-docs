@@ -18,7 +18,12 @@ export const labBeyondCodeSidebar: DefaultTheme.SidebarItem[] = [
       {
         text: '团队与协作',
         collapsed: false,
-        items: [],
+        items: [
+          {
+            text: '我心目中的理想团队',
+            link: '/lab-beyond-code/team/my-ideal-team',
+          },
+        ],
       },
       {
         text: '工程治理',
