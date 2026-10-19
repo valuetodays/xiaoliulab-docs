@@ -5,7 +5,7 @@ pageClass: lab-home site-home
 hero:
   name: 小刘实验室
   text: 每一个第一次，都值得跑通
-  tagline: 面向开发者的最小 MVP 实验室。每个实验都以「在线体验 + 可运行源码 + 明确成功结果」为目标。
+  tagline: 从真实经历出发，以事实约束观点，以逻辑检验结论，<br>通过讨论拓展视角，最终留下经得起复盘的认识。
   actions:
     - theme: brand
       text: 微信支付

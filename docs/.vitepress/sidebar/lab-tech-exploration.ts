@@ -189,6 +189,10 @@ export const labTechExplorationSidebar: DefaultTheme.SidebarItem[] = [
             text: '从 Dubbo 到 HTTP：关于内部系统解耦的一次架构思考',
             link: '/lab-tech-exploration/engineering-practice/dubbo-to-http-system-decoupling',
           },
+          {
+            text: '一个失败了两年的定时任务：从 Dubbo 超时到增量同步',
+            link: '/lab-tech-exploration/engineering-practice/two-year-failed-scheduled-job-retrospective',
+          },
         ],
       },
     ],

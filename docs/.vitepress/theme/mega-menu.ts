@@ -14,6 +14,7 @@ export const megaMenuGroups = [
     items: [
       { text: '技术实验', link: '/lab-technology/' },
       { text: '探索技术', link: '/lab-tech-exploration/' },
+      { text: '代码之外', link: '/lab-beyond-code/' },
     ],
   },
   {
@@ -33,6 +34,7 @@ export const megaMenuGroups = [
       { text: '内核思想', link: '/core-principles/' },
       { text: 'Demo', link: '/demos/' },
       { text: '更新日志', link: '/changelog' },
+      { text: '工程实践', link: '/engineering' },
     ],
   },
 ] as const satisfies readonly MegaMenuGroup[];
