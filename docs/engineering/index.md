@@ -10,6 +10,8 @@ articleMeta: false
 
 ## 代码之外
 
+- [工程经验如何传递，而不是让每个人重新踩坑？](/lab-beyond-code/growth/engineering-experience-transfer)
+- [我心目中的理想团队](/lab-beyond-code/team/my-ideal-team)
 - [功能开发完成了，为什么半年还没上线？](/lab-beyond-code/delivery/feature-developed-but-not-released)
 - [接手一个没有单元测试的遗留系统，我会从哪里开始？](/lab-beyond-code/governance/legacy-system-unit-testing-start-guide)
 - [单元测试跑起来了，为什么后来又停了？](/lab-beyond-code/governance/unit-test-ci-sustainability)

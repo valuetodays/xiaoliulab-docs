@@ -42,7 +42,12 @@ export const labBeyondCodeSidebar: DefaultTheme.SidebarItem[] = [
       {
         text: '经验与成长',
         collapsed: false,
-        items: [],
+        items: [
+          {
+            text: '工程经验如何传递，而不是让每个人重新踩坑？',
+            link: '/lab-beyond-code/growth/engineering-experience-transfer',
+          },
+        ],
       },
       {
         text: '工程判断',
