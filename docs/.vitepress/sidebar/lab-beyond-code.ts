@@ -47,6 +47,10 @@ export const labBeyondCodeSidebar: DefaultTheme.SidebarItem[] = [
             text: '工程经验如何传递，而不是让每个人重新踩坑？',
             link: '/lab-beyond-code/growth/engineering-experience-transfer',
           },
+          {
+            text: 'AI 能写代码之后，工程师还需要做什么？',
+            link: '/lab-beyond-code/growth/ai-coding-engineer-role',
+          },
         ],
       },
       {
