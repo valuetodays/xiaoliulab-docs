@@ -34,4 +34,4 @@ articleMeta: false
 
 ---
 
-[探索技术](/lab-tech-exploration/) | [代码之外](/lab-beyond-code/)
+[代码之外](/lab-beyond-code/) | [探索技术](/lab-tech-exploration/)
