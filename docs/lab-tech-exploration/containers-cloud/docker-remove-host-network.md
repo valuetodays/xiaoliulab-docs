@@ -14,6 +14,8 @@ core-principles:
 
 # Docker 服务去除 `--net=host`：从 host 网络回到 bridge 的一次改造记录
 
+> 本文的宿主机地址与部署拓扑已脱敏，`10.20.0.10` 为虚构私网地址；Docker bridge 地址仅用于说明容器网络关系。端口保留为排查示例。
+
 ## 一、为什么要去掉 `--net=host`
 
 现有生产环境中的 Java 服务以 Docker 容器运行。
