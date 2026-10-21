@@ -16,6 +16,7 @@ articleMeta: false
 - [功能开发完成了，为什么半年还没上线？](/lab-beyond-code/delivery/feature-developed-but-not-released)
 - [接手一个没有单元测试的遗留系统，我会从哪里开始？](/lab-beyond-code/governance/legacy-system-unit-testing-start-guide)
 - [单元测试跑起来了，为什么后来又停了？](/lab-beyond-code/governance/unit-test-ci-sustainability)
+- [从发现问题到解决问题，中间隔着什么？](/lab-beyond-code/judgment/from-identifying-to-solving-problems)
 
 ## 技术实践
 

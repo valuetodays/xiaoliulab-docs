@@ -56,7 +56,12 @@ export const labBeyondCodeSidebar: DefaultTheme.SidebarItem[] = [
       {
         text: '工程判断',
         collapsed: false,
-        items: [],
+        items: [
+          {
+            text: '从发现问题到解决问题，中间隔着什么？',
+            link: '/lab-beyond-code/judgment/from-identifying-to-solving-problems',
+          },
+        ],
       },
     ],
   },
