@@ -7,6 +7,7 @@ export const financeExplorationSidebar: DefaultTheme.SidebarItem[] = [
       { text: '金融实验首页', link: '/lab-fortune/' },
       { text: '探索金融首页', link: '/lab-fortune/lab-finance-exploration/' },
       { text: '为什么有探索金融？', link: '/lab-fortune/lab-finance-exploration/why-this-finance-exploration' },
+      { text: '一个人的金融弯路', link: '/lab-fortune/lab-finance-exploration/my-financial-detours'},
       {
         text: '余额宝',
         collapsed: false,
