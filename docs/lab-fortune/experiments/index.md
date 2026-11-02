@@ -62,6 +62,7 @@ head:
 | FTX-0003 | [A股深度回撤修复实验](/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment) | 未开始 |
 | FTX-0010 | [CCI尾盘低位观察实验](/lab-fortune/experiments/ftx-0010-cci-tail-low-observation) | 已结束 |
 | FTX-0011 | [510300 CCI超卖短期修复验证实验](/lab-fortune/experiments/ftx-0011-510300-cci-oversold-repair) | 已结束 |
+| FTX-0012 | [520550 融资持有与月度分红复投实验](/lab-fortune/experiments/ftx-0012-520550-margin-dividend-reinvestment) | 已启动，初始建仓待确认 |
 
 ## 实验想法池
 

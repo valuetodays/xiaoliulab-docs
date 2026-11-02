@@ -11,6 +11,7 @@ export const experimentsSidebar: DefaultTheme.SidebarItem[] = [
       { text: 'FTX-0003 A股深度回撤修复实验', link: '/lab-fortune/experiments/ftx-0003-a-share-deep-drawdown-recovery-experiment' },
       { text: 'FTX-0010 CCI尾盘低位观察实验', link: '/lab-fortune/experiments/ftx-0010-cci-tail-low-observation' },
       { text: 'FTX-0011 510300 CCI超卖短期修复验证实验', link: '/lab-fortune/experiments/ftx-0011-510300-cci-oversold-repair' },
+      { text: 'FTX-0012 520550 融资持有与月度分红复投实验', link: '/lab-fortune/experiments/ftx-0012-520550-margin-dividend-reinvestment' },
     ],
   },
 ];
