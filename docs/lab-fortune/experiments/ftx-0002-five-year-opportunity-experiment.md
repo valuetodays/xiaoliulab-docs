@@ -92,7 +92,6 @@ core-principles:
 具体买入、卖出及已实现收益记录在：
 
 - [实验：机会实盘记录](https://tools.xiaoliulab.com/opportunity-trade-records)
-- [【腾讯文档】机会实验实盘记录](https://docs.qq.com/sheet/DVXpVbk5yRWV3WnVa?tab=BB08J2)
 
 
 每笔交易至少记录：
