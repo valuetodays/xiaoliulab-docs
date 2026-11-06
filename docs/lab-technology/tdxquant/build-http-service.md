@@ -361,3 +361,5 @@ TQ 调用统一加锁
 TdxQuant 负责提供通达信行情能力，Python 行情服务负责建立稳定、统一、可控制的内部 API 边界，Spring Boot 等业务系统则负责调度、数据入库、指标计算和消息推送。
 
 这样既保留了 TdxQuant 的数据能力，也避免业务系统直接依赖它的本地目录、Python 数据结构和原始接口。
+
+本文讨论的是 TdxQuant 行情数据接口的工程封装；[《从零打通 Java、Python 与 QMT 的真实证券交易链路》](/securities/trading/programmatic-t-trading)记录的是通过 MiniQMT 发起真实证券委托、接收成交回调并自动提交反向委托的过程。两者用途不同，但共享通过 Python HTTP 服务与 Java 业务系统对接的工程思路。

@@ -54,6 +54,8 @@ core-principles:
 
 这也是我第一次将自己熟悉的软件开发技术，应用到真实证券交易中。
 
+关于如何通过 Java、Python 与 MiniQMT 打通真实委托，以及首笔成交后如何自动提交反向委托，我在[《从零打通 Java、Python 与 QMT 的真实证券交易链路》](/securities/trading/programmatic-t-trading)中记录了具体过程。
+
 ## 三、需求并没有随着自动交易完成而结束
 
 随着实际使用，新的问题开始出现。

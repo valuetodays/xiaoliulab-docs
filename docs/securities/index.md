@@ -43,6 +43,8 @@ head:
 
 **目录按实际内容逐步建立，不提前创建空目录和占位文章。**
 
+证券交易管理方向可以先阅读[《从零打通 Java、Python 与 QMT 的真实证券交易链路》](/securities/trading/programmatic-t-trading)，了解从人工做 T 到程序化委托执行的实现过程。
+
 ## 记录什么？
 
 这个专题主要关注三个方面。

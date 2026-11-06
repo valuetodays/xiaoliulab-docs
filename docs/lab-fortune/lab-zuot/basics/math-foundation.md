@@ -133,6 +133,8 @@ description: 从最基本的数学公式出发，解释做T为什么能够产生
 
 这，也正是“做 T 实验”的起点。
 
+本文从数学上解释价差收益如何产生；委托提交、成交确认和反向委托执行，则属于程序化交易的工程问题。关于这些步骤如何实现，可以延伸阅读[《从零打通 Java、Python 与 QMT 的真实证券交易链路》](/securities/trading/programmatic-t-trading)。
+
 ## 下一篇
 
 [什么样的标的才算适合做T？](/lab-fortune/lab-zuot/basics/what-makes-a-good-target)

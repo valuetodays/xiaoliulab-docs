@@ -336,5 +336,5 @@ core-principles:
 
 - 为什么第一笔交易最难？
 - 一笔交易应该使用多少数量？
-- 为什么自动下单是一个工程问题？
+- [从零打通 Java、Python 与 QMT 的真实证券交易链路](/securities/trading/programmatic-t-trading)
 - 做 T 实验需要记录哪些数据？
