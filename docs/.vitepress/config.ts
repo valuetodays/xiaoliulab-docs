@@ -12,9 +12,9 @@ import { labFortuneSidebar } from './sidebar/lab-fortune/index';
 import { labZuotSidebar } from './sidebar/lab-fortune/lab-zuot';
 import { labTechExplorationSidebar } from './sidebar/lab-tech-exploration';
 import { labTechnologySidebar } from './sidebar/lab-technology';
+import { lifeTopicsSidebar } from './sidebar/life-topics';
 import { wechatSidebar } from './sidebar/wechat';
 import { getPageModeInitScript } from './theme/utils/page-mode';
-import { megaMenuTriggerTexts } from './theme/mega-menu';
 
 const siteHostname = 'docs.xiaoliulab.com';
 const siteUrl = `https://${siteHostname}`;
@@ -215,13 +215,18 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '微信支付', link: '/wechat/' },
-      ...megaMenuTriggerTexts.map((text) => ({
-        component: 'MegaMenuTrigger',
-        props: { text },
-      })),
+      { component: 'MegaMenuTrigger', props: { text: '技术' } },
+      { component: 'MegaMenuTrigger', props: { text: '金融' } },
+      {
+        text: '人生课题',
+        link: '/life-topics/',
+        activeMatch: '^/life-topics/',
+      },
+      { component: 'MegaMenuTrigger', props: { text: '更多' } },
     ],
 
     sidebar: {
+      '/life-topics/': lifeTopicsSidebar,
       '/lab-tech-exploration/': labTechExplorationSidebar,
       '/lab-beyond-code/': labBeyondCodeSidebar,
       '/wechat/': wechatSidebar,
