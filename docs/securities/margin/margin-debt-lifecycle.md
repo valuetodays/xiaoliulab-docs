@@ -597,3 +597,12 @@ A 股市场并不是所有投资者都具备融资融券交易权限，需要满
 这就是我理解的融资合约生命周期管理。
 
 本文记录的是个人证券交易管理系统的设计与开发经历，不构成投资建议。
+
+## 关联文档
+
+- [《为什么我开始自己开发证券软件？》](/securities/why-i-built-it)：介绍证券软件的起点，以及系统如何从自动交易逐步发展到交易管理和融资业务。
+- [《从零打通 Java、Python 与 QMT 的真实证券交易链路》](/securities/trading/programmatic-t-trading)：介绍如何通过程序发起证券委托，并利用券商回调完成自动反向委托。
+- [《从一买一卖到成交中和：我的做 T 交易记录模型如何演进》](/securities/trading/trade-offset-evolution)：本文的直接前置文章，介绍券商成交导入、买卖中和、交易待办与收益管理。
+- [《外部渠道调用中的数据一致性问题：如何实现最终一致性》](/lab-tech-exploration/engineering-practice/external-channel-consistency)：从其他业务场景理解原始事实保留、状态管理、数据核对和异常处理。
+- [《为什么投资研究需要可靠的数据来源？》](/lab-fortune/lab-data/why-investment-research-needs-reliable-data)：介绍数据来源、历史快照、统计口径及可追溯性的重要性。
+- [《FTX-0012：520550 融资持有与月度分红复投实验》](/lab-fortune/experiments/ftx-0012-520550-margin-dividend-reinvestment)：从实际融资持有实验出发，观察 ETF 分红、融资利息与长期资金成本之间的关系。
