@@ -17,6 +17,10 @@ export const securitiesSidebar: DefaultTheme.SidebarItem[] = [
             text: '从零打通 Java、Python 与 QMT 的真实证券交易链路',
             link: '/securities/trading/programmatic-t-trading',
           },
+          {
+            text: '从一买一卖到成交中和：我的做 T 交易记录模型如何演进',
+            link: '/securities/trading/trade-offset-evolution',
+          },
         ],
       },
     ],
