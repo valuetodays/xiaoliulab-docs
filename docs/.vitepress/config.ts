@@ -218,6 +218,11 @@ export default defineConfig({
       { component: 'MegaMenuTrigger', props: { text: '技术' } },
       { component: 'MegaMenuTrigger', props: { text: '金融' } },
       {
+        text: '证券工程',
+        link: '/securities/',
+        activeMatch: '^/securities/',
+      },
+      {
         text: '人生课题',
         link: '/life-topics/',
         activeMatch: '^/life-topics/',
