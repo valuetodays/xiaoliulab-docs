@@ -21,9 +21,15 @@ export const securitiesSidebar: DefaultTheme.SidebarItem[] = [
             text: '从一买一卖到成交中和：我的做 T 交易记录模型如何演进',
             link: '/securities/trading/trade-offset-evolution',
           },
+        ],
+      },
+      {
+        text: '融资业务',
+        collapsed: false,
+        items: [
           {
             text: '一笔融资交易，究竟什么时候才算结束？',
-            link: '/securities/trading/margin-debt-lifecycle',
+            link: '/securities/margin/margin-debt-lifecycle',
           },
         ],
       },
