@@ -9,6 +9,16 @@ export const securitiesSidebar: DefaultTheme.SidebarItem[] = [
         text: '为什么我开始自己开发证券软件？',
         link: '/securities/why-i-built-it',
       },
+      {
+        text: '证券交易管理',
+        collapsed: false,
+        items: [
+          {
+            text: '从零打通 Java、Python 与 QMT 的真实证券交易链路',
+            link: '/securities/trading/programmatic-t-trading',
+          },
+        ],
+      },
     ],
   },
 ];
