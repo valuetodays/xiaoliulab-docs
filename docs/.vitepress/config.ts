@@ -13,6 +13,7 @@ import { labZuotSidebar } from './sidebar/lab-fortune/lab-zuot';
 import { labTechExplorationSidebar } from './sidebar/lab-tech-exploration';
 import { labTechnologySidebar } from './sidebar/lab-technology';
 import { lifeTopicsSidebar } from './sidebar/life-topics';
+import { securitiesSidebar } from './sidebar/securities';
 import { wechatSidebar } from './sidebar/wechat';
 import { getPageModeInitScript } from './theme/utils/page-mode';
 
@@ -231,6 +232,7 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/securities/': securitiesSidebar,
       '/life-topics/': lifeTopicsSidebar,
       '/lab-tech-exploration/': labTechExplorationSidebar,
       '/lab-beyond-code/': labBeyondCodeSidebar,
