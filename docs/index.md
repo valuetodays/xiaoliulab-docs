@@ -16,6 +16,15 @@ hero:
     - theme: alt
       text: 探索技术
       link: /lab-tech-exploration/
+    - theme: alt
+      text: 证券工程
+      link: /securities/
+    - theme: alt
+      text: 人生课题
+      link: /life-topics/
+    - theme: alt
+      text: 工程实践
+      link: /engineering
 ---
 
 
