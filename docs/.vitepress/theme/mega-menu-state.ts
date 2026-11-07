@@ -21,8 +21,8 @@ export function openMegaMenu(trigger?: HTMLElement) {
 
 export function closeMegaMenu({ restoreFocus = false } = {}) {
   cancelClose();
-  isOpen.value = false;
   if (restoreFocus) activeTrigger.value?.focus();
+  isOpen.value = false;
 }
 
 export function scheduleMegaMenuClose() {
@@ -43,3 +43,4 @@ export function openMegaMenuAndFocus(trigger: HTMLElement) {
 }
 
 export const megaMenuOpen = readonly(isOpen);
+export const megaMenuActiveTrigger = readonly(activeTrigger);

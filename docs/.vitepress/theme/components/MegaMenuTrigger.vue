@@ -6,6 +6,7 @@ import {
 } from '../mega-menu';
 import {
   closeMegaMenu,
+  megaMenuActiveTrigger,
   megaMenuOpen,
   openMegaMenu,
   openMegaMenuAndFocus,
@@ -20,6 +21,10 @@ const props = defineProps<{
 const mobileOpen = ref(false);
 const mobileGroup = computed(() => getMegaMenuGroupForTrigger(props.text));
 const mobileGroupId = computed(() => `mega-menu-mobile-${props.text}`);
+const desktopTrigger = ref<HTMLButtonElement>();
+const desktopExpanded = computed(
+  () => megaMenuOpen.value && megaMenuActiveTrigger.value === desktopTrigger.value,
+);
 
 function eventTarget(event: Event) {
   return event.currentTarget as HTMLElement;
@@ -60,11 +65,12 @@ function openAndFocus(event: KeyboardEvent) {
 
   <button
     v-else
+    ref="desktopTrigger"
     class="mega-menu-trigger"
     type="button"
     aria-haspopup="true"
     aria-controls="site-mega-menu"
-    :aria-expanded="megaMenuOpen"
+    :aria-expanded="desktopExpanded"
     @mouseenter="openMegaMenu(eventTarget($event))"
     @mouseleave="scheduleMegaMenuClose"
     @focus="openMegaMenu(eventTarget($event))"
@@ -75,7 +81,25 @@ function openAndFocus(event: KeyboardEvent) {
     @keydown.space.prevent="openAndFocus"
     @keydown.esc="closeMegaMenu({ restoreFocus: true })"
   >
-    {{ text }}
+    <span class="mega-menu-trigger-content">
+      <span>{{ text }}</span>
+      <svg
+        class="mega-menu-trigger-chevron"
+        width="12"
+        height="12"
+        viewBox="0 0 12 12"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path
+          d="m3 4.5 3 3 3-3"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </span>
   </button>
 </template>
 
@@ -96,6 +120,32 @@ function openAndFocus(event: KeyboardEvent) {
 .mega-menu-trigger:focus-visible,
 .mega-menu-trigger[aria-expanded='true'] {
   color: var(--vp-c-brand-1);
+}
+
+.mega-menu-trigger-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin: 0 -8px;
+  padding: 4px 8px;
+  line-height: 24px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.mega-menu-trigger-chevron {
+  flex: 0 0 auto;
+  color: var(--vp-c-text-2);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.mega-menu-trigger[aria-expanded='true'] .mega-menu-trigger-content {
+  background: var(--vp-c-brand-soft);
+}
+
+.mega-menu-trigger[aria-expanded='true'] .mega-menu-trigger-chevron {
+  color: var(--vp-c-brand-1);
+  transform: rotate(180deg);
 }
 
 .mega-menu-trigger:focus-visible {
@@ -151,5 +201,13 @@ function openAndFocus(event: KeyboardEvent) {
 
 .mega-menu-mobile-link:hover {
   color: var(--vp-c-brand-1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mega-menu-trigger,
+  .mega-menu-trigger-content,
+  .mega-menu-trigger-chevron {
+    transition: none;
+  }
 }
 </style>
