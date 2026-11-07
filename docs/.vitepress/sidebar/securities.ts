@@ -33,6 +33,16 @@ export const securitiesSidebar: DefaultTheme.SidebarItem[] = [
           },
         ],
       },
+      {
+        text: '期权业务',
+        collapsed: false,
+        items: [
+          {
+            text: '从 ETF 到期权：时间为什么改变了我的交易方式？',
+            link: '/securities/options/etf-to-options-time-and-trading',
+          },
+        ],
+      },
     ],
   },
 ];
