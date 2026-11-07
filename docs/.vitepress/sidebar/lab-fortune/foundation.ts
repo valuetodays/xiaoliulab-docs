@@ -14,6 +14,7 @@ export const foundationSidebar: DefaultTheme.SidebarItem[] = [
           { text: '交易成本', link: '/lab-fortune/foundation/instruments/stock-vs-etf' },
           { text: 'ETF 和联接基金怎么选？', link: '/lab-fortune/foundation/instruments/etf-vs-etf-feeder-fund' },
           { text: '指数观察指标', link: '/lab-fortune/foundation/instruments/index-observation-indicators' },
+          { text: '什么是期权？从基本概念到交易规则', link: '/lab-fortune/foundation/instruments/options-basics' },
         ],
       },
       {
