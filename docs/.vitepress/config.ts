@@ -1,6 +1,7 @@
 import { createContentLoader, defineConfig, type HeadConfig } from 'vitepress';
 import { corePrinciples, getCorePrinciple } from './data/core-principles';
 import { articleMetadataPlugin } from './markdown/article-metadata';
+import { aboutMeSidebar } from './sidebar/about-me';
 import { labBeyondCodeSidebar } from './sidebar/lab-beyond-code';
 import { deepDrawdownSidebar } from './sidebar/lab-fortune/deep-drawdown';
 import { experimentsSidebar } from './sidebar/lab-fortune/experiments';
@@ -228,10 +229,16 @@ export default defineConfig({
         link: '/life-topics/',
         activeMatch: '^/life-topics/',
       },
+      {
+        text: '关于我',
+        link: '/about-me/',
+        activeMatch: '^/about-me/',
+      },
       { component: 'MegaMenuTrigger', props: { text: '更多' } },
     ],
 
     sidebar: {
+      '/about-me/': aboutMeSidebar,
       '/securities/': securitiesSidebar,
       '/life-topics/': lifeTopicsSidebar,
       '/lab-tech-exploration/': labTechExplorationSidebar,
