@@ -2,6 +2,18 @@
   box-shadow: inset 0 -2px 0 var(--vp-c-brand-1);
 }
 
+.VPSidebarItem.level-0:not(.is-link):not(.collapsible) > .item {
+  cursor: default;
+}
+
+.VPSidebarItem.level-0:not(.is-link):not(.collapsible) > .item > .text {
+  padding: 4px 0 10px;
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
 .lab-home .VPHero .name,
 .lab-home .VPHero .text {
   letter-spacing: 0;
