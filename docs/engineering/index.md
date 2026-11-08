@@ -20,6 +20,15 @@ articleMeta: false
 - [单元测试跑起来了，为什么后来又停了？](/lab-beyond-code/governance/unit-test-ci-sustainability)
 - [从发现问题到解决问题，中间隔着什么？](/lab-beyond-code/judgment/from-identifying-to-solving-problems)
 
+## 证券工程
+
+- [为什么我开始自己开发证券软件？](/securities/why-i-built-it)
+- [从零打通 Java、Python 与 QMT 的真实证券交易链路](/securities/trading/programmatic-t-trading)
+- [从一买一卖到成交中和：我的做 T 交易记录模型如何演进](/securities/trading/trade-offset-evolution)
+- [一笔融资交易，究竟什么时候才算结束？](/securities/margin/margin-debt-lifecycle)
+- [从 ETF 到期权：时间为什么改变了我的交易方式？](/securities/options/etf-to-options-time-and-trading)
+
+
 ## 技术实践
 
 - [一个留学缴费遗留系统的治理：边界、验证与工程判断](/lab-tech-exploration/engineering-practice/a-remit-system-governance)
@@ -38,4 +47,4 @@ articleMeta: false
 
 ---
 
-[代码之外](/lab-beyond-code/) | [探索技术](/lab-tech-exploration/)
+[代码之外](/lab-beyond-code/) | [探索技术](/lab-tech-exploration/) | [证券工程](/securities/)
