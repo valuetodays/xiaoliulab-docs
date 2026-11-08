@@ -47,4 +47,4 @@ articleMeta: false
 
 ---
 
-[代码之外](/lab-beyond-code/) | [探索技术](/lab-tech-exploration/) | [证券工程](/securities/)
+[代码之外](/lab-beyond-code/) | [证券工程](/securities/) | [探索技术](/lab-tech-exploration/)
