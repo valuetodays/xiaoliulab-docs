@@ -36,6 +36,7 @@
 }
 
 .site-home .VPHome .VPHomeHero {
+  padding-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 24px);
   padding-bottom: 24px;
 }
 
@@ -369,6 +370,7 @@ html[data-page-mode='video'] .vp-doc img {
 
 @media (min-width: 640px) {
   .site-home .VPHome .VPHomeHero {
+    padding-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px);
     padding-bottom: 32px;
   }
 
