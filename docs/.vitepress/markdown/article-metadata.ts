@@ -36,6 +36,10 @@ function countWords(text: string): number {
   return hanCharacterCount + latinAndNumberWordCount;
 }
 
+export function countArticleWords(tokens: Token[]): number {
+  return countWords(extractReadableText(tokens));
+}
+
 function collectArticleMetadata(state: StateCore): void {
   const environment = state.env as MarkdownEnvironment;
 
@@ -43,7 +47,7 @@ function collectArticleMetadata(state: StateCore): void {
     return;
   }
 
-  const wordCount = countWords(extractReadableText(state.tokens));
+  const wordCount = countArticleWords(state.tokens);
 
   environment.frontmatter.wordCount = wordCount;
   environment.frontmatter.readingTime = Math.max(

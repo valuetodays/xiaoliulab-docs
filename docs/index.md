@@ -1,6 +1,7 @@
 ---
 layout: home
 pageClass: lab-home site-home
+lastUpdated: 2026-11-10T11:09:13+08:00
 
 hero:
   name: 小刘实验室
@@ -28,6 +29,11 @@ hero:
 ---
 
 
+<!--
+维护说明：本页内容更新时间和 Sitemap 的 lastmod 使用 Frontmatter 中的 lastUpdated。
+提交前，首页正文、入口或展示的文章数量、字数等发生变化时，AI 应同步维护该字段。
+首页显示的“最后发布时间”仍使用构建／部署时间，不用于推算本页的 lastUpdated。
+-->
 ## 技术实验
 
 <div class="lab-topic-grid">

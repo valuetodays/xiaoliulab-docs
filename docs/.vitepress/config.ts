@@ -1,5 +1,5 @@
-import { createContentLoader, defineConfig, type HeadConfig } from 'vitepress';
-import { corePrinciples, getCorePrinciple } from './data/core-principles';
+import { defineConfig, type HeadConfig } from 'vitepress';
+import { corePrinciples, getCorePrincipleLastUpdated } from './data/core-principles';
 import { articleMetadataPlugin } from './markdown/article-metadata';
 import { aboutMeSidebar } from './sidebar/about-me';
 import { labBeyondCodeSidebar } from './sidebar/lab-beyond-code';
@@ -16,7 +16,6 @@ import { labTechnologySidebar } from './sidebar/lab-technology';
 import { lifeTopicsSidebar } from './sidebar/life-topics';
 import { securitiesSidebar } from './sidebar/securities';
 import { wechatSidebar } from './sidebar/wechat';
-import { updateAggregateLastmod } from './sitemap/aggregate-lastmod';
 import { getPageModeInitScript } from './theme/utils/page-mode';
 
 const siteHostname = 'docs.xiaoliulab.com';
@@ -90,56 +89,16 @@ export default defineConfig({
   ],
   sitemap: {
     hostname: `${siteUrl}/`,
-    async transformItems(items) {
+    transformItems(items) {
       const sitemapItemByUrl = new Map(
         items.map((item) => [item.url.replace(/^\/+/, ''), item]),
       );
-      const pages = await createContentLoader('**/*.md', { includeSrc: true }).load();
-      updateAggregateLastmod(items, pages);
-      const latestArticleByCorePrinciple = new Map<
-        string,
-        { item: (typeof items)[number]; timestamp: number }
-      >();
-
-      for (const page of pages) {
-        const articleCorePrinciples = page.frontmatter['core-principles'];
-
-        if (!Array.isArray(articleCorePrinciples)) {
-          continue;
-        }
-
-        const sitemapItem = sitemapItemByUrl.get(page.url.replace(/^\/+/, ''));
-        const lastmod = sitemapItem?.lastmod;
-        const timestamp = lastmod instanceof Date
-          ? lastmod.getTime()
-          : typeof lastmod === 'number'
-            ? lastmod
-            : typeof lastmod === 'string'
-              ? Date.parse(lastmod)
-              : 0;
-
-        if (!(timestamp > 0) || !sitemapItem) {
-          continue;
-        }
-
-        for (const code of articleCorePrinciples) {
-          if (typeof code !== 'string' || !getCorePrinciple(code)) {
-            continue;
-          }
-
-          const current = latestArticleByCorePrinciple.get(code);
-
-          if (!current || timestamp > current.timestamp) {
-            latestArticleByCorePrinciple.set(code, { item: sitemapItem, timestamp });
-          }
-        }
-      }
-
-      for (const [code, latestArticle] of latestArticleByCorePrinciple) {
-        const detailItem = sitemapItemByUrl.get(`core-principles/${code}`);
+      for (const corePrinciple of corePrinciples) {
+        const lastUpdated = getCorePrincipleLastUpdated(corePrinciple);
+        const detailItem = sitemapItemByUrl.get(`core-principles/${corePrinciple.code}`);
 
         if (detailItem) {
-          detailItem.lastmod = latestArticle.item.lastmod;
+          detailItem.lastmod = lastUpdated;
         }
       }
 

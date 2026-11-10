@@ -73,6 +73,46 @@ New commit types may be added in the future when needed.
 - Markdown 内容文件名：`^[a-z0-9_-]+\.md$`
 - 路径中的 `/` 仅作为目录分隔符使用
 
+## lastUpdated 与 Sitemap lastmod
+
+### 通用约定
+
+- VitePress 页面更新时间字段使用 `lastUpdated`，Sitemap 输出字段使用 `lastmod`，不要混写为 `lastUpdate`。
+- 更新时间由 AI 在提交前根据本次实际提交的差异维护。只比较本次修改前后的内容和展示数据，不为此在构建或发布时遍历全部 Git 历史，也不引入数据库或上一版状态文件。
+- 显式维护的时间使用带时区的 ISO 8601 格式，按北京时间记录本次内容修改时间，不填写未来时间，不在每次构建、部署或无关提交时统一刷新。
+- Markdown Frontmatter 中的 `lastUpdated` 使用不加引号的时间值，以便 VitePress 将其识别为日期；TypeScript 数据对象中的 `lastUpdated` 使用 ISO 8601 字符串。
+- 判断是否更新时间，以页面实际展示内容是否变化为准；纯格式整理、不可见注释或其他不改变展示内容的修改，不单独刷新显式维护的时间。
+
+### 按页面类型处理
+
+| 页面类型 | 时间来源与维护位置 | 提交前处理方式 |
+| --- | --- | --- |
+| 普通内容文档及其他未单独约定的 Markdown 页面 | 使用该文件最近一次 Git 提交的作者时间，由 VitePress 自动读取 | 不新增或手动维护显式 `lastUpdated`；显式时间只用于本表单独约定的聚合页，不将聚合页规则扩展到普通文章。 |
+| 内核思想总览 `/core-principles/` | 在 `docs/core-principles/index.md` 的 Frontmatter 中维护 `lastUpdated` | 思想增删、名称、说明、入口或各分类文章数量等展示内容变化时更新；关联文章仅改正文且总览展示不变时不更新。 |
+| 内核思想动态详情 `/core-principles/:code` | 在 `docs/.vitepress/data/core-principles.ts` 中为每个思想分别维护 `lastUpdated` | 思想名称、说明或所属文章列表变化时，只更新受影响思想的时间；文章列表变化包括增删文章、标题、链接及归属标签调整。关联文章仅改正文时不更新。 |
+| 首页 `/` | 在 `docs/index.md` 的 Frontmatter 中维护 `lastUpdated` | 首页正文、入口或实际展示的文章数量、字数等变化时更新；展示未变时不因上游文档提交而刷新。 |
+| Demo 汇总 `/demos/` | 在 `docs/demos/index.md` 的 Frontmatter 中维护 `lastUpdated` | 展示的文档增删、标题、说明、入口或附件链接等变化时更新；来源文档仅改正文且 Demo 列表展示不变时不更新。 |
+
+- 首页、Demo 汇总和内核思想总览的页面更新时间及 Sitemap `lastmod` 均读取各自 Frontmatter，不再用上游文档时间覆盖。
+- 首页显示的“最后发布时间”使用构建／部署时间，与内容 `lastUpdated` 独立；不因发布本身刷新内容更新时间。
+
+### 动态页面的时间接入
+
+- 动态详情页共用 `[code].md` 模板，但更新时间按思想分别保存；不能只修改共用模板来代替单个页面的时间维护。
+- 每个思想的 `lastUpdated` 必须同时用于 `[code].paths.ts` 的 `pageData.lastUpdated` 和 Sitemap 对应 URL 的 `lastmod`。Sitemap 中不能再用最新关联文章时间覆盖该显式值。
+- 公共模板或组件发生实质内容变化时，按实际影响范围更新各思想的时间；不因修改共享文件就无差别刷新所有页面。
+- 首次采用显式时间时，同步调整页面中的维护注释，保证注释与实际时间来源一致。字段或映射尚未接入时，要说明尚未生效，不能仅凭本规范声称页面已使用新规则；接入代码作为独立实现任务处理。
+
+### 提交前核验
+
+- 本机首次使用或 hook 模板更新后，运行 `npm run hooks:install` 安装仓库内 `.githooks/` 的提交及推送校验；安装器保留已有的自定义 hook，不自动覆盖。
+- `npm run check:last-updated` 检查工作区；加 `-- --staged` 只检查暂存区。提交前 hook 检查实际暂存内容，推送前 hook 比较远程旧版本与本地新版本，不受未提交修改影响。
+- 校验失败时按报告修正内容或对应时间后重新暂存，不以跳过 hook 代替修复。详细命令、初始化规则和比较边界见 `scripts/README.md`。
+- 新增聚合页或改变现有页面的展示字段、统计口径及依赖结构时，同步维护 `scripts/lib/last-updated.mjs` 的数据投影及回归测试。
+- 检查本次提交涉及的新增、修改、删除和重命名，确定受影响的聚合页；文章归属变化时同时检查原归属和新归属。
+- 将必要的 `lastUpdated` 更新与相应内容改动一起提交，保留未受影响页面的时间。
+- 涉及时间字段或 Sitemap 逻辑的改动，执行 `npm run docs:build`，核对相关静态页面及 Sitemap 的时间，并确认其他页面没有被无差别刷新。
+
 ## 更新日志
 
 - 生成更新日志时，不要描述开发过程，要描述用户可感知的变化。

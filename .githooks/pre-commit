@@ -1,0 +1,3 @@
+#!/bin/sh
+# xiaoliulab-docs lastUpdated hook
+exec node scripts/check-last-updated.mjs --staged

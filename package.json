@@ -4,9 +4,13 @@
   "scripts": {
     "docs:dev": "vitepress dev docs --host 0.0.0.0 --port 28080",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs --port 28080"
+    "docs:preview": "vitepress preview docs --port 28080",
+    "check:last-updated": "node scripts/check-last-updated.mjs",
+    "test:last-updated": "node --test scripts/check-last-updated.test.mjs",
+    "hooks:install": "node scripts/install-git-hooks.mjs"
   },
   "devDependencies": {
+    "@babel/parser": "^7.29.7",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^2.0.0-alpha"
   }

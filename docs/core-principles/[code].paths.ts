@@ -2,6 +2,7 @@ import { defineRoutes } from 'vitepress';
 import {
   corePrinciples,
   getCorePrinciple,
+  getCorePrincipleLastUpdated,
 } from '../.vitepress/data/core-principles';
 
 export default defineRoutes({
@@ -18,10 +19,12 @@ export default defineRoutes({
     return {
       title: corePrinciple.name,
       description: corePrinciple.description,
+      lastUpdated: getCorePrincipleLastUpdated(corePrinciple),
       frontmatter: {
         ...pageData.frontmatter,
         title: corePrinciple.name,
         description: corePrinciple.description,
+        lastUpdated: corePrinciple.lastUpdated,
       },
     };
   },
