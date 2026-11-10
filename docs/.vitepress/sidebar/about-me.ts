@@ -11,6 +11,10 @@ export const aboutMeSidebar: DefaultTheme.SidebarItem[] = [
   {
     items: [
       { text: '关于小刘实验室', link: '/about-me/website' },
+      {
+        text: '小刘实验室与 AI：一次个人生产力的实践',
+        link: '/about-me/xiaoliulab-and-ai-personal-productivity',
+      },
     ],
   },
 ];
