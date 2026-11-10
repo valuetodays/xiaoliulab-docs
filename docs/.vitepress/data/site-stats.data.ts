@@ -7,6 +7,7 @@ import {
 export interface SiteStats {
   articleCount: number;
   wordCount: number;
+  builtAt: string;
 }
 
 // 该专题首页没有 articleMeta: false，单独按目录页排除。
@@ -35,7 +36,11 @@ export default createContentLoader('**/*.md', {
   async transform(pages): Promise<SiteStats> {
     // Content loader 已初始化站点的 Markdown renderer，这里复用它及单篇字数插件。
     const markdown = await createMarkdownRenderer(process.cwd());
-    const stats: SiteStats = { articleCount: 0, wordCount: 0 };
+    const stats: SiteStats = {
+      articleCount: 0,
+      wordCount: 0,
+      builtAt: new Date().toISOString(),
+    };
 
     for (const page of pages) {
       if (!isArticlePage(page) || !page.src?.trim()) {
