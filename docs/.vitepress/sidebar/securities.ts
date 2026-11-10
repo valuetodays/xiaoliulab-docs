@@ -41,6 +41,10 @@ export const securitiesSidebar: DefaultTheme.SidebarItem[] = [
             text: '从 ETF 到期权：时间为什么改变了我的交易方式？',
             link: '/securities/options/etf-to-options-time-and-trading',
           },
+          {
+            text: '卖出之后，它还在涨：一个行情观察页面的由来',
+            link: '/securities/options/why-i-built-six-etf-market-observation',
+          },
         ],
       },
     ],
