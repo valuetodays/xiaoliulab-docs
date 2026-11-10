@@ -64,7 +64,7 @@ function formatWordCount(wordCount: number): string {
     <span class="home-site-stats-separator" aria-hidden="true">·</span>
     <span>
       最后发布时间
-      <time :datetime="publishedAt" :title="deployedAt ? '北京时间，GitHub 记录的部署成功时间' : '北京时间，站点构建时间'">{{ formatPublicationTime(publishedAt) }}</time>
+      <time :datetime="publishedAt" :title="deployedAt ? '北京时间，GitHub 记录的部署成功时间' : '北京时间，站点构建时间'">{{ formatPublicationTime(publishedAt) }}</time>（北京时间）
     </span>
   </p>
 </template>
