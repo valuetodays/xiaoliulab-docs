@@ -1,11 +1,5 @@
 import { createContentLoader } from 'vitepress';
-
-const demoCdnPrefix =
-  'https://cdn.jsdelivr.net/gh/valuetodays/supreme-octo-palm-tree';
-const demoUrlPattern = new RegExp(
-  `${demoCdnPrefix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\\s)"'<>]*`,
-  'g',
-);
+import { getDemoUrls } from './content-sources';
 
 export interface DemoAttachment {
   name: string;
@@ -46,7 +40,7 @@ export default createContentLoader('**/*.md', {
         continue;
       }
 
-      const urls = [...new Set(page.src.match(demoUrlPattern) ?? [])];
+      const urls = getDemoUrls(page.src);
 
       if (urls.length === 0) {
         continue;

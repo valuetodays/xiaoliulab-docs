@@ -16,6 +16,7 @@ import { labTechnologySidebar } from './sidebar/lab-technology';
 import { lifeTopicsSidebar } from './sidebar/life-topics';
 import { securitiesSidebar } from './sidebar/securities';
 import { wechatSidebar } from './sidebar/wechat';
+import { updateAggregateLastmod } from './sitemap/aggregate-lastmod';
 import { getPageModeInitScript } from './theme/utils/page-mode';
 
 const siteHostname = 'docs.xiaoliulab.com';
@@ -93,7 +94,8 @@ export default defineConfig({
       const sitemapItemByUrl = new Map(
         items.map((item) => [item.url.replace(/^\/+/, ''), item]),
       );
-      const pages = await createContentLoader('**/*.md').load();
+      const pages = await createContentLoader('**/*.md', { includeSrc: true }).load();
+      updateAggregateLastmod(items, pages);
       const latestArticleByCorePrinciple = new Map<
         string,
         { item: (typeof items)[number]; timestamp: number }

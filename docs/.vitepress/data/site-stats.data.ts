@@ -1,34 +1,15 @@
 import {
   createContentLoader,
   createMarkdownRenderer,
-  type ContentData,
 } from 'vitepress';
+import { isArticlePage } from './content-sources';
+
+export { isArticlePage } from './content-sources';
 
 export interface SiteStats {
   articleCount: number;
   wordCount: number;
   builtAt: string;
-}
-
-// 该专题首页没有 articleMeta: false，单独按目录页排除。
-const TOPIC_INDEX_URLS = new Set(['/lab-fortune/lab-finance-exploration/']);
-
-export function isArticlePage(page: ContentData): boolean {
-  const { frontmatter, url } = page;
-  const head = frontmatter.head;
-  const isRedirect = Array.isArray(head) && head.some((entry) => (
-    Array.isArray(entry)
-    && entry[0] === 'meta'
-    && typeof entry[1]?.['http-equiv'] === 'string'
-    && entry[1]['http-equiv'].toLowerCase() === 'refresh'
-  ));
-
-  return url !== '/'
-    && !TOPIC_INDEX_URLS.has(url)
-    && !/\/AGENTS(?:\.html)?$/i.test(url)
-    && frontmatter.layout !== 'home'
-    && frontmatter.articleMeta !== false
-    && !isRedirect;
 }
 
 export default createContentLoader('**/*.md', {
