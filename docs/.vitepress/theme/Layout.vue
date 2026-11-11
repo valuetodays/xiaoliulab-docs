@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme';
 import { useData } from 'vitepress';
+import ArticleWatermark from './components/ArticleWatermark.vue';
 import GiscusComment from './components/GiscusComment.vue';
 import HomeSiteStats from './components/HomeSiteStats.vue';
 import MegaMenu from './components/MegaMenu.vue';
@@ -16,6 +17,9 @@ const { page } = useData();
     </template>
     <template #nav-bar-content-after>
       <MegaMenu />
+    </template>
+    <template #doc-before>
+      <ArticleWatermark />
     </template>
     <template #doc-after>
       <GiscusComment />

@@ -91,6 +91,36 @@
   margin-right: auto;
 }
 
+/* One centered watermark stays fixed within the visible article bounds. */
+.article-watermark {
+  --article-watermark-color: #2563eb;
+  --article-watermark-opacity: 0.03;
+  --article-watermark-size: min(100%, 320px) 220px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  pointer-events: none;
+  user-select: none;
+  background-color: var(--article-watermark-color);
+  opacity: var(--article-watermark-opacity);
+  mask-image: url('/images/article-watermark.svg');
+  mask-size: var(--article-watermark-size);
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.dark .article-watermark {
+  --article-watermark-color: #93b4ff;
+  --article-watermark-opacity: 0.06;
+}
+
+@media (max-width: 639px) {
+  .article-watermark {
+    --article-watermark-size: min(100%, 260px) 180px;
+  }
+}
+
 .article-meta {
   display: flex;
   flex-wrap: wrap;
