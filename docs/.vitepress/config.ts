@@ -1,3 +1,4 @@
+import { fileURLToPath, URL } from 'node:url';
 import { defineConfig, type HeadConfig } from 'vitepress';
 import { corePrinciples, getCorePrincipleLastUpdated } from './data/core-principles';
 import { articleMetadataPlugin } from './markdown/article-metadata';
@@ -131,6 +132,16 @@ export default defineConfig({
     ];
   },
   vite: {
+    resolve: {
+      alias: [
+        {
+          find: /^.*\/VPDocFooterLastUpdated\.vue$/,
+          replacement: fileURLToPath(
+            new URL('./theme/components/DocLastUpdated.vue', import.meta.url),
+          ),
+        },
+      ],
+    },
     server: {
       allowedHosts: ['v200'],
     },
@@ -169,10 +180,7 @@ export default defineConfig({
 
     lastUpdated: {
       text: '最后更新于',
-      formatOptions: {
-        dateStyle: 'medium',
-        timeStyle: 'short',
-      },
+      // 日期格式由 DocLastUpdated.vue 固定为北京时间 YYYY-MM-DD HH:mm。
     },
 
     nav: [
