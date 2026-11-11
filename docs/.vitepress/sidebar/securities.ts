@@ -47,6 +47,16 @@ export const securitiesSidebar: DefaultTheme.SidebarItem[] = [
           },
         ],
       },
+      {
+        text: '业务研究',
+        collapsed: false,
+        items: [
+          {
+            text: 'ETF 做市，不只是自动做 T：用八个模块理解一项证券业务',
+            link: '/securities/business/etf-market-making-eight-modules',
+          },
+        ],
+      },
     ],
   },
 ];
