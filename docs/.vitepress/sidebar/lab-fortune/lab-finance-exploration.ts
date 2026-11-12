@@ -60,6 +60,7 @@ export const financeExplorationSidebar: DefaultTheme.SidebarItem[] = [
         items: [
           { text: '证券账户里的闲钱怎么办？——国债逆回购', link: '/lab-fortune/lab-finance-exploration/extras/idle-cash-in-brokerage-account-treasury-reverse-repo' },
           { text: '融资账户里的闲钱怎么办？——场内货币基金', link: '/lab-fortune/lab-finance-exploration/extras/idle-cash-in-margin-account-huabao-tianyi' },
+          { text: '当所有企业都想增长，消费者的钱从哪里来？', link: '/lab-fortune/lab-finance-exploration/extras/when-consumers-cut-spending' },
         ],
       },
     ],
