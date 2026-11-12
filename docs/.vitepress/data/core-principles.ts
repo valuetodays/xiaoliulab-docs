@@ -17,7 +17,7 @@ export const corePrinciples: CorePrincipleDefinition[] = [
   },
   {
     code: 'preserve-truth',
-    lastUpdated: '2026-11-10T12:43:38+08:00',
+    lastUpdated: '2026-11-12T23:05:29+08:00',
     name: '留真',
     color: '#67C23A',
     description: '保留当时真实发生的事实，不用后来形成的解释重写历史。',
@@ -31,21 +31,21 @@ export const corePrinciples: CorePrincipleDefinition[] = [
   },
   {
     code: 'explicit',
-    lastUpdated: '2026-11-10T12:43:38+08:00',
+    lastUpdated: '2026-11-12T23:05:29+08:00',
     name: '显式',
     color: '#9B59B6',
     description: '重要状态、规则和风险尽量明确表达，不依赖隐含默认和人的记忆。',
   },
   {
     code: 'restraint',
-    lastUpdated: '2026-11-10T12:43:38+08:00',
+    lastUpdated: '2026-11-12T23:05:29+08:00',
     name: '克制',
     color: '#909399',
     description: '没有充分理由时不强行动作，不为了使用资源而制造动作。',
   },
   {
     code: 'evolution',
-    lastUpdated: '2026-11-10T12:43:38+08:00',
+    lastUpdated: '2026-11-12T23:05:29+08:00',
     name: '演进',
     color: '#00A6A6',
     description: '接受当前结论并非最终答案，在保留历史的基础上持续修正和演进。',

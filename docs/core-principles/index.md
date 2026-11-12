@@ -2,7 +2,7 @@
 title: 内核思想
 description: 小刘实验室在技术与金融实践中长期体现的内核思想。
 articleMeta: false
-lastUpdated: 2026-11-10T12:27:46+08:00
+lastUpdated: 2026-11-12T23:05:29+08:00
 ---
 
 <script setup lang="ts">
