@@ -53,7 +53,7 @@ head:
 
 当一个想法正式进入验证阶段后，分配 FTX 编号，并建立独立实验文档。
 
-## 进行中的实验
+## 实验列表
 
 | 编号 | 实验 | 状态 |
 | --- | --- | --- |
@@ -63,6 +63,7 @@ head:
 | FTX-0010 | [CCI尾盘低位观察实验](/lab-fortune/experiments/ftx-0010-cci-tail-low-observation) | 已结束 |
 | FTX-0011 | [510300 CCI超卖短期修复验证实验](/lab-fortune/experiments/ftx-0011-510300-cci-oversold-repair) | 已结束 |
 | FTX-0012 | [520550 融资持有与月度分红复投实验](/lab-fortune/experiments/ftx-0012-520550-margin-dividend-reinvestment) | 已启动，初始建仓待确认 |
+| FTX-0013 | [招商银行融资持有与股息利差验证实验](/lab-fortune/experiments/ftx-0013-cmb-margin-dividend-spread) | 计划中，尚未确认首笔成交 |
 
 ## 实验想法池
 
