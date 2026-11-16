@@ -17,7 +17,7 @@ export const corePrinciples: CorePrincipleDefinition[] = [
   },
   {
     code: 'preserve-truth',
-    lastUpdated: '2026-11-14T10:56:56+08:00',
+    lastUpdated: '2026-11-16T19:09:59+08:00',
     name: '留真',
     color: '#67C23A',
     description: '保留当时真实发生的事实，不用后来形成的解释重写历史。',
@@ -45,7 +45,7 @@ export const corePrinciples: CorePrincipleDefinition[] = [
   },
   {
     code: 'evolution',
-    lastUpdated: '2026-11-14T10:56:56+08:00',
+    lastUpdated: '2026-11-16T19:09:59+08:00',
     name: '演进',
     color: '#00A6A6',
     description: '接受当前结论并非最终答案，在保留历史的基础上持续修正和演进。',

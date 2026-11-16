@@ -10,6 +10,10 @@ export const financialHistorySidebar: DefaultTheme.SidebarItem[] = [
         text: '从 LTCM 到 JWM',
         link: '/lab-fortune/financial-history/ltcm-to-jwm-survival-risk',
       },
+      {
+        text: '从珠海华发想到的两个问题',
+        link: '/lab-fortune/financial-history/zhuhai-huafa-debt-risk-reflections',
+      },
     ],
   },
 ];
