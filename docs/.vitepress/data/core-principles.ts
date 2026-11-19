@@ -45,7 +45,7 @@ export const corePrinciples: CorePrincipleDefinition[] = [
   },
   {
     code: 'evolution',
-    lastUpdated: '2026-11-16T19:09:59+08:00',
+    lastUpdated: '2026-11-19T23:37:12+08:00',
     name: '演进',
     color: '#00A6A6',
     description: '接受当前结论并非最终答案，在保留历史的基础上持续修正和演进。',

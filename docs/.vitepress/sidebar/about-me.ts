@@ -6,6 +6,7 @@ export const aboutMeSidebar: DefaultTheme.SidebarItem[] = [
       { text: '关于我', link: '/about-me/' },
       { text: '童年和求学经历', link: '/about-me/education' },
       { text: '工作经历', link: '/about-me/career' },
+      { text: '我的技术与工具演变记录', link: '/about-me/personal-system-evolution/' },
     ],
   },
   {
