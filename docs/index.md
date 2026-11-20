@@ -1,7 +1,7 @@
 ---
 layout: home
 pageClass: lab-home site-home
-lastUpdated: 2026-11-20T19:33:00+08:00
+lastUpdated: 2026-11-20T19:40:12+08:00
 
 hero:
   name: 小刘实验室
