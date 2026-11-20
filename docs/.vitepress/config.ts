@@ -28,6 +28,7 @@ const siteUrl = `https://${siteHostname}`;
 const sitemapExcludedPaths = [
   'lab-tech-exploration/maven-pom-simplification-history',
   'lab-tech-exploration/https-certificate-secondary-validation-dns-timeout',
+  'lab-technology/tdxquant/flask-service',
   'orientations/',
   ...corePrinciples.map(({ code }) => `orientations/${code}`),
 ];
