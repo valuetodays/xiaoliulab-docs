@@ -1,7 +1,7 @@
 ---
 layout: home
 pageClass: lab-home site-home
-lastUpdated: 2026-11-20T18:48:58+08:00
+lastUpdated: 2026-11-20T19:33:00+08:00
 
 hero:
   name: 小刘实验室
@@ -58,9 +58,21 @@ hero:
 ## 金融实验
 
 <div class="lab-topic-grid">
+  <a class="lab-topic-card" href="./lab-fortune/foundation/">
+    <h3>金融基础</h3>
+    <p>查阅股票、ETF、交易成本和收益指标，弄清分析时常用的概念。</p>
+  </a>
+  <a class="lab-topic-card" href="./lab-fortune/lab-finance-exploration/">
+    <h3>探索金融</h3>
+    <p>从余额宝里的钱去了哪里、买 ETF 的钱流向哪里这些实际问题出发，理解金融工具的运作。</p>
+  </a>
   <a class="lab-topic-card" href="./lab-fortune/lab-zuot/">
     <h3>做T实验</h3>
-    <p>记录做T的基础、信号、执行、系统与实践复盘。</p>
+    <p>从历史数据里找交易信号，记录下单执行、交易成本和实践复盘。</p>
+  </a>
+  <a class="lab-topic-card" href="./lab-fortune/experiments/">
+    <h3>策略实验</h3>
+    <p>从红利 ETF 一年持有等实验入手，查看假设、验证过程和记录。</p>
   </a>
 </div>
 
